@@ -1,6 +1,6 @@
 ![](./media/media/image2.png)
 
-LABNMS-2500
+LTRNMS-2700
 ===========
 
 Task 1 Create L2VPN Service Package
@@ -161,7 +161,7 @@ the file back to NSO server.**
     }
     ``` 
 
-1.  Complete content of the file is available at [L2Vpn.yang](https://github.com/weiganghuang/labnms-2500/blob/master/solution/L2Vpn/src/yang/L2Vpn.yang)
+1.  Complete content of the file is available at [L2Vpn.yang](https://github.com/weiganghuang/LTRNMS-2700/blob/master/solution/L2Vpn/src/yang/L2Vpn.yang)
 
     **Note: You can find the solution of the L2Vpn.yang from NSO server,
     at `/home/nso/solution/L2Vpn/src/yang/` for your reference.**
@@ -322,7 +322,7 @@ format. This output is the starting point of the mapping template.
     </config-template>
   
     ```
-    Complete tempalte file is available at [L2Vpn-template.xml](https://github.com/weiganghuang/labnms-2500/blob/master/solution/L2Vpn/templates/L2Vpn-template.xml)
+    Complete tempalte file is available at [L2Vpn-template.xml](https://github.com/weiganghuang/LTRNMS-2700/blob/master/solution/L2Vpn/templates/L2Vpn-template.xml)
  
     **You can find the solution template file from
     `~/solution/L2Vpn/templates` of your NSO server, for your
@@ -522,6 +522,6 @@ You have completed Task1. In this task, you created, deployed and tested
 L2Vpn service package. Next, you will learn service discovery and
 reconcile when dealing with brownfield network:
 
-[Task2 Service discovery and reconciliation A: Create L2Vpn service instances from pre-existing configuration](https://github.com/weiganghuang/labnms-2500/blob/master/task2.md)
+[Task2 Service discovery and reconciliation A: Create L2Vpn service instances from pre-existing configuration](https://github.com/weiganghuang/LTRNMS-2700/blob/master/task2.md)
 --------------------------------------------------
 

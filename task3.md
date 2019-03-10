@@ -1,6 +1,6 @@
 ![](./media/media/image2.png)
 
-LABNMS-2500
+LTRNMS-2700
 ===========
 
 Task 3: Service discovery and reconciliation B: Reset reference count
@@ -158,5 +158,5 @@ automatic. It is recommended to go through the task and learn how to
 create massive service instances from pre-existing configurations, and
 reset ref-count automatically:
 
-[Task4 (Extra Credit): Create an NSO action to discover pre-existing L2VPN service instances automatically](https://github.com/weiganghuang/labnms-2500/blob/master/task4.md)
+[Task4 (Extra Credit): Create an NSO action to discover pre-existing L2VPN service instances automatically](https://github.com/weiganghuang/LTRNMS-2700/blob/master/task4.md)
 ------------------------------

@@ -1,6 +1,6 @@
 ![](./media/media/image2.png)
 
-LABNMS-2500
+LTRNMS-2700
 ===========
 
 Task 2: Service discovery and reconciliation A: Create L2Vpn service instances from pre-existing configuration. 
@@ -276,7 +276,7 @@ lifecycle of service instances of pre-existing configuration.
 In next Task, you will learn to complete service reconciliation by
 resetting the reference count of pre-existing services:
 
-[Task3 Service discovery and reconciliation B: Reset reference count](https://github.com/weiganghuang/labnms-2500/blob/master/task3.md)
+[Task3 Service discovery and reconciliation B: Reset reference count](https://github.com/weiganghuang/LTRNMS-2700/blob/master/task3.md)
 -----------------------------
 
  
