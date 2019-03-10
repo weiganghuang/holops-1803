@@ -460,7 +460,7 @@ service instance.
 
 1.  Check device configuration to see the
     intended CLI’s are configured at asr9k0. Open another putty
-    terminal, logged in as user nso/cisco123. From NSO application server, connect to the netsim
+    terminal (<em>check your lab tile for credentials</em>). From NSO application server, connect to the netsim
     device asr9k0 to confirm Bundle-Ether sub-interface, 100.100 is
     created with the correct customer name, order number and vlan tag:
 
