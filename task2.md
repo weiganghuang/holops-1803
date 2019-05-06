@@ -281,7 +281,7 @@ This is because, by default, devices own the out-of-band configurations.
 	admin@ncs%   	
 	```
 
-1.  Although the service instance test1is deleted from NSO, the
+1.  Although the service instance `test1` is deleted from NSO, the
     associated Bundle Ether sub-interface 100.2188 **remains** in
     asr9k0. The out-of-band configuration can’t be modified through NSO!
     
