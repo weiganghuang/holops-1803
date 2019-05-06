@@ -485,26 +485,28 @@ service instance.
 
 	[edit]
 	admin@ncs%
-
   	```
 
-1.  Check device configuration to see the
-    intended CLI’s are configured at asr9k0. Open another putty
-    terminal (<em>check your lab tile for credentials</em>). From NSO application server, connect to the netsim
-    device asr9k0 to confirm Bundle-Ether sub-interface, 100.100 is
-    created with the correct customer name, order number and vlan tag:
+1.  Check device configuration to see the intended CLI’s are configured at `asr9k0`:
 
+	```	
+	admin@ncs% show devices device asr9k0 config cisco-ios-xr:interface Bundle-Ether-subinterface Bundle-Ether 100.100
 	```
-	[nso@cl-lab-211]$ cd ~/ncs-run
-	[nso@cl-lab-211 ncs-run]$ ncs-netsim cli-c asr9k0
-
-	admin connected from 128.107.235.22 using ssh on cl-lab-211
-	cl-lab-211# show running-config interface Bundle-Ether 100.100
-	interface Bundle-Ether 100.100 l2transport
-	   description ciscolive-123
- 	   encapsulation dot1q 100
-	exit
+	
+	Expected output:
+	
 	```
+    mode        l2transport;
+    description ciscolive-123;
+    encapsulation {
+       dot1q {
+          vlan-id [ 100 ];
+       }
+    }
+    [ok][2019-05-05 08:54:05]
+    [edit]
+    admin@ncs%
+    ```
 
 1.  Delete service instance “test” from NSO
     CLI (config mode).
