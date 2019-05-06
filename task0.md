@@ -136,7 +136,6 @@ Follow the following instruction.
 
      ```
      admin@ncs> request devices sync-from
-
      ```
 
      Sample output:

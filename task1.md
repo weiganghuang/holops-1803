@@ -175,6 +175,12 @@ the file back to NSO server.**
     ```
     [nso@cl-lab-211 ncs-run]$ cd ~/packages/L2Vpn/src
     [nso@cl-lab-211 src]$ make clean all
+    ```
+    
+    Sample output:
+    
+    ```
+    [nso@cl-lab-211 src]$ make clean all
     rm -rf ../load-dir java/src//
     mkdir -p ../load-dir
     mkdir -p java/src//
@@ -225,6 +231,11 @@ format. This output is the starting point of the mapping template.
 
     ```
     admin@ncs% commit dry-run outformat xml
+    ```
+    
+    Expected output:
+    
+    ```
     result-xml {
       local-node {
         data <devices xmlns="http://tail-f.com/ns/ncs">
