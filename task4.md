@@ -44,6 +44,9 @@ first.
    ```
    [nso@cl-lab-211]$ cd ~/packages
    [nso@cl-lab-211 packages]$ ncs-make-package --service-skeleton python --action-example l2vpnreconcile
+   ```
+   
+   ```
    [nso@cl-lab-211 packages]$ cd l2vpnreconcile
    [nso@cl-lab-211 l2vpnreconcile]$ ls
    package-meta-data.xml python README src templates test
