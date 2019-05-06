@@ -523,6 +523,9 @@ NSO server.
     [nso@cl-lab-211 packages]$ ncs_cli -u admin
 
     admin connected from 128.107.235.22 using ssh on cl-lab-211
+    ```
+    
+    ```
     admin@ncs> request packages reload
     ```
     
@@ -601,7 +604,7 @@ pre-existing L2VPN services.
 
     ```
 
-1.  Try to delete one of them to confirm that NSO is managing the
+1.  Delete one of them to confirm that NSO is managing the
     lifecycle of reconciled services.
     
     ```
@@ -610,10 +613,16 @@ pre-existing L2VPN services.
     [ok][2017-06-05 06:17:35]
 
     [edit]
+    ```
+    
+    ```
     admin@ncs% delete services L2Vpn L_3m_318-L1111318-asr9k0
     [ok][2017-06-05 06:17:50]
 
     [edit]
+    ```
+    
+    ```
     admin@ncs% commit dry-run outformat native
     native {
       device {
@@ -635,6 +644,9 @@ pre-existing L2VPN services.
     [ok][2017-04-30 13:12:49]
 
     [edit]
+    ```
+    
+    ```
     admin@ncs% show devices device asr9k0 config cisco-ios-xr:interface Bundle-Ether-subinterface Bundle-Ether 100.276
     -----------------------------------------------------------------------------------------------------------^
     syntax error: element does not exist
