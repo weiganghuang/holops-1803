@@ -175,12 +175,18 @@ example table:
     values at the previous step.**
 
 	```
-	admin@ncs% commit dry-run outformat native                                                            
+	admin@ncs% commit dry-run outformat native  
+	```
+	
+	Expecte empty in `native` block:
+	
+	```                                                          
 	native {
 	}
 	[ok][2017-04-29 09:39:30]
 
 	```
+	
 1.  After confirm the output of `commit dry-run outformat native` does
     not contain any CLI, continue commit the service instances, and then
     exit from ncs cli. We will commit with option `no-networking`, this
