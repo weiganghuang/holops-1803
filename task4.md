@@ -465,6 +465,11 @@ NSO server.
     ```
     [nso@cl-lab-211 packages]$ cd ~/packages/l2vpnreconcile/src
     [nso@cl-lab-211 src]$ make clean all
+    ```
+    
+    Sample output:
+    
+    ```
     rm -rf ../load-dir java/src//
     mkdir -p ../load-dir
     mkdir -p java/src//
@@ -484,24 +489,46 @@ NSO server.
     (`~/solution/l2vpnreconcile/src/yang/l2reconcile.yang`, and
     `~/solution/l2vpnreconcile/python/l2vpnreconcile/main.py`)**
 
+    Check current `packages` dir:
     ```
     [nso@cl-lab-211 src]$ cd ~/ncs-run/packages
     [nso@cl-lab-211 packages]$ ls -l
     total 0
     lrwxrwxrwx. 1 nso nso 54 Dec  9 04:46 cisco-iosxr-cli-6.6 -> /home/nso/ncs-5.0.1/packages/neds/cisco-iosxr-cli-6.6/
     lrwxrwxrwx. 1 nso nso 25 Dec  9 08:19 L2Vpn -> /home/nso/packages/L2Vpn/ 
-
+    ```
+    
+    Create symbolic link:
+    
+    ```
     [nso@cl-lab-211 packages]$ ln –s /home/nso/packages/l2vpnreconcile/
+    total 0
+    ```
+    
+    ```
+    [nso@cl-lab-211 src]$ cd ~/ncs-run/packages
+    [nso@cl-lab-211 packages]$ ls -l
     total 0
     lrwxrwxrwx. 1 nso nso 54 Dec  9 04:46 cisco-iosxr-cli-6.6 -> /home/nso/ncs-5.0.1/packages/neds/cisco-iosxr-cli-6.6/
     lrwxrwxrwx. 1 nso nso 25 Dec  9 08:19 L2Vpn -> /home/nso/packages/L2Vpn/
     lrwxrwxrwx. 1 nso nso 34 Dec  9 09:14 l2vpnreconcile -> /home/nso/packages/l2vpnreconcile/
     [nso@cl-lab-211 packages]$ 
-
+    ```
+    
+    Reload NSO packages after creating symbolick link:
+    
+    **Note: package reload may take minutes to complete**
+    
+    ```
     [nso@cl-lab-211 packages]$ ncs_cli -u admin
 
     admin connected from 128.107.235.22 using ssh on cl-lab-211
     admin@ncs> request packages reload
+    ```
+    
+    Sample output:
+    
+    ```
     >>> System upgrade is starting.
     >>> Sessions in configure mode must exit to operational mode.
     >>> No configuration changes can be performed until upgrade has completed.
