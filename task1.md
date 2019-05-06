@@ -378,6 +378,7 @@ Now you are ready to deploy the service package to NSO application.
 
     **Make sure the reload result is true. If you see errors, check the
     solution from ~/packages/solution directory for reference.**
+    
     **Note: It may take minutes to complete `reload`**
 
     ```
