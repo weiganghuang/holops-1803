@@ -378,11 +378,17 @@ Now you are ready to deploy the service package to NSO application.
 
     **Make sure the reload result is true. If you see errors, check the
     solution from ~/packages/solution directory for reference.**
+    **Note: It may take minutes to complete `reload`**
 
     ```
     [nso@cl-lab-211 ~]$ ncs_cli -u admin
     admin connected from 128.107.235.22 using ssh on cl-lab-211
     admin@ncs> request packages reload 
+    ```
+    
+    Sample output:
+    
+    ```
     >>> System upgrade is starting.
     >>> Sessions in configure mode must exit to operational mode.
     >>> No configuration changes can be performed until upgrade has completed.
@@ -395,6 +401,9 @@ Now you are ready to deploy the service package to NSO application.
     	package cisco-iosxr-cli-6.6
     	result true
 	}
+	```
+	
+	```
 	admin@ncs> show packages package package-version
                      PACKAGE
 	NAME                 VERSION
@@ -431,7 +440,12 @@ service instance.
     asr9k0:
 
   	```
-  	admin@ncs% commit dry-run outformat native
+  	admin@ncs% commit dry-run outformat native 
+  	```
+  	
+  	Sample output:
+  	
+  	```
 	native {
     	device {
         name asr9k0
@@ -445,6 +459,7 @@ service instance.
 	[edit]
 	admin@ncs%  
   	```
+  	
 1.  Commit the service instance test. After commit, the service instance
     test is persistent in NSO’s in memory database cdb, and the
     cli’s from above are committed to asr9k0.
@@ -455,6 +470,9 @@ service instance.
 	[ok][2017-04-29 08:21:18]
 
 	[edit]
+	```
+	
+	```
 	admin@ncs% show services L2Vpn test
 	order-number  123;
 	customer-name ciscolive;
