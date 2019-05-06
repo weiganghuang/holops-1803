@@ -137,6 +137,7 @@ example table:
 
 1.  Create two service instances, name them as
     test1 and test2 to match two pre-existing configurations 
+    
     **Note: Since you are creating L2Vpn service instances to match the
     pre-existing configurations, make sure the service attributes
     match exactly to what appear in device configuration.
