@@ -58,17 +58,32 @@ Follow the following instruction.
     5.0.20181016.1
     ```
 
-1.  Make sure NSO is running, if you get “connection refused”, start NSO application:
+1.  Make sure NSO is running:
 
     ```
-    [nso@cl-lab-211 ncs-run]$ ncs --status
+    [nso@cl-lab-211 ncs-run]$  ncs --status | head
+    ```
+    Sample output:
+    
+    ```
+    [nso@cl-lab-221 ncs-run]$ ncs --status | head
+    vsn: 5.0.20181016.1
+    SMP support: yes, using 8 threads
+    Using epoll: yes
+    available modules: 
+    ....
+    ```
+    
+    **Note: if you get “connection refused”, start NSO application
+    
+    ```
+    [nso@cl-lab-211 ncs-run]$  ncs --status | head
     connection refused (status)
     [nso@cl-lab-211]$ cd ncs-run
     [nso@cl-lab-211 ncs-run]$ pwd
     /home/nso/ncs-run
     [nso@cl-lab-211 ncs-run]$ ncs
     ```
-
     **Note: If you get errors for “ncs” command, make sure you are in
     your nso runtime directory: `/home/nso/ncs-run`**
 
