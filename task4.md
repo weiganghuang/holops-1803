@@ -559,6 +559,11 @@ pre-existing L2VPN services.
 
     ```
     admin@ncs> request action reconcile-l2vpn device-name asr9k0
+    ```
+    
+    Sample output:
+    
+    ```
     message Successfully created the services.
     success true
     [ok][2017-06-03 11:38:21]
@@ -579,6 +584,9 @@ pre-existing L2VPN services.
     L_ford_318-L1111318-asr9k0         - Unique service name
     L_mckesson_318-L1111318-asr9k0     - Unique service name
     ………
+    ```
+    
+    ```
     admin@ncs> conf
     admin@ncs% show services L2Vpn L_3m_318-L1111318-asr9k0
     order-number  L1111318;
@@ -595,6 +603,7 @@ pre-existing L2VPN services.
 
 1.  Try to delete one of them to confirm that NSO is managing the
     lifecycle of reconciled services.
+    
     ```
     admin@ncs> conf
     Entering configuration mode private
@@ -635,5 +644,4 @@ pre-existing L2VPN services.
 
     ```
 
-**Congratulations! You have successfully finished this lab.**
-LTRNMS-2700
+**Congratulations! You have successfully finished this lab LTRNMS-2700**
