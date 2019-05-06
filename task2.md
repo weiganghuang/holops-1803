@@ -140,8 +140,7 @@ example table:
     
     **Note: Since you are creating L2Vpn service instances to match the
     pre-existing configurations, make sure the service attributes
-    match exactly to what appear in device configuration.
-    **
+    match exactly to what appear in device configuration.**
 
 	 ```
 	 [nso@cl-lab-211 ncs-run]$ ncs_cli -u admin
