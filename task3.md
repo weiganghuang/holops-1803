@@ -105,9 +105,17 @@ this step, you will see the correct behaviour when we delete `test2`
     [ok][2017-04-29 10:04:30]
     
     [edit]
+    ```
+    
+    ```
     admin@ncs% delete services L2Vpn test2
     [ok][2017-04-29 11:34:32]
     [edit]
+    ```
+    
+    Expected output:
+    
+    ```
     admin@ncs% commit dry-run outformat native
     native {
       device {
