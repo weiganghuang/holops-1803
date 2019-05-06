@@ -74,7 +74,7 @@ Follow the following instruction.
     ....
     ```
     
-    **Note: if you get “connection refused”, start NSO application
+    **Note: if you get “connection refused”, start NSO application:**
     
     ```
     [nso@cl-lab-211 ncs-run]$  ncs --status | head
