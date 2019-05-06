@@ -2,7 +2,7 @@
 
 # LTRNMS-2700
 
-## NSO: Dealing with Brownfield, Deploy, Discover and Reconcile L2VPN Services
+## NSO Service Lifecycle Management
 
 ### Weigang Huang – Business Developer Manager
 
