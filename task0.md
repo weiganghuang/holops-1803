@@ -91,6 +91,13 @@ Follow the following instruction.
 
     ```
     [nso@cl-lab-211 ncs-run]$ ncs_cli -u admin
+    admin connected from 128.107.235.22 using ssh on cl-lab-211
+    admin@ncs> show packages package package-version
+    ```
+    Sample output:
+    
+    ```
+    [nso@cl-lab-211 ncs-run]$ ncs_cli -u admin
 
     admin connected from 128.107.235.22 using ssh on cl-lab-211
     admin@ncs> show packages package package-version
@@ -104,7 +111,6 @@ Follow the following instruction.
     oper-status up
     [ok][2017-06-11 06:35:51]  
     ```
-
     **Make sure the version of cisco-iosxr-cli-6.6 is 6.6.0.1 and the
     oper-status is up**
 
