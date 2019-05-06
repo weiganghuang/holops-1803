@@ -51,6 +51,11 @@ NSO’s device model through `sync-from` operation.
 	admin connected from 128.107.235.22 using ssh on cl-lab-211
 	admin@ncs> conf
 	admin@ncs% request devices sync-from
+	```
+	
+	Sample output:
+	
+	```
 	sync-result {
     	device asr9k0
     	result true
@@ -78,6 +83,11 @@ NSO’s device model through `sync-from` operation.
 	admin connected from 128.107.235.22 using ssh on cl-lab-211
 	admin@ncs> conf
 	admin@ncs% show devices device asr9k0 config cisco-ios-xr:interface Bundle-Ether-subinterface
+	```
+	
+	Sample output:
+	
+	```
 	Bundle-Ether 100.2188 {
     	mode        l2transport;
     	description L_ford_318-L1111318;
