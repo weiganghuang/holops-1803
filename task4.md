@@ -256,7 +256,7 @@ Continue editing file `main.py`.
     pe-device, via the xpath
     `ncs:devices/ncs:device{device-name}/config/cisco-ios-xr:interface/Bundle-Ether-subinterface/Bundle-Ether`
     
-    **Note: Helper fundtion `getDevice` is defined later. **
+    **Note: Helper fundtion `getDevice` is defined later.**
 
     We add check (the if len(bundleEths) == 0: block) to cover the case when the device has no Bundle Ether sub-interfaces, in which, there is no need to create any service instances, the block will return with message of reconciliation finished.
     
