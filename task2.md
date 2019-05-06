@@ -227,8 +227,17 @@ This is because, by default, devices own the out-of-band configurations.
 	[ok][2017-06-02 07:59:37]
 
 	[edit]
-
+	```
+	
+	Before delete, we can see `test1` in NSO:
+	
+	```
 	admin@ncs% show services L2Vpn test1
+	```
+	
+	Sample output:
+	
+	```
 	order-number  L1111318;
 	customer-name L_ford_318;
 	pe-devices asr9k0 {
@@ -238,6 +247,10 @@ This is because, by default, devices own the out-of-band configurations.
 	[ok][2017-04-29 10:04:30]
 
 	[edit]
+	```
+	Now delete `test1`
+	
+	```
 	admin@ncs% delete services L2Vpn test1
 	[ok][2017-04-29 10:04:40]
 
@@ -274,6 +287,11 @@ This is because, by default, devices own the out-of-band configurations.
     
 	```
 	admin@ncs% show devices device asr9k0 config cisco-ios-xr:interface Bundle-Ether-subinterface Bundle-Ether 100.2188
+	```
+	
+	Expected outout:
+	
+	```
 	Bundle-Ether 100.2188 {
     	mode        l2transport;
     	description L_ford_318-L1111318;
