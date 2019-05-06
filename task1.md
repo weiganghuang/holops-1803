@@ -548,7 +548,7 @@ service instance.
     [error][2019-05-05 08:56:55]
 
     [edit]
-  
+    admin@ncs%
   	 ```
 
 You have completed Task1. In this task, you created, deployed and tested
