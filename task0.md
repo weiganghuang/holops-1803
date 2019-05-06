@@ -97,9 +97,6 @@ Follow the following instruction.
     Sample output:
     
     ```
-    [nso@cl-lab-211 ncs-run]$ ncs_cli -u admin
-
-    admin connected from 128.107.235.22 using ssh on cl-lab-211
     admin@ncs> show packages package package-version
                 PACKAGE
     NAME            VERSION
@@ -122,6 +119,10 @@ Follow the following instruction.
 
     admin connected from 172.23.123.13 using ssh on cl-lab-218
     admin@ncs> show devices brief
+    ```
+    Sample output:
+    
+    ```
     NAME    ADDRESS    DESCRIPTION  NED ID
     --------------------------------------------
     asr9k0  127.0.0.1  -            cisco-iosxr-cli-6.6
@@ -134,6 +135,13 @@ Follow the following instruction.
     device model.
 
      ```
+     admin@ncs> request devices sync-from
+
+     ```
+
+     Sample output:
+     
+      ```
      admin@ncs> request devices sync-from
      sync-result {
     	device asr9k0
@@ -149,7 +157,6 @@ Follow the following instruction.
 	  }
 
      ```
-
 You have finished Task 0: Verify Lab Setup. Now you are ready to move on
 to the next Task: Create a service package:
 
