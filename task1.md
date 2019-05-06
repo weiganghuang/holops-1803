@@ -511,9 +511,6 @@ service instance.
 1.  Delete service instance “test” from NSO
     CLI (config mode).
 
-	 Note: you can get back to nso cli config mode by `ncs_cli –u admin`
-    followed by `config` from your NSO’s VM, linux prompt.
-
 	 ```
 	 admin@ncs% delete services L2Vpn test
 	 [ok][2017-04-29 08:42:24]
@@ -537,16 +534,21 @@ service instance.
 
   	 ```
 
-1.  Check device configuration to confirm that Bundle-Ether
-    sub-interface 100.100 created through service instance test is
-    removed. (from the putty terminal, you opened at **4**):
+1.  Check device configuration to confirm that Bundle-Ether sub-interface 100.100 created through service instance test is removed. :
 
 	```
 	admin@ncs% show devices device asr9k0 config cisco-ios-xr:interface Bundle-Ether-subinterface Bundle-Ether 100.100
+	```
 	
-    -----------------------------------------------------------------------------------------------------------^
-    syntax error: element does not exist
-    [error][2019-01-17 10:43:28]
+	Expected output:
+	
+	```
+    ----------------------------------------------------------------------------------------------------------  -^
+   syntax error: element does not exist
+   [error][2019-05-05 08:56:55]
+
+   [edit]
+
   
   	```
 
