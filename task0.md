@@ -166,6 +166,16 @@ Follow the following instruction.
 	  }
 
      ```
+     
+2. Exit from cli
+
+   ```
+   admin@ncs>exit
+   admin@ncs> exit
+   [nso@cl-lab-221 ncs-run]$
+   ```
+   
+   
 You have finished Task 0: Verify Lab Setup. Now you are ready to move on
 to the next Task: Create a service package:
 
