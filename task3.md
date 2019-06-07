@@ -154,6 +154,14 @@ this step, you will see the correct behaviour when we delete `test2`
    [edit]
    ```
 
+1. Exit from ncs cli:
+
+   ```
+   admin@ncs% exit
+   [ok][2019-06-06 14:03:16]
+   admin@ncs> exit
+   ```
+
 Congratulations! You have successfully finished all the tasks of this
 lab!
 
