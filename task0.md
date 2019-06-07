@@ -170,7 +170,6 @@ Follow the following instruction.
 2. Exit from cli
 
    ```
-   admin@ncs>exit
    admin@ncs> exit
    [nso@cl-lab-221 ncs-run]$
    ```
