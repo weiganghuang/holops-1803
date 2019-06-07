@@ -368,7 +368,7 @@ Now you are ready to deploy the service package to NSO application.
     [nso@cl-lab-211 packages]$ ls -l
     total 0
     lrwxrwxrwx. 1 nso nso 25 Jun  6 13:25 L2Vpn -> /home/nso/packages/L2Vpn/
-lrwxrwxrwx. 1 nso nso 55 Jun  3 23:53 ncs-5.0.20181016.1-cisco-iosxr-6.6.0.1.tar.gz -> /home/nso/ncs-5.0.20181016.1-cisco-iosxr-6.6.0.1.tar.gz
+    lrwxrwxrwx. 1 nso nso 55 Jun  3 23:53 ncs-5.0.20181016.1-cisco-iosxr-6.6.0.1.tar.gz -> /home/nso/ncs-5.0.20181016.1-cisco-iosxr-6.6.0.1.tar.gz
 
     ```
 
