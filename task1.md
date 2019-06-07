@@ -161,7 +161,8 @@ the file back to NSO server.**
     }
     ``` 
 
-1.  Complete content of the file is available at [L2Vpn.yang](https://github.com/weiganghuang/LTRNMS-2700/blob/master/solution/L2Vpn/src/yang/L2Vpn.yang)
+1.  Complete content of the file is available at [L2Vpn.yang](https://github.com/weiganghuang/ltrnms-2700/blob/master/solution/L2Vpn/src/yang/L2Vpn.yang)
+
 
     **Note: You can find the solution of the L2Vpn.yang from NSO server,
     at `/home/nso/solution/L2Vpn/src/yang/` for your reference.**
