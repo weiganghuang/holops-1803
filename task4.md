@@ -505,7 +505,7 @@ NSO server.
     Create symbolic link:
     
     ```
-    [nso@cl-lab-211 packages]$ ln –s /home/nso/packages/l2vpnreconcile/
+    [nso@cl-lab-211 packages]$ ln -s /home/nso/packages/l2vpnreconcile/
     total 0
     ```
     
