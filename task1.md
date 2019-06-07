@@ -551,6 +551,15 @@ service instance.
     admin@ncs%
   	 ```
 
+1. Exit from ncs cli
+
+   ```
+   admin@ncs% exit
+   [ok][2019-06-06 13:37:30]
+   admin@ncs> exit
+   [nso@cl-lab-221 packages]$
+   ```
+   
 You have completed Task1. In this task, you created, deployed and tested
 L2Vpn service package. Next, you will learn service discovery and
 reconcile when dealing with brownfield network:
