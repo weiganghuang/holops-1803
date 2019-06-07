@@ -269,9 +269,7 @@ format. This output is the starting point of the mapping template.
     [edit]
 
     ```
-
-1.  We don’t want to commit the above changes to devices. Exit from ncs
-    cli without committing:
+1. The above xml format output will be used as reference to for service configuration template. Exit from ncs cli without committing:
 
     ```
     admin@ncs% exit no
