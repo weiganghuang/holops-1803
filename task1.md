@@ -408,7 +408,7 @@ Now you are ready to deploy the service package to NSO application.
 	
 	```
 	admin@ncs> show packages package package-version
-                        PACKAGE
+                         PACKAGE
 	NAME                 VERSION
 	------------------------------
 	L2Vpn                1.0
