@@ -98,12 +98,20 @@ Follow the following instruction.
     
     ```
     admin@ncs> show packages package package-version
-                PACKAGE
+                    PACKAGE
     NAME            VERSION
     -------------------------
     cisco-iosxr-cli-6.6  6.6.0.1
     [ok][2017-04-28 07:12:36]
+    ```
+    
+    ```
     admin@ncs> show packages package oper-status
+    ```
+    
+    Sample output:
+    
+    ```
     packages package cisco-iosxr-cli-6.6
     oper-status up
     [ok][2017-06-11 06:35:51]  
