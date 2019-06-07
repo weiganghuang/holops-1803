@@ -512,6 +512,11 @@ NSO server.
     ```
     [nso@cl-lab-211 src]$ cd ~/ncs-run/packages
     [nso@cl-lab-211 packages]$ ls -l
+    ```
+    
+    Sample output:
+    
+    ```
     total 0
     lrwxrwxrwx. 1 nso nso 55 Jun  3 23:53 ncs-5.0.20181016.1-cisco-iosxr-6.6.0.1.tar.gz -> /home/nso/ncs-5.0.20181016.1-cisco-iosxr-6.6.0.1.tar.gz
     lrwxrwxrwx. 1 nso nso 25 Dec  9 08:19 L2Vpn -> /home/nso/packages/L2Vpn/
