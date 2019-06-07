@@ -13,17 +13,17 @@ NSO assumes that devices own the pre-existing configuration. This is to
 ensure that the out-of-band configurations are not accidentally
 overwritten by NSO’s service operations.
 
-However, in many cases, we need to have NSO fully manage the lifecycle
-of the pre-existing services. This is called NSO service discovery and
+To have NSO fully manage the lifecycle
+of the pre-existing services, we need to perform service discovery and
 reconciliation.
 
 NSO service discovery and reconciliation for brownfield starts with
 creating service instances (the service instances that match the
-out-of-band service configurations. After the service instances are
+pre-existing service configurations. After the service instances are
 created, we need to transfer the ownership of the configuration to NSO.
 
-In this lab, the PE devices (asr9k0, asr9k1 and asr9k2) all have
-pre-existing L2VPN services that are configured out-of-band. They are synced to NSO’s device model via NSO’s
+In this lab, the PE devices (asr9k0, asr9k1 and asr9k2) have
+pre-existing L2VPN services that are configured out-of-band. The device configurations are synced to NSO’s device model via NSO’s
 `sync-from` operation.
 
 Pre-existing L2VPN configuration on PE devices:
