@@ -113,10 +113,15 @@ this step, you will see the correct behaviour when we delete `test2`
     [edit]
     ```
     
-    Expected output:
+    Perform a commit dry-run to see the correct `no` cli:
     
     ```
     admin@ncs% commit dry-run outformat native
+    ```
+    
+    Expected output:
+    
+    ```
     native {
       device {
         name asr9k0
