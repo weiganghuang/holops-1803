@@ -613,13 +613,6 @@ pre-existing L2VPN services.
 1.  Delete one of them to confirm that NSO is managing the
     lifecycle of reconciled services.
     
-    ```
-    admin@ncs> conf
-    Entering configuration mode private
-    [ok][2017-06-05 06:17:35]
-
-    [edit]
-    ```
     
     ```
     admin@ncs% delete services L2Vpn L_3m_318-L1111318-asr9k0
