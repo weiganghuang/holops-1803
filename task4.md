@@ -654,5 +654,11 @@ pre-existing L2VPN services.
     [edit]
 
     ```
+1. Exit from ncs cli:
 
+   ```
+   admin@ncs% exit
+   [ok][2019-06-06 14:27:07]
+   admin@ncs> exit
+   ```
 **Congratulations! You have successfully finished this lab LTRNMS-2700**
