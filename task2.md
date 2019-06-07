@@ -6,9 +6,8 @@ LTRNMS-2700
 Task 2: Service discovery and reconciliation A: Create L2Vpn service instances from pre-existing configuration. 
 --------------------------------------------------------------------------------------------------------
 
-One of the typical brownfield service orchestration requirements is to
-have NSO discover and reconcile the pre-existing services in the
-network. The pre-existing service configurations can be brought into
+Discover and reconcile the pre-existing services in the
+network is an important aspect of service life cycle management. The pre-existing service configurations can be brought into
 NSO’s device model through NSO CLI operation “sync-from”. By default,
 NSO assumes that devices own the pre-existing configuration. This is to
 ensure that the out-of-band configurations are not accidentally
