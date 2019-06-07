@@ -162,7 +162,7 @@ the file back to NSO server.**
     ``` 
 1. You can delete the unused leaf-list block, `device` and leaf block `dummy`:
 
-   ![](./media/media/L2vpnyang.png)
+   ![](./media/media/l2vpnyang.png)
 
 1.  Complete content of the file is available at [L2Vpn.yang](https://github.com/weiganghuang/ltrnms-2700/blob/master/solution/L2Vpn/src/yang/L2Vpn.yang)
 
