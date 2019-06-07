@@ -77,7 +77,6 @@ NSO’s device model through `sync-from` operation.
     sub-interfaces
 
 	```
-	admin@ncs> conf
 	admin@ncs% show devices device asr9k0 config cisco-ios-xr:interface Bundle-Ether-subinterface
 	```
 	
