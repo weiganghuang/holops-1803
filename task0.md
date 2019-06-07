@@ -128,9 +128,6 @@ Follow the following instruction.
     asr9k2.
 
     ```
-    [nso@cl-lab-218 ~]$ ncs_cli -u admin
-
-    admin connected from 172.23.123.13 using ssh on cl-lab-218
     admin@ncs> show devices brief
     ```
     Sample output:
