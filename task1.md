@@ -355,7 +355,7 @@ Now you are ready to deploy the service package to NSO application.
 
     ```
     [nso@cl-lab-211]$ ls –l ~/ncs-run/packages
-    lrwxrwxrwx. 1 nso nso 54 Dec 9 04:46 cisco-iosxr-cli-6.6 ->/home/nso/ncs-5.0.1/packages/neds/cisco-iosxr-cli-6.6/
+    lrwxrwxrwx. 1 nso nso 54 Dec 9 04:46 ncs-5.0.20181016.1-cisco-iosxr-6.6.0.1.tar.gz -> /home/nso/ncs-5.0.20181016.1-cisco-iosxr-6.6.0.1.tar.gz
     ```
 
 1.  Make package L2Vpn available for NSO. Creating a symbolic link to
