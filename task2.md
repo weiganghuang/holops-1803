@@ -284,7 +284,7 @@ This is because, by default, devices own the out-of-band configurations.
 	admin@ncs% show devices device asr9k0 config cisco-ios-xr:interface Bundle-Ether-subinterface Bundle-Ether 100.2188
 	```
 	
-	Expected outout:
+	Sample outout:
 	
 	```
 	Bundle-Ether 100.2188 {
