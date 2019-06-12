@@ -1,0 +1,23 @@
+
+### enter nso cli
+ncs_cli -u admin
+### from nso cli, enter config mode
+conf
+### check ref-count and backpointers
+show devices device asr9k0 config cisco-ios-xr:interface Bundle-Ether-subinterface | display service-meta-data
+### perform service reconcile for L2Vpn service instance test2
+request services L2Vpn test2 re-deploy reconcile
+### perform a sync-from
+request devices sync-from
+### recheck refernce count
+show devices device asr9k0 config cisco-ios-xr:interface Bundle-Ether-subinterface | display service-meta-data
+### delete service instance test2 after reconciliation
+delete services L2Vpn test2
+commit dry-run outformat native
+commit
+### check device config to confirm Bundle-Etnernet-subinterface 100.2234 is removed 
+show devices device asr9k0 config cisco-iosxr:interface Bundle-Ether-subinterface Bundle-Ether 100.2234
+exit
+exit
+
+

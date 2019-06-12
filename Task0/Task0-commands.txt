@@ -1,0 +1,14 @@
+### check nso version
+ncs --version
+### check nso status
+ncs --status
+###enter nso cli
+ncs_cli -u admin
+### check nso packages from nso cli prompt
+show packages package oper-status
+### check devices from nso cli prompt
+show devices brief
+### perform device sync from operation from nso cli prompt
+request devices sync-from
+###exit from nso cli
+exit

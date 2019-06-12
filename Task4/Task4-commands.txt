@@ -1,0 +1,33 @@
+### create nso service skeleton l2vpnreoncile from nso VM
+cd ~/packages
+ncs-make-package --service-skeleton python --action-example l2vpnreconcile  
+### inspect service skeleton
+cd ~/packages/l2vpnreconcile
+ls
+### compile nso package l2vpnreconcile, after you have updated l2vpnreconcile.yang and main.py
+cd ~/packages/l2vpnreconcile/src
+make clean all
+### check current packages directory
+ls –l ~/ncs-run/packages
+### create link to make l2vpnreconcile available as a package for nso
+cd ~/ncs-run/packages
+ln -s /home/nso/packages/l2vpnreconcile/
+### reload ncs to include the new package l2vpnreconcile, enter nso cli, followed by reload package command
+ncs_cli -u admin
+request packages reload
+show packages package package-version
+### perform reconcile action from nso cli
+request action reconcile-l2vpn device-name asr9k0
+### check discovered service instances from nso's config mode
+conf
+show services L2Vpn ?
+show services L2Vpn L_3m_318-L1111318-asr9k0
+### delete one discovered service instance
+delete service L2Vpn L_3m_318-L1111318-asr9k0
+commit dry-run outformat native
+commit
+### confirm Bundle-Ethernet 100.276 is no longer exist in asr9k0
+show devices device asr9k0 config cisco-ios-xr:interface Bundle-Ether-subinterface Bundle-Ether 100.276
+exit
+
+
