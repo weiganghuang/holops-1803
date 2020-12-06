@@ -36,6 +36,8 @@ Pre-requisite
 
 -   Basic knowledge of Cisco Network Services Orchestrator (NSO)
 
+-	Basic NSO service reconcilation knowledge [Presentation slides available for downloading] (https://github.com/weiganghuang/holops-1803/blob/master/BRKNMS-2805.pptx)
+
 Overview
 ========
 
