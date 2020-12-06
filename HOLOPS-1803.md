@@ -1,6 +1,6 @@
 ![](./media/media/image2.png)
 
-# LTRNMS-2700
+# HOLOPS-1803
 
 ## NSO Service Lifecycle Management
 
@@ -88,16 +88,16 @@ The lab contains 5 tasks.
 
 To start the lab, click the following links for instructions.
 
- [Task0 Verify Lab Setup](https://github.com/weiganghuang/LTRNMS-2700/blob/master/task0.md)
+ [Task0 Verify Lab Setup](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task0.md)
 -----------------------------------
- [Task1 Create L2VPN Service Package](https://github.com/weiganghuang/LTRNMS-2700/blob/master/task1.md)
+ [Task1 Create L2VPN Service Package](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task1.md)
 -------------------------------------
 
-[Task2 Service discovery and reconciliation A: Create L2Vpn service instances from pre-existing configuration](https://github.com/weiganghuang/LTRNMS-2700/blob/master/task2.md)
+[Task2 Service discovery and reconciliation A: Create L2Vpn service instances from pre-existing configuration](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task2.md)
 --------------------------------------------------
 
-[Task3 Service discovery and reconciliation B: Reset reference count](https://github.com/weiganghuang/LTRNMS-2700/blob/master/task3.md)
+[Task3 Service discovery and reconciliation B: Reset reference count](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task3.md)
 -----------------------------
 
-[Task4 (Extra Credit): Create an NSO action to discover pre-existing L2VPN service instances automatically](https://github.com/weiganghuang/LTRNMS-2700/blob/master/task4.md)
+[Task4 (Extra Credit): Create an NSO action to discover pre-existing L2VPN service instances automatically](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task4.md)
 ------------------------------
