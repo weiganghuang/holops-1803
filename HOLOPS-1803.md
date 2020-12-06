@@ -4,9 +4,9 @@
 
 ## NSO Service Lifecycle Management
 
-### Weigang Huang – Business Developer Manager
+### Weigang Huang – Software Architect
 
-### Andrew Bond – Software Architecture
+### Andrew Bond – Software Architect
 
 
 
