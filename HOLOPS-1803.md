@@ -64,7 +64,7 @@ L2VPN services.
 
 NSO application is pre-installed on Linux VM, with the details as following:
 
-![](./media/media/nso-installed.png)
+![](./media/media/nso.png)
 
 NSO runtime directory is set to `/home/nso/ncs-run` (NSO
 runtime directory is to keep NSO’s database, state files, logs and other
