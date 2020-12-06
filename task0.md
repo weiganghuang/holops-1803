@@ -1,6 +1,6 @@
 ![](./media/media/image2.png)
 
-LTRNMS-2700
+HOLOPS-1803
 ===========
 
 # Task 0 Verify Lab Setup
@@ -178,7 +178,7 @@ Follow the following instruction.
 You have finished Task 0: Verify Lab Setup. Now you are ready to move on
 to the next Task: Create a service package:
 
- [Task1 Create L2VPN Service Package](https://github.com/weiganghuang/LTRNMS-2700/blob/master/task1.md)
+ [Task1 Create L2VPN Service Package](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task1.md)
 ------
 
   

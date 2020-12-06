@@ -1,6 +1,6 @@
 ![](./media/media/image2.png)
 
-LTRNMS-2700
+HOLOPS-1803
 ===========
 
 
@@ -81,7 +81,7 @@ the file back to NSO server.**
     input parameter `number` with `device-name`, and the default output
     parameter `result1 with `success` and `message`.
 
-    The contents of l2vpnreconcile.yang should look like the following, available at [l2vpnreconcile.yang](https://github.com/weiganghuang/LTRNMS-2700/blob/master/solution/l2vpnreconcile/src/yang/l2vpnreconcile.yang)
+    The contents of l2vpnreconcile.yang should look like the following, available at [l2vpnreconcile.yang](https://github.com/weiganghuang/HOLOPS-1803/blob/master/solution/l2vpnreconcile/src/yang/l2vpnreconcile.yang)
     
     ```
     module l2vpnreconcile {
@@ -184,7 +184,7 @@ rename the generic default action class `DoubleAction` to `Reconcile`.
 
 	 ```
      
-2.   The cleaned `main.py` is available at [main-clean.py](https://github.com/weiganghuang/LTRNMS-2700/blob/master/solution/l2vpnreconcile/python/l2vpnreconcile/main-clean.py)
+2.   The cleaned `main.py` is available at [main-clean.py](https://github.com/weiganghuang/HOLOPS-1803/blob/master/solution/l2vpnreconcile/python/l2vpnreconcile/main-clean.py)
 
 ### Implement the action call back function to reconcile pre-exisiting L2VPN service.
 
@@ -446,7 +446,7 @@ In this step, we are defining the three functions used in `cb_action` .
 
     ```
 
-1.  The complete contents of main.py: [main.py](https://github.com/weiganghuang/LTRNMS-2700/blob/master/solution/l2vpnreconcile/python/l2vpnreconcile/main.py)
+1.  The complete contents of main.py: [main.py](https://github.com/weiganghuang/HOLOPS-1803/blob/master/solution/l2vpnreconcile/python/l2vpnreconcile/main.py)
 
 
 
@@ -661,4 +661,4 @@ pre-existing L2VPN services.
    [ok][2019-06-06 14:27:07]
    admin@ncs> exit
    ```
-**Congratulations! You have successfully finished this lab LTRNMS-2700**
+**Congratulations! You have successfully finished this lab HOLOPS-1803**
