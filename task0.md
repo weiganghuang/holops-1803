@@ -25,7 +25,7 @@ You session setup:
 
 2. Expected result:
 
-
+![](./media/media/nso-vm.png)
 
 ### Validate the setup
 
