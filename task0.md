@@ -6,14 +6,17 @@ HOLOPS-1803
 # Task 0 Verify Lab Setup
 ----------------
 
-In this task, you will verify that you can access lab setup via jump
-start server. 
+In this task, you verify lab setup access
+
+You session setup:
+
+![](./media/media/dcloud-setup.png)
 
 ###  Access Information
 
-Note, jump start server is shared. You should login with your own user id. Each lab user will have his/her own NSO application VM.
+(revise this section after dCloud setup is finalized)
 
-  * Jump start window server: <em>check your lab tile</em>
+  * 
 
     * login: <em>check your lab tile</em>
     * password: <em>check your lab tile</em>
