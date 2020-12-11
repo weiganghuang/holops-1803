@@ -105,6 +105,8 @@ Follow the following instruction.
     [ok][2020-12-11 13:56:09]
   
     ```
+    weigang's note, checking iosxr versions here
+    
     **Make sure the version of cisco-iosxr-cli-6.6 is 6.6.0.1 and the
     oper-status is up**
 
