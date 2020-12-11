@@ -79,12 +79,14 @@ Follow the following instruction.
     Sample output:
     
     ```
-    admin@ncs> show packages package package-version
-                    PACKAGE
-    NAME            VERSION
-    -------------------------
-    cisco-iosxr-cli-6.6  6.6.0.1
-    [ok][2017-04-28 07:12:36]
+    nso@ncs> show packages package package-version
+             PACKAGE
+    NAME         VERSION
+    ----------------------
+    cisco-iosxr  6.2.9
+
+    [ok][2020-12-11 13:55:52]
+
     ```
     
     Check package operation status:
@@ -97,9 +99,11 @@ Follow the following instruction.
     Sample output:
     
     ```
-    packages package cisco-iosxr-cli-6.6
-      oper-status up
-    [ok][2017-06-11 06:35:51]  
+    nso@ncs> show packages package oper-status
+    packages package cisco-iosxr
+    oper-status up
+    [ok][2020-12-11 13:56:09]
+  
     ```
     **Make sure the version of cisco-iosxr-cli-6.6 is 6.6.0.1 and the
     oper-status is up**
@@ -151,7 +155,7 @@ Follow the following instruction.
 
    ```
    admin@ncs> exit
-   [nso@cl-lab-221 ncs-run]$
+   [nso@nso ncs-run]$
    ```
    
    
