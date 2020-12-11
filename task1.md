@@ -97,10 +97,10 @@ auto-generated Yang file, `L2Vpn.yang` to model the L2Vpn service.
 using `vi` for example;**
 
 **Option 2: Copy file `~/packages/L2Vpn/src/yang/L2Vpn.yang` from NSO
-server to Windows worksttion using `WinScp`
-(**![](./media/media/scp.png)**). Edit the file using editors such as
+server to Windows worksttion use `WinScp`
+(**![](./media/media/scp.png)**). Edit the file use editors such as
 Visiual Studio Code (** ![](./media/media/vstudio.png)**), or
-Notepad++(**![](./media/media/notepad.png)**). If you take this Option, remember copy
+Notepad++(**![](./media/media/notepad.png)**). If you take this Option, remember to copy
 the file back to NSO server.**
 
 1.  The auto-generated `L2Vpn.yang` file contains several skeleton blocks.
