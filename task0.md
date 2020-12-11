@@ -34,45 +34,45 @@ Follow the following instruction.
 1.  Check NSO version.
 
     ```
-    [nso@cl-lab-211]$ cd ncs-run
-    [nso@cl-lab-211 ncs-run]$ pwd
-    [nso@cl-lab-211 ncs-run]$ ncs --version
+    [nso@nso ~]$ cd ncs-run
+    [nso@nso ncs-run]$ pwd
+    [nso@nso ncs-run]$ ncs --version
     ```
     Sample output:
     
     ```
-    [nso@cl-lab-211]$ cd ncs-run
-    [nso@cl-lab-211 ncs-run]$ pwd
+    [nso@nso]$ cd ncs-run
+    [nso@nso ncs-run]$ pwd
     /home/nso/ncs-run
-    [nso@cl-lab-211 ncs-run]$ ncs --version
-    5.0.20181016.1
+    [nso@nso ncs-run]$ ncs --version
+    4.5.0.1
     ```
 
 1.  Make sure NSO is running:
 
     ```
-    [nso@cl-lab-211 ncs-run]$  ncs --status | head
+    [nso@nso ncs-run]$  ncs --status | head
     ```
     Sample output:
     
     ```
-    [nso@cl-lab-221 ncs-run]$ ncs --status | head
-    vsn: 5.0.20181016.1
-    SMP support: yes, using 8 threads
+    [nso@nso ncs-run]$ ncs --status | head
+    vsn: 4.5.0.1
+    SMP support: yes, using 4 threads
     Using epoll: yes
-    available modules: 
+    available modules:        
     ....
     ```
     
     **Note: if you get “connection refused”, start NSO application:**
     
     ```
-    [nso@cl-lab-211 ncs-run]$  ncs --status | head
+    [nso@nso ncs-run]$  ncs --status | head
     connection refused (status)
-    [nso@cl-lab-211]$ cd ncs-run
-    [nso@cl-lab-211 ncs-run]$ pwd
+    [nso@nso]$ cd ncs-run
+    [nso@nso ncs-run]$ pwd
     /home/nso/ncs-run
-    [nso@cl-lab-211 ncs-run]$ ncs
+    [nso@nso ncs-run]$ ncs
     ```
     **Note: If you get errors for “ncs” command, make sure you are in
     your nso runtime directory: `/home/nso/ncs-run`**
@@ -82,7 +82,7 @@ Follow the following instruction.
     Check package version
     
     ```
-    [nso@cl-lab-211 ncs-run]$ ncs_cli -u admin
+    [nso@nso ncs-run]$ ncs_cli -u admin
     admin connected from 128.107.235.22 using ssh on cl-lab-211
     admin@ncs> show packages package package-version
     ```
