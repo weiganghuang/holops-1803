@@ -51,6 +51,7 @@ a `Bundle-Ether` port and an `stag` (service tag).
 
 1.  From NSO application VM, create a service skeleton package using
     `ncs-make-package` command, name it `L2Vpn`.
+    
     ```
     [nso@nso]$ cd
     [nso@nso]$ mkdir ~/packages
@@ -99,7 +100,7 @@ using `vi` for example;**
 server to Windows worksttion using `WinScp`
 (**![](./media/media/scp.png)**). Edit the file using editors such as
 Visiual Studio Code (** ![](./media/media/vstudio.png)**), or
-Notepad++(**![](./media/media/notepad.png)**). If you take Option 2, remember copy
+Notepad++(**![](./media/media/notepad.png)**). If you take this Option, remember copy
 the file back to NSO server.**
 
 1.  The auto-generated `L2Vpn.yang` file contains several skeleton blocks.
