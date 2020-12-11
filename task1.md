@@ -52,17 +52,17 @@ a `Bundle-Ether` port and an `stag` (service tag).
 1.  From NSO application VM, create a service skeleton package using
     `ncs-make-package` command, name it `L2Vpn`.
     ```
-    [nso@cl-lab-211]$ mkdir ~/packages
-    [nso@cl-lab-211 packages]$ cd ~/packages
-    [nso@cl-lab-211 packages]$ ncs-make-package --service-skeleton python-and-template --augment /ncs:services L2Vpn
+    [nso@nso]$ mkdir ~/packages
+    [nso@nso packages]$ cd ~/packages
+    [nso@nso packages]$ ncs-make-package --service-skeleton python-and-template --augment /ncs:services L2Vpn
 
     ```     
 
 1.  “ncs-make-package” creates a directory structure (`L2Vpn`), and skeleton of service files, let's check it out:
 
     ```
-    [nso@cl-lab-211 packages]$ cd ~/packages/L2Vpn
-    [nso@cl-lab-211 L2Vpn]$ ls
+    [nso@nso packages]$ cd ~/packages/L2Vpn
+    [nso@nso L2Vpn]$ ls
     package-meta-data.xml python README src templates test
     ```
 
@@ -70,11 +70,11 @@ a `Bundle-Ether` port and an `stag` (service tag).
     `L2Vpn-template.xml` are created:
 
     ```
-    [nso@cl-lab-211 L2Vpn]$ ls src  
+    [nso@nso L2Vpn]$ ls src  
     Makefile yang
-    [nso@cl-lab-211 L2Vpn]$ ls src/yang 
+    [nso@nso L2Vpn]$ ls src/yang 
     L2Vpn.yang
-    [nso@cl-lab-211 L2Vpn]$ ls templates/
+    [nso@nso L2Vpn]$ ls templates/
     L2Vpn-template.xml
     ```
 
@@ -177,14 +177,14 @@ the file back to NSO server.**
 2.  Compile project L2Vpn at your NSO server.
 
     ```
-    [nso@cl-lab-211 ncs-run]$ cd ~/packages/L2Vpn/src
-    [nso@cl-lab-211 src]$ make clean all
+    [nso@nso ncs-run]$ cd ~/packages/L2Vpn/src
+    [nso@nso src]$ make clean all
     ```
     
     Sample output:
     
     ```
-    [nso@cl-lab-211 src]$ make clean all
+    [nso@nso src]$ make clean all
     rm -rf ../load-dir java/src//
     mkdir -p ../load-dir
     mkdir -p java/src//
@@ -217,7 +217,7 @@ format. This output is the starting point of the mapping template.
     
 
     ```
-    [nso@cl-lab-211 src]$ ncs_cli -u admin
+    [nso@nso src]$ ncs_cli -u admin
     admin connected from 128.107.235.22 using ssh on cl-lab-211
     admin@ncs>conf
     Entering configuration mode private 
@@ -275,7 +275,7 @@ format. This output is the starting point of the mapping template.
     admin@ncs% exit no
     [ok][2017-06-02 01:47:29]
     admin@ncs> exit
-    [nso@cl-lab-211 src]$
+    [nso@nso src]$
     ```
 
 1.  Now let’s complete L2Vpn template file, L2Vpn-template.xml
@@ -354,7 +354,7 @@ Now you are ready to deploy the service package to NSO application.
     `ncs-run/packages`:
 
     ```
-    [nso@cl-lab-211]$ ls –l ~/ncs-run/packages
+    [nso@nso]$ ls –l ~/ncs-run/packages
     lrwxrwxrwx. 1 nso nso 54 Dec 9 04:46 ncs-5.0.20181016.1-cisco-iosxr-6.6.0.1.tar.gz -> /home/nso/ncs-5.0.20181016.1-cisco-iosxr-6.6.0.1.tar.gz
     ```
 
@@ -363,9 +363,9 @@ Now you are ready to deploy the service package to NSO application.
     (`/home/nso/ncs-run/packages`):
 
     ```
-    [nso@cl-lab-211]$ cd ~/ncs-run/packages
-    [nso@cl-lab-211 packages]$ ln -s /home/nso/packages/L2Vpn/
-    [nso@cl-lab-211 packages]$ ls -l
+    [nso@nso]$ cd ~/ncs-run/packages
+    [nso@nso packages]$ ln -s /home/nso/packages/L2Vpn/
+    [nso@nso packages]$ ls -l
     total 0
     lrwxrwxrwx. 1 nso nso 25 Jun  6 13:25 L2Vpn -> /home/nso/packages/L2Vpn/
     lrwxrwxrwx. 1 nso nso 55 Jun  3 23:53 ncs-5.0.20181016.1-cisco-iosxr-6.6.0.1.tar.gz -> /home/nso/ncs-5.0.20181016.1-cisco-iosxr-6.6.0.1.tar.gz
@@ -384,7 +384,7 @@ Now you are ready to deploy the service package to NSO application.
     **Note: It may take minutes to complete package reload**
 
     ```
-    [nso@cl-lab-211 ~]$ ncs_cli -u admin
+    [nso@nso ~]$ ncs_cli -u admin
     admin connected from 128.107.235.22 using ssh on cl-lab-211
     admin@ncs> request packages reload 
     ```
