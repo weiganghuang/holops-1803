@@ -15,22 +15,11 @@ You session setup:
 ###  Access Information
 
 (revise this section after dCloud setup is finalized)
-
-  * 
-
-    * login: <em>check your lab tile</em>
-    * password: <em>check your lab tile</em>
-  
-  * NSO VM for each server, (putty from Jump start server)
-    *  IP:   <em>check your lab tile</em>       
-    *  user: <em>check your lab tile</em>
-    *  password: <em>check your lab tile</em>           
+        
 
 ### Access Lab Setup. 
 
-1.  Access lab jump start server via Remote Desk Top. Launch Remote Desk Top, enter credentials (<em>check your lab tile</em>) 
-    
-2.  Access NSO application VM from Jump Start windows server, 
+1. Once you RDP to windows workstation, access NSO application VM:
     
     click ![](./media/media/putty.png) from desktop, to open a putty connection, enter NSO VM IP address (<em>check your lab tile</em>)
     
