@@ -100,8 +100,10 @@ using `vi` for example;**
 server to Windows worksttion use `WinScp`
 (**![](./media/media/scp.png)**). Edit the file use editors such as
 Visiual Studio Code (** ![](./media/media/vstudio.png)**), or
-Notepad++(**![](./media/media/notepad.png)**). If you take this Option, remember to copy
+Notepad++(**![](./media/media/notepad.png)**). 
+If you take this Option, remember to copy
 the file back to NSO server.**
+
 
 1.  The auto-generated `L2Vpn.yang` file contains several skeleton blocks.
     You need to update L2Vpn block to add service attributes. Modify the
@@ -179,8 +181,7 @@ the file back to NSO server.**
     **Note: You can find the solution of the L2Vpn.yang from NSO server,
     at `/home/nso/solution/L2Vpn/src/yang/` for your reference.**
 
-1.  Save the updated L2Vpn.yang file. If you edit the file at jump start
-    server, remember to copy back to NSO server
+1.  Save the updated L2Vpn.yang file. If you edit the file at Windows workstation, remember to copy back to NSO server
     (![](./media/media/scp.png).
 
 2.  Compile project L2Vpn at your NSO server.
