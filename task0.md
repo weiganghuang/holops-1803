@@ -21,7 +21,7 @@ You session setup:
 
 1. Once you RDP to windows workstation, access NSO application VM:
     
-    click ![](./media/media/putty.png = 20x) from desktop, to open a putty connection, enter NSO VM IP address (<em>check your lab tile</em>)
+    click <img src=https://github.com/weiganghuang/holops-1803/tree/master/media/media/putty.png width="20" height="20" /> from desktop, to open a putty connection, enter NSO VM IP address (<em>check your lab tile</em>)
     
     **Make sure you entered the ip address assigned to you.
     **
