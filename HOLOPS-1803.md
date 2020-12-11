@@ -78,12 +78,15 @@ The lab contains 5 tasks.
 
 -   Task 1: Create NSO service package for L2VPN.
 
--   Task 2 and Task 3: Discover/reconcile pre-existing L2VPN services,
-    manually. Task 2 is to create L2VPN service instances for
-    pre-existing configuration. Task 3 is to complete the service
+-   Task 2 and 3: Discover/reconcile pre-existing L2VPN services,
+    manually. 
+    
+    - Task 2: Create L2VPN service instances for
+    pre-existing configuration. 
+    - Task 3: Complete the service
     discovery by resetting the reference count.
 
--   Task 4: Discover/reconcile pre-existing L2VPN services,
+-   Task 4 (extra credit): Discover/reconcile pre-existing L2VPN services,
     automatically, through NSO’s northbound api MAAPI (Management Agent
     API), and Maggic API.
 
