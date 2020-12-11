@@ -64,18 +64,8 @@ Follow the following instruction.
     ....
     ```
     
-    **Note: if you get “connection refused”, start NSO application:**
-    
-    ```
-    [nso@nso ncs-run]$  ncs --status | head
-    connection refused (status)
-    [nso@nso]$ cd ncs-run
-    [nso@nso ncs-run]$ pwd
-    /home/nso/ncs-run
-    [nso@nso ncs-run]$ ncs
-    ```
-    **Note: If you get errors for “ncs” command, make sure you are in
-    your nso runtime directory: `/home/nso/ncs-run`**
+    **Note: if you get `connection refused`, start NSO application.  From your nso runtime directory:`/home/nso/ncs-run`, type `ncs`**
+ 
 
 1.  Check pre-loaded packages in your NSO application.
 
