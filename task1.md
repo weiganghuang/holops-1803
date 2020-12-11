@@ -71,12 +71,19 @@ a `Bundle-Ether` port and an `stag` (service tag).
     `L2Vpn-template.xml` are created:
 
     ```
-    [nso@nso L2Vpn]$ ls src  
-    Makefile yang
-    [nso@nso L2Vpn]$ ls src/yang 
-    L2Vpn.yang
-    [nso@nso L2Vpn]$ ls templates/
-    L2Vpn-template.xml
+    [nso@nso L2Vpn]$ tree src
+	 src
+    ├── Makefile
+    └── yang
+        └── L2Vpn.yang
+
+    1 directory, 2 files
+    [nso@nso L2Vpn]$ tree templates
+    templates
+    └── L2Vpn-template.xml
+    
+    0 directories, 1 file
+
     ```
 
 ### Update the auto-generated L2Vpn.yang
@@ -89,9 +96,9 @@ auto-generated Yang file, `L2Vpn.yang` to model the L2Vpn service.
 using `vi` for example;**
 
 **Option 2: Copy file `~/packages/L2Vpn/src/yang/L2Vpn.yang` from NSO
-server to jump server using `WinScp`
+server to Windows worksttion using `WinScp`
 (**![](./media/media/scp.png)**). Edit the file using editors such as
-Sublime (** ![](./media/media/sublime.png)**), or
+Visiual Studio Code (** ![](./media/media/vstudio.png)**), or
 Notepad++(**![](./media/media/notepad.png)**). If you take Option 2, remember copy
 the file back to NSO server.**
 
