@@ -222,7 +222,7 @@ format. This output is the starting point of the mapping template.
 
     ```
     [nso@nso src]$ ncs_cli -u admin
-    admin connected from 128.107.235.22 using ssh on cl-lab-211
+    admin connected from 128.107.235.22 using ssh on nso
     admin@ncs>conf
     Entering configuration mode private 
     [ok][2020-12-29 03:05:47]
@@ -391,7 +391,7 @@ Now you are ready to deploy the service package to NSO application.
 
     ```
     [nso@nso ~]$ ncs_cli -u admin
-    admin connected from 128.107.235.22 using ssh on cl-lab-211
+    admin connected from 128.107.235.22 using ssh on nso
     admin@ncs> request packages reload 
     ```
     

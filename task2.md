@@ -45,9 +45,9 @@ NSO’s device model through `sync-from` operation.
     pre-existing configurations to NSO’s device model
 
 	```
-	[nso@cl-lab-211 ~]$ ncs_cli -u admin
+	[nso@nso ~]$ ncs_cli -u admin
 
-	admin connected from 128.107.235.22 using ssh on cl-lab-211
+	admin connected from 128.107.235.22 using ssh on nso
 	admin@ncs> conf
 	admin@ncs% request devices sync-from
 	```
@@ -138,9 +138,9 @@ example table:
     match exactly to what appear in device configuration.**
 
 	 ```
-	 [nso@cl-lab-211 ncs-run]$ ncs_cli -u admin
+	 [nso@nso ncs-run]$ ncs_cli -u admin
 
-	admin connected from 128.107.235.22 using ssh on cl-lab-211
+	admin connected from 128.107.235.22 using ssh on nso
 	admin@ncs> conf
 	Entering configuration mode private
 	Current configuration users:
@@ -200,7 +200,7 @@ example table:
 	admin@ncs% exit
 	[ok][2017-06-02 07:58:37]
 	admin@ncs> exit
-	[nso@cl-lab-211 packages]$
+	[nso@nso packages]$
 
 	 ```
   
@@ -214,9 +214,9 @@ This is because, by default, devices own the out-of-band configurations.
 1. Try to delete instance `test1`.
 
 	```
-	[nso@cl-lab-211 packages]$ ncs_cli -u admin
+	[nso@nso packages]$ ncs_cli -u admin
 
-	admin connected from 172.23.123.13 using ssh on cl-lab-211
+	admin connected from 172.23.123.13 using ssh on nso
 	admin@ncs> conf
 	Entering configuration mode private
 	[ok][2017-06-02 07:59:37]
