@@ -67,7 +67,7 @@ NSO’s device model through `sync-from` operation.
     	device asr9k2
     	result true
 	}
-	[ok][2017-04-29 09:20:11]
+	[ok][2020-12-29 09:20:11]
 
 	[edit]
 
@@ -144,19 +144,19 @@ example table:
 	admin@ncs> conf
 	Entering configuration mode private
 	Current configuration users:
-	admin ssh (cli from 128.107.235.22) on since 	2017-04-29 09:17:58 private mode
-	[ok][2017-04-29 09:35:29]
+	admin ssh (cli from 128.107.235.22) on since 	2020-12-29 09:17:58 private mode
+	[ok][2020-12-29 09:35:29]
 
 	[edit]
 	 ```
 	 
 	 ```
 	admin@ncs% set services L2Vpn test1 order-number L1111318 customer-name L_ford_318 pe-devices asr9k0 Bundle-Ether 100 stag 2188
-	[ok][2017-04-29 09:36:33]
+	[ok][2020-12-29 09:36:33]
 
 	[edit]
 	admin@ncs% set services L2Vpn test2 order-number L1111318 customer-name L_unitedhealth_318 pe-devices asr9k0 Bundle-Ether 100 stag 2234
-	[ok][2017-04-29 09:39:25]
+	[ok][2020-12-29 09:39:25]
 
 	[edit]
 
@@ -178,7 +178,7 @@ example table:
 	```                                                          
 	native {
 	}
-	[ok][2017-04-29 09:39:30]
+	[ok][2020-12-29 09:39:30]
 
 	```
 	
@@ -194,11 +194,11 @@ example table:
 	```
 	admin@ncs% commit no-networking
 	Commit complete.
-	[ok][2017-04-29 09:42:50]
+	[ok][2020-12-29 09:42:50]
 
 	[edit]
 	admin@ncs% exit
-	[ok][2017-06-02 07:58:37]
+	[ok][2020-06-02 07:58:37]
 	admin@ncs> exit
 	[nso@nso packages]$
 
@@ -219,7 +219,7 @@ This is because, by default, devices own the out-of-band configurations.
 	admin connected from 172.23.123.13 using ssh on nso
 	admin@ncs> conf
 	Entering configuration mode private
-	[ok][2017-06-02 07:59:37]
+	[ok][2020-06-02 07:59:37]
 
 	[edit]
 	```
@@ -239,7 +239,7 @@ This is because, by default, devices own the out-of-band configurations.
     Bundle-Ether 100;
     stag         2188;
 	}
-	[ok][2017-04-29 10:04:30]
+	[ok][2020-12-29 10:04:30]
 
 	[edit]
 	```
@@ -247,18 +247,18 @@ This is because, by default, devices own the out-of-band configurations.
 	
 	```
 	admin@ncs% delete services L2Vpn test1
-	[ok][2017-04-29 10:04:40]
+	[ok][2020-12-29 10:04:40]
 
 	[edit]
 	admin@ncs% commit dry-run outformat native
 	native {
 	}
-	[ok][2017-04-29 10:04:47]
+	[ok][2020-12-29 10:04:47]
 
 	[edit]
 	admin@ncs% commit
 	Commit complete.
-	[ok][2017-04-29 10:04:56]
+	[ok][2020-12-29 10:04:56]
 
 	[edit]
 
@@ -271,7 +271,7 @@ This is because, by default, devices own the out-of-band configurations.
   	admin@ncs% show services L2Vpn test1
 	-------------------------------^
 	syntax error: element does not exist
-	[error][2017-05-05 00:44:15]
+	[error][2020-12-05 00:44:15]
 	[edit]
 	admin@ncs%   	
 	```
