@@ -141,7 +141,7 @@ the file back to NSO server.**
   
 1.  Add list attribute `pe-devices`
     with `device-name` as the key. We use leaf reference (`leafref`) points
-    to NSO’s device model: (`/ncs:devices/ncs:device/ncs:name`). In addition, add leaf attributes `Bundle-Ether` and `stag` to each pe-device element. 
+    to NSO’s device model: (`/ncs:devices/ncs:device/ncs:name`). In addition, add leaf attributes `Bundle-Ether` and `stag`. 
 
     ```
             list pe-devices {
