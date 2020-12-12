@@ -79,13 +79,13 @@ Follow the following instruction.
     Sample output:
     
     ```
-    nso@ncs> show packages package package-version
+    admin@ncs> show packages package package-version
              		PACKAGE
-    NAME         VERSION
-    ----------------------
-    cisco-iosxr  6.2.9
+	NAME         VERSION
+	----------------------
+	cisco-iosxr  6.2.9
 
-    [ok][2020-12-11 13:55:52]
+	[ok][2020-12-12 15:17:54]
 
     ```
     
