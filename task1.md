@@ -111,7 +111,7 @@ the file back to NSO server.**
 
     ![](./media/media/l2vpnyang.png)
 
-1.  Change “`name`” to “`sr-name`”:
+1.  Change “`name`” to “`sr-name`” for both key and leaf:
 
     ```
     augment /ncs:services {
@@ -140,13 +140,7 @@ the file back to NSO server.**
             leaf customer-name {
                 type string;
             }
-            list pe-devices {
-                key device-name;
-                leaf device-name {
-                    type leafref {
-                        path "/ncs:devices/ncs:device/ncs:name";
-                    }
-                }
+            
     ```
   
 1.  Continue adding attributes of pe-device element. (inside the list `pe-devices` block)
