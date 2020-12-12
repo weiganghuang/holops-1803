@@ -83,12 +83,10 @@ Follow the following instruction.
                  PACKAGE
     NAME         VERSION
     ----------------------
-    cisco-iosxr  6.2.9
-    
+    cisco-iosxr  6.2.9    
     ```
     
     Check package operation status:
-    
     
     ```
     admin@ncs> show packages package oper-status
