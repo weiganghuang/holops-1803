@@ -496,8 +496,9 @@ NSO server.
     [nso@nso src]$ cd ~/ncs-run/packages
     [nso@nso packages]$ ls -l
     total 0
-    lrwxrwxrwx. 1 nso nso 25 Jun  6 13:25 L2Vpn -> /home/nso/packages/L2Vpn/
-    lrwxrwxrwx. 1 nso nso 55 Jun  3 23:53 ncs-5.0.20181016.1-cisco-iosxr-6.6.0.1.tar.gz -> /home/nso/ncs-5.0.20181016.1-cisco-iosxr-6.6.0.1.tar.gz
+    lrwxrwxrwx. 1 nso nso 48 Nov 26 00:40 cisco-iosxr -> /home/nso/ncs-4.5.0.1/packages/neds/cisco-iosxr/
+    lrwxrwxrwx. 1 nso nso 25 Dec 11 23:08 L2Vpn -> /home/nso/packages/L2Vpn/
+
 
     ```
     
