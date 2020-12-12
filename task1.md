@@ -127,11 +127,7 @@ the file back to NSO server.**
             }
     ```
 
-1.  Add other service attributes: `order-number`, `customer-name`, and
-    `pe-devices` after `sr-name` block. Note, attribute `pe-devices` is a list
-    with `device-name` as the key. We use leaf reference (`leafref`) points
-    to NSO’s device model: (`/ncs:devices/ncs:device/ncs:name`)
-    
+1.  Add other service attributes: `order-number`, `customer-name`, after `sr-name` block.     
     ```
     
             leaf order-number {
@@ -143,7 +139,10 @@ the file back to NSO server.**
             
     ```
   
-1.  Continue adding attributes of pe-device element. (inside the list `pe-devices` block)
+1.  Add PE list attribute.  `pe-devices` is a list
+    with `device-name` as the key. We use leaf reference (`leafref`) points
+    to NSO’s device model: (`/ncs:devices/ncs:device/ncs:name`); 
+with additional attributes of pe-device element. (inside the list `pe-devices` block)
 
     ```
             list pe-devices {
