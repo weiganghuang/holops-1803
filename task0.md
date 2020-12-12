@@ -107,7 +107,7 @@ Follow the following instruction.
     ```
     weigang's note, checking iosxr versions here
     
-    **Make sure the version of cisco-iosxr-cli-6.6 is 6.6.0.1 and the
+    **Make sure the version of cisco-iosxr is 6.2.9 and the
     oper-status is up**
 
 1.  Check the NSO instance contains 3 PE devices, asr9k0, asr9k1,
