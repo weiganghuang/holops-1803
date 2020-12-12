@@ -215,7 +215,7 @@ This is because, by default, devices own the out-of-band configurations.
 	```
 	[nso@nso packages]$ ncs_cli -u admin
 
-	admin connected from 172.23.123.13 using ssh on nso
+	admin connected from 198.18.133.252 using ssh on nso
 	admin@ncs> conf
 	Entering configuration mode private
 	[ok][2020-06-02 07:59:37]
