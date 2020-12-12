@@ -548,7 +548,7 @@ NSO server.
       result true
     }
     reload-result {
-      package cisco-iosxr-cli-6.6
+      package cisco-iosxr
       result true
     }
     reload-result {
