@@ -70,12 +70,11 @@ Visual Studio Code (** ![](./media/media/vstudio.png)**), or
 Notepad++(**![](./media/media/notepad.png)**). If you take Option 2, remember copy
 the file back to NSO server.**
 
-1.  Edit l2vpnreconcile.yang . We put the action reconcile-l2vpn under
-    container action:
+1.  Edit l2vpnreconcile.yang . We put the action reconcile-l2vpn under container action:
 
-![](./media/media/action.png)
+ ![](./media/media/action.png)
 
-1.  Change the generated generic action name “double” to
+2. Change the generated generic action name “double” to
     `reconcile-l2vpn`, and action point `l2vpnreconcile-action` to
     “reconcile”. In addition, as specified above, replace the default
     input parameter `number` with `device-name`, and the default output
