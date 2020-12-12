@@ -185,8 +185,7 @@ example table:
 1.  After confirm the output of `commit dry-run outformat native` does
     not contain any CLI, continue commit the service instances, and then
     exit from ncs cli. We will commit with option `no-networking`, this
-    option makes sure the instances are committed to cdb without
-    changing the configuration of network devices.
+    option makes sure the instances are committed to NSO's cdb only.
 
     **Make sure you are still in ncs cli’s config mode**. With option
     `no-networking`, NSO is committing the changes only to cdb.
