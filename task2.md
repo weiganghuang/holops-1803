@@ -124,7 +124,7 @@ L2Vpn service instances to match two pre-existing Bundle-Ether
 sub-interfaces, through NSO cli.
 
 Compare to what we have done at *Task 1:*,
-service instance creation is reverse mapping device model to service model. The following is the device attribute to service attribute mapping
+service instance creation is reverse mapping of device model to service model. The following is the device attribute to service attribute mapping
 example table:
 
 ![NSO Ned (cisco-iosxr) to L2Vpn attribute mapping example](./media/media/reverse.png)
