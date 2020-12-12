@@ -162,7 +162,7 @@ example table:
 
 	 ```
   
-1. Confirm “commit dry-run” output is empty.
+1. Confirm “commit dry-run” output is **empty**.
 	
 
    **Make sure you are still in ncs cli’s config mode**, **if “commit
@@ -173,7 +173,7 @@ example table:
 	admin@ncs% commit dry-run outformat native  
 	```
 	
-	Expecte empty in `native` block:
+	Expecte **empty** in `native` block:
 	
 	```                                                          
 	native {
