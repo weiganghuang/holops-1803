@@ -532,7 +532,7 @@ NSO server.
     ```
     [nso@nso packages]$ ncs_cli -u admin
 
-    admin connected from 128.107.235.22 using ssh on nso
+    admin connected from 198.18.133.252 using ssh on nso
     admin@ncs> request packages reload
     ```
     
