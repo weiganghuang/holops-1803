@@ -80,12 +80,11 @@ Follow the following instruction.
     
     ```
     admin@ncs> show packages package package-version
-             	PACKAGE
-	NAME         VERSION
-	----------------------
-	cisco-iosxr  6.2.9
-
-	[ok][2020-12-12 15:17:54]
+    PACKAGE
+    NAME         VERSION
+    ----------------------
+    cisco-iosxr  6.2.9
+    [ok][2020-12-12 15:17:54]
 
     ```
     
