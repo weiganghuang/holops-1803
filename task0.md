@@ -80,7 +80,7 @@ Follow the following instruction.
     
     ```
     nso@ncs> show packages package package-version
-             PACKAGE
+             		PACKAGE
     NAME         VERSION
     ----------------------
     cisco-iosxr  6.2.9
