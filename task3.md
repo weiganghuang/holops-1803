@@ -47,7 +47,7 @@ to NSO through ref-count reset.
 
 	```
 	admin@ncs% request services L2Vpn test2 re-deploy reconcile
-	[ok][2017-11-26 11:42:19]
+	[ok][2020-11-26 11:42:19]
   	[edit]
 	```
   
@@ -67,7 +67,7 @@ to NSO through ref-count reset.
     	device asr9k2
     	result true
 	}
-	[ok][2017-04-29 09:20:11]
+	[ok][2020-12-29 09:20:11]
 
 	[edit]
 
@@ -102,14 +102,14 @@ this step, you will see the correct behaviour when we delete `test2`
        Bundle-Ether 100;
        stag         2234;
     }
-    [ok][2017-04-29 10:04:30]
+    [ok][2020-12-29 10:04:30]
     
     [edit]
     ```
     
     ```
     admin@ncs% delete services L2Vpn test2
-    [ok][2017-04-29 11:34:32]
+    [ok][2020-12-29 11:34:32]
     [edit]
     ```
     
@@ -128,7 +128,7 @@ this step, you will see the correct behaviour when we delete `test2`
         data no interface Bundle-Ether 100.2234 l2transport
       }
     }
-    [ok][2017-04-29 11:34:39]
+    [ok][2020-12-29 11:34:39]
     
     [edit]
     ```
@@ -138,7 +138,7 @@ this step, you will see the correct behaviour when we delete `test2`
    ```
    admin@ncs% commit
    Commit complete.
-   [ok][2017-04-29 11:34:47]
+   [ok][2020-12-29 11:34:47]
   
    [edit] 
    ```
@@ -149,7 +149,7 @@ this step, you will see the correct behaviour when we delete `test2`
    admin@ncs% show devices device asr9k0 config cisco-ios-xr:interface Bundle-Ether-subinterface Bundle-Ether 100.2234
    ----------------------------------------------------- ------------------------------------------------------\^
    syntax error: element does not exist
-   [error]$[2017-04-29 11:40:54]
+   [error]$[2020-12-29 11:40:54]
   
    [edit]
    ```
