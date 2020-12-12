@@ -115,12 +115,12 @@ Follow the following instruction.
     
     ```
     admin@ncs> show devices brief
-	NAME    ADDRESS    DESCRIPTION  NED ID
-	--------------------------------------------
-	asr9k0  127.0.0.1  -            cisco-ios-xr
-	asr9k1  127.0.0.1  -            cisco-ios-xr
-	asr9k2  127.0.0.1  -            cisco-ios-xr
-[	ok][2020-12-12 15:12:05]
+	 NAME    ADDRESS    DESCRIPTION  NED ID
+	 --------------------------------------------
+	 asr9k0  127.0.0.1  -            cisco-ios-xr
+	 asr9k1  127.0.0.1  -            cisco-ios-xr
+	 asr9k2  127.0.0.1  -            cisco-ios-xr
+    [ok][2020-12-12 15:12:05]
 
     ```
 
