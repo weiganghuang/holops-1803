@@ -420,7 +420,7 @@ Now you are ready to deploy the service package to NSO application.
 	NAME                 VERSION
 	------------------------------
 	L2Vpn                1.0
-	cisco-iosxr-cli-6.6  6.6.0.1
+	cisco-iosxr  			 6.2.9
 	[ok][2018-12-09 08:23:00]
 
     ```
