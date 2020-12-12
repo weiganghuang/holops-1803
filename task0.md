@@ -119,12 +119,14 @@ Follow the following instruction.
     Sample output:
     
     ```
-    NAME    ADDRESS    DESCRIPTION  NED ID
-    --------------------------------------------
-    asr9k0  127.0.0.1  -            cisco-iosxr-cli-6.6
-    asr9k1  127.0.0.1  -            cisco-iosxr-cli-6.6
-    asr9k2  127.0.0.1  -            cisco-iosxr-cli-6.6 
-    [ok][2017-06-11 12:30:02]
+    admin@ncs> show devices brief
+	NAME    ADDRESS    DESCRIPTION  NED ID
+	--------------------------------------------
+	asr9k0  127.0.0.1  -            cisco-ios-xr
+	asr9k1  127.0.0.1  -            cisco-ios-xr
+	asr9k2  127.0.0.1  -            cisco-ios-xr
+[	ok][2020-12-12 15:12:05]
+
     ```
 
 1.  Sync up the devices to bring the PE devices configuration into NSO’s
