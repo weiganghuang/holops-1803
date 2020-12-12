@@ -42,13 +42,13 @@ first.
     name it `l2vpnreconcile`
     
    ```
-   [nso@cl-lab-211]$ cd ~/packages
-   [nso@cl-lab-211 packages]$ ncs-make-package --service-skeleton python --action-example l2vpnreconcile
+   [nso@nso]$ cd ~/packages
+   [nso@nso packages]$ ncs-make-package --service-skeleton python --action-example l2vpnreconcile
    ```
    
    ```
-   [nso@cl-lab-211 packages]$ cd l2vpnreconcile
-   [nso@cl-lab-211 l2vpnreconcile]$ ls
+   [nso@nso packages]$ cd l2vpnreconcile
+   [nso@nso l2vpnreconcile]$ ls
    package-meta-data.xml python README src templates test
    
    ```
@@ -466,8 +466,8 @@ NSO server.
 1.  Compile package `l2vpnreconcile`.
 
     ```
-    [nso@cl-lab-211 packages]$ cd ~/packages/l2vpnreconcile/src
-    [nso@cl-lab-211 src]$ make clean all
+    [nso@nso packages]$ cd ~/packages/l2vpnreconcile/src
+    [nso@nso src]$ make clean all
     ```
     
     Sample output:
@@ -478,7 +478,7 @@ NSO server.
     mkdir -p java/src//
     /home/nso/ncs-5.0.1/bin/ncsc  `ls l2vpnreconcile-ann.yang  > /dev/null 2>&1 && echo "-a l2vpnreconcile-ann.yang"` \
               -c -o ../load-dir/l2vpnreconcile.fxs yang/l2vpnreconcile.yang
-    [nso@cl-lab-211 src]$
+    [nso@nso src]$
 
     ```
 
@@ -494,8 +494,8 @@ NSO server.
 
     Check current `packages` dir:
     ```
-    [nso@cl-lab-211 src]$ cd ~/ncs-run/packages
-    [nso@cl-lab-211 packages]$ ls -l
+    [nso@nso src]$ cd ~/ncs-run/packages
+    [nso@nso packages]$ ls -l
     total 0
     lrwxrwxrwx. 1 nso nso 25 Jun  6 13:25 L2Vpn -> /home/nso/packages/L2Vpn/
     lrwxrwxrwx. 1 nso nso 55 Jun  3 23:53 ncs-5.0.20181016.1-cisco-iosxr-6.6.0.1.tar.gz -> /home/nso/ncs-5.0.20181016.1-cisco-iosxr-6.6.0.1.tar.gz
@@ -505,13 +505,13 @@ NSO server.
     Create symbolic link:
     
     ```
-    [nso@cl-lab-211 packages]$ ln -s /home/nso/packages/l2vpnreconcile/
+    [nso@nso packages]$ ln -s /home/nso/packages/l2vpnreconcile/
     total 0
     ```
     
     ```
-    [nso@cl-lab-211 src]$ cd ~/ncs-run/packages
-    [nso@cl-lab-211 packages]$ ls -l
+    [nso@nso src]$ cd ~/ncs-run/packages
+    [nso@nso packages]$ ls -l
     ```
     
     Sample output:
@@ -521,7 +521,7 @@ NSO server.
     lrwxrwxrwx. 1 nso nso 55 Jun  3 23:53 ncs-5.0.20181016.1-cisco-iosxr-6.6.0.1.tar.gz -> /home/nso/ncs-5.0.20181016.1-cisco-iosxr-6.6.0.1.tar.gz
     lrwxrwxrwx. 1 nso nso 25 Dec  9 08:19 L2Vpn -> /home/nso/packages/L2Vpn/
     lrwxrwxrwx. 1 nso nso 34 Dec  9 09:14 l2vpnreconcile -> /home/nso/packages/l2vpnreconcile/
-    [nso@cl-lab-211 packages]$ 
+    [nso@nso packages]$ 
     ```
     
     Reload NSO packages after creating symbolick link:
@@ -529,9 +529,9 @@ NSO server.
     **Note: package reload may take minutes to complete**
     
     ```
-    [nso@cl-lab-211 packages]$ ncs_cli -u admin
+    [nso@nso packages]$ ncs_cli -u admin
 
-    admin connected from 128.107.235.22 using ssh on cl-lab-211
+    admin connected from 128.107.235.22 using ssh on nso
     admin@ncs> request packages reload
     ```
     
@@ -575,9 +575,9 @@ pre-existing L2VPN services.
     ```
     message Successfully created the services.
     success true
-    [ok][2017-06-03 11:38:21]
+    [ok][2020-06-03 11:38:21]
     admin@ncs>
-    System message at 2017-06-03 11:38:21...
+    System message at 2020-06-03 11:38:21...
     Commit performed by admin via tcp using cli.
 
     ```
@@ -616,7 +616,7 @@ pre-existing L2VPN services.
     
     ```
     admin@ncs% delete services L2Vpn L_3m_318-L1111318-asr9k0
-    [ok][2017-06-05 06:17:50]
+    [ok][2020-06-05 06:17:50]
 
     [edit]
     ```
@@ -629,7 +629,7 @@ pre-existing L2VPN services.
         data no interface Bundle-Ether 100.276 l2transport
       }
     }
-    [ok][2017-06-05 06:17:57]
+    [ok][2020-06-05 06:17:57]
 
     [edit]
 
@@ -640,7 +640,7 @@ pre-existing L2VPN services.
     ```
     admin@ncs% commit
     Commit complete.
-    [ok][2017-04-30 13:12:49]
+    [ok][2020-12-30 13:12:49]
 
     [edit]
     ```
@@ -649,7 +649,7 @@ pre-existing L2VPN services.
     admin@ncs% show devices device asr9k0 config cisco-ios-xr:interface Bundle-Ether-subinterface Bundle-Ether 100.276
     -----------------------------------------------------------------------------------------------------------^
     syntax error: element does not exist
-    [error][2017-04-30 13:13:22]
+    [error][2020-12-30 13:13:22]
 
     [edit]
 
