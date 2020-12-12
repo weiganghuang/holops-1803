@@ -225,10 +225,10 @@ format. This output is the starting point of the mapping template.
     admin connected from 128.107.235.22 using ssh on cl-lab-211
     admin@ncs>conf
     Entering configuration mode private 
-    [ok][2017-04-29 03:05:47]
+    [ok][2020-12-29 03:05:47]
     [edit]
     admin@ncs% set devices device asr9k0 config cisco-ios-xr:interface Bundle-Ether-subinterface Bundle-Ether 100.100 mode l2transport description test-desc encapsulation dot1q vlan-id 100
-    [ok][2017-04-29 03:07:44]
+    [ok][2020-12-29 03:07:44]
     [edit] 
     admin@ncs%
     ```
@@ -269,7 +269,7 @@ format. This output is the starting point of the mapping template.
              </devices>
       }
     }
-    [ok][2017-04-29 03:09:22]
+    [ok][2020-12-29 03:09:22]
     [edit]
 
     ```
@@ -277,7 +277,7 @@ format. This output is the starting point of the mapping template.
 
     ```
     admin@ncs% exit no
-    [ok][2017-06-02 01:47:29]
+    [ok][2020-06-02 01:47:29]
     admin@ncs> exit
     [nso@nso src]$
     ```
@@ -422,7 +422,7 @@ Now you are ready to deploy the service package to NSO application.
 	L2Vpn        1.0
 	cisco-iosxr  6.2.9
 
-	[ok][2018-12-09 08:23:00]
+	[ok][2020-12-09 08:23:00]
 
     ```
 
@@ -439,10 +439,10 @@ service instance.
     ```
   	admin@ncs>conf
   	Entering configuration mode private
-  	[ok][2017-04-29 08:20:16] 
+  	[ok][2020-12-29 08:20:16] 
   	[edit] 
   	admin@ncs% set services L2Vpn test customer-name ciscolive order-number 123 pe-devices asr9k0 Bundle-Ether 100 stag 100
-  	[ok][2017-04-29 08:21:00]
+  	[ok][2020-12-29 08:21:00]
   	[edit]
 	```
 
@@ -465,7 +465,7 @@ service instance.
              exit
     	}
 	}
-	[ok][2017-04-29 08:21:08]
+	[ok][2020-12-29 08:21:08]
 	[edit]
 	admin@ncs%  
   	```
@@ -477,7 +477,7 @@ service instance.
   	```
   	admin@ncs% commit
 	Commit complete.
-	[ok][2017-04-29 08:21:18]
+	[ok][2020-12-29 08:21:18]
 
 	[edit]
 	```
@@ -490,7 +490,7 @@ service instance.
     	Bundle-Ether 100;
     	stag         100;
 	}
-	[ok][2017-04-29 08:21:33]
+	[ok][2020-12-29 08:21:33]
 
 	[edit]
 	admin@ncs%
@@ -522,7 +522,7 @@ service instance.
 
 	 ```
 	 admin@ncs% delete services L2Vpn test
-	 [ok][2017-04-29 08:42:24]
+	 [ok][2020-12-29 08:42:24]
 
 	 admin@ncs% commit dry-run outformat native
 	 native {
@@ -531,12 +531,12 @@ service instance.
         data no interface Bundle-Ether 100.100 l2transport
     	}
 	 }
-	 [ok][2017-04-29 08:42:24]
+	 [ok][2020-12-29 08:42:24]
 
 	 [edit]
 	 admin@ncs% commit
 	 Commit complete.
-	 [ok][2017-04-29 08:42:31]
+	 [ok][2020-12-29 08:42:31]
 
 	 [edit]
 	 admin@ncs%
