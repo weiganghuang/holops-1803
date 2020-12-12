@@ -104,7 +104,6 @@ Follow the following instruction.
     [ok][2020-12-11 13:56:09]
   
     ```
-    weigang's note, checking iosxr versions here
     
     **Make sure the version of cisco-iosxr is 6.2.9 and the
     oper-status is up**
