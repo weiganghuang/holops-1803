@@ -458,7 +458,7 @@ service instance.
   		device {
   			name asr9k0
   			data interface Bundle-Ether 100.100 l2transport
-  			description "ciscolive-123"
+  				description "ciscolive-123"
   				encapsulation dot1q 100
   			exit
     	}
