@@ -588,17 +588,20 @@ pre-existing L2VPN services.
     ```
     admin@ncs> show services L2Vpn ?
     Possible completions:
-    L_3m_318-L1111318-asr9k0           - Unique service name
-    L_att_318-L1111318-asr9k0          - Unique service name
-    L_comcast_318-L1111318-asr9k0      - Unique service name
-    L_ford_318-L1111318-asr9k0         - Unique service name
-    L_mckesson_318-L1111318-asr9k0     - Unique service name
+    L_3m_318-L1111318       - Unique service name
+    L_att_318-L1111318      - Unique service name
+    L_comcast_318-L1111318  - Unique service name
+    L_ford_318-L1111318     - Unique service name
+    L_mckesson_318-L1111318 - Unique service name
+    Possible match completions:
+    customer-name  order-number  pe-devices
+
     ………
     ```
     
     ```
     admin@ncs> conf
-    admin@ncs% show services L2Vpn L_3m_318-L1111318-asr9k0
+    admin@ncs% show services L2Vpn L_3m_318-L1111318
     order-number  L1111318;
     customer-name L_3m_318;
     pe-devices asr9k0 {
@@ -616,7 +619,7 @@ pre-existing L2VPN services.
     
     
     ```
-    admin@ncs% delete services L2Vpn L_3m_318-L1111318-asr9k0
+    admin@ncs% delete services L2Vpn L_3m_318-L1111318
     [ok][2020-06-05 06:17:50]
 
     [edit]
