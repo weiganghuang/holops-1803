@@ -208,7 +208,7 @@ example table:
 As mentioned, although the service instances (`test1` and `test2`) matching the
 two pre-existing Bundle-Ether sub-interfaces are committed in NSO, NSO
 is not able to modify or delete the associated device configuration.
-This is because, by default, devices own the out-of-band configurations.
+This is because, the pre-existing L2Vpn are configured out-of-band, NSO is not managing those by default.
 
 1. Try to delete instance `test1`.
 
