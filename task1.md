@@ -564,7 +564,7 @@ service instance.
    admin@ncs% exit
    [ok][2019-06-06 13:37:30]
    admin@ncs> exit
-   [nso@cl-lab-221 packages]$
+   [nso@nso packages]$
    ```
    
 You have completed Task1. In this task, you created, deployed and tested
