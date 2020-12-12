@@ -84,7 +84,6 @@ Follow the following instruction.
     NAME         VERSION
     ----------------------
     cisco-iosxr  6.2.9
-    [ok][2020-12-12 15:17:54]
     
     ```
     
