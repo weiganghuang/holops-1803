@@ -139,7 +139,7 @@ the file back to NSO server.**
             
     ```
   
-1.  Add PE list attribute.  `pe-devices` is a list
+1.  Add list attribute `pe-devices`
     with `device-name` as the key. We use leaf reference (`leafref`) points
     to NSO’s device model: (`/ncs:devices/ncs:device/ncs:name`); 
 with additional attributes of pe-device element. (inside the list `pe-devices` block)
