@@ -407,8 +407,8 @@ Now you are ready to deploy the service package to NSO application.
     	result true
 	}
 	reload-result {
-      package cisco-iosxr
-      result true
+		package cisco-iosxr
+		result true
    }
    [ok][2020-12-11 23:10:37]
 
