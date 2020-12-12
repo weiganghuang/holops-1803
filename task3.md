@@ -113,7 +113,7 @@ this step, you will see the correct behaviour when we delete `test2`
     [edit]
     ```
     
-    Perform a commit dry-run to see the correct `no` cli:
+    Perform a commit dry-run to see the correct `no interface ...` cli:
     
     ```
     admin@ncs% commit dry-run outformat native
