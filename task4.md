@@ -61,12 +61,12 @@ message associated with. You will modify the auto-generated yang file to
 capture the input and output parameters.
 
 **Option 1: Edit `~/packages/l2vpnreconcile/src/yang/l2vpnreconcile.yang` from NSO server,
-using `vi` for example;**
+use `vi` for example;**
 
 **Option 2: Copy file `~/packages/l2vpnreconcile/src/yang/l2vpnreconcile.yang` from NSO
-server to jump server using `WinScp`
+server to Windows workstation use `WinScp`
 (**![](./media/media/scp.png)**). Edit the file using editors such as
-Sublime (** ![](./media/media/sublime.png)**), or
+Sublime (** ![](./media/media/vstudio.png)**), or
 Notepad++(**![](./media/media/notepad.png)**). If you take Option 2, remember copy
 the file back to NSO server.**
 
@@ -454,7 +454,7 @@ In this step, we are defining the three functions used in `cb_action` .
     ~/solution/l2vpnreconcile/python/l2vpnreconcile/ for your
     reference.**
 
-1.  Save `main.py`. If you edit the file from windows jump start server,
+1.  Save `main.py`. If you edit the file from Windows workstation,
     make sure you copy the file back to NSO server, at location
     `/home/nso/packages/l2vpnreconcile/python/l2vpnreconcile/`
 
