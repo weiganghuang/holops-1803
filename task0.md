@@ -85,7 +85,6 @@ Follow the following instruction.
     ----------------------
     cisco-iosxr  6.2.9
     [ok][2020-12-12 15:17:54]
-
     ```
     
     Check package operation status:
