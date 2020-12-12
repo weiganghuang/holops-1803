@@ -506,7 +506,7 @@ NSO server.
     
     ```
     [nso@nso packages]$ ln -s /home/nso/packages/l2vpnreconcile/
-    total 0
+    
     ```
     
     ```
@@ -517,11 +517,12 @@ NSO server.
     Sample output:
     
     ```
+    [nso@nso packages]$ ls -l
     total 0
-    lrwxrwxrwx. 1 nso nso 55 Jun  3 23:53 ncs-5.0.20181016.1-cisco-iosxr-6.6.0.1.tar.gz -> /home/nso/ncs-5.0.20181016.1-cisco-iosxr-6.6.0.1.tar.gz
-    lrwxrwxrwx. 1 nso nso 25 Dec  9 08:19 L2Vpn -> /home/nso/packages/L2Vpn/
-    lrwxrwxrwx. 1 nso nso 34 Dec  9 09:14 l2vpnreconcile -> /home/nso/packages/l2vpnreconcile/
-    [nso@nso packages]$ 
+    lrwxrwxrwx. 1 nso nso 48 Nov 26 00:40 cisco-iosxr -> /home/nso/ncs-4.5.0.1/packages/neds/cisco-iosxr/
+    lrwxrwxrwx. 1 nso nso 25 Dec 11 23:08 L2Vpn -> /home/nso/packages/L2Vpn/
+    lrwxrwxrwx. 1 nso nso 34 Dec 12 00:20 l2vpnreconcile -> /home/nso/packages/l2vpnreconcile/
+ 
     ```
     
     Reload NSO packages after creating symbolick link:
