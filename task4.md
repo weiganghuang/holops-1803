@@ -65,8 +65,8 @@ use `vi` for example;**
 
 **Option 2: Copy file `~/packages/l2vpnreconcile/src/yang/l2vpnreconcile.yang` from NSO
 server to Windows workstation use `WinScp`
-(**![](./media/media/scp.png)**). Edit the file using editors such as
-Sublime (** ![](./media/media/vstudio.png)**), or
+(**![](./media/media/scp.png)**). Edit the file use editors such as
+Visual Studio Code (** ![](./media/media/vstudio.png)**), or
 Notepad++(**![](./media/media/notepad.png)**). If you take Option 2, remember copy
 the file back to NSO server.**
 
