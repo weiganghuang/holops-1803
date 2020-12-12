@@ -290,8 +290,7 @@ format. This output is the starting point of the mapping template.
     **Option 2: Copy the file
  ~/packages/L2Vpn/templates/L2Vpn-template.xml from NSO server to
   Windows workstation using
-  (![](./media/media/scp.png). Edit the file using editors such as Visual Studio Code
-  
+  (![](./media/media/scp.png). Edit the file using editors such as Visual Studio Code  
  ![](./media/media/vstudio.png),
  Notepad++(![](./media/media/notepad.png). If you take Option 2, remember copy the file back to NSO server.**
 
