@@ -665,4 +665,4 @@ pre-existing L2VPN services.
    [ok][2019-06-06 14:27:07]
    admin@ncs> exit
    ```
-**Congratulations! You have successfully finished this lab HOLOPS-1803**
+**Congratulations! You have complteted all the tasks of lab HOLOPS-1803**
