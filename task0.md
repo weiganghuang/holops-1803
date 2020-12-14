@@ -73,7 +73,7 @@ Follow the following instruction.
     
     ```
     [nso@nso ncs-run]$ ncs_cli -u admin
-    admin connected from 128.107.235.22 using ssh on cl-lab-211
+    admin connected from 198.18.133.252 using ssh on cl-lab-211
     admin@ncs> show packages package package-version
     ```
     Sample output:
