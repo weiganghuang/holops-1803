@@ -431,7 +431,7 @@ on the application server has 3 PE devices. You will create a test L2Vpn
 service instance.
 
 1.  Create an L2Vpn service instance, name it
-    “test”, set customer name as ciscolive, and order-number 123. In
+    “test”, set customer name as duoabc, and order-number 123. In
     addition, set pe-devices as asr9k0, Bundle-Ether 100, and stag 100 :
 
     ```
@@ -439,7 +439,7 @@ service instance.
   	Entering configuration mode private
   	[ok][2020-12-29 08:20:16] 
   	[edit] 
-  	admin@ncs% set services L2Vpn test customer-name ciscolive order-number 123 pe-devices asr9k0 Bundle-Ether 100 stag 100
+  	admin@ncs% set services L2Vpn test customer-name duoabc order-number 123 pe-devices asr9k0 Bundle-Ether 100 stag 100
   	[ok][2020-12-29 08:21:00]
   	[edit]
 	```
@@ -458,7 +458,7 @@ service instance.
   		device {
   			name asr9k0
   			data interface Bundle-Ether 100.100 l2transport
-  				description "ciscolive-123"
+  				description "duoabc-123"
   				encapsulation dot1q 100
   			exit
     	}
@@ -483,7 +483,7 @@ service instance.
 	```
 	admin@ncs% show services L2Vpn test
 	order-number  123;
-	customer-name ciscolive;
+	customer-name duoabc;
 	pe-devices asr9k0 {
     	Bundle-Ether 100;
     	stag         100;
@@ -504,7 +504,7 @@ service instance.
 	
 	```
     mode        l2transport;
-    description ciscolive-123;
+    description duoabc-123;
     encapsulation {
        dot1q {
           vlan-id [ 100 ];
