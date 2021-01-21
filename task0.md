@@ -3,10 +3,10 @@
 HOLOPS-1803
 ===========
 
-# Task 0 Verify Lab Setup
+# Scenario 1 Verify Lab Setup
 ----------------
 
-In this task, you verify lab setup access
+In this scenario, you verify lab setup access
 
 You session setup:
 
@@ -158,10 +158,10 @@ Follow the following instruction.
    ```
    
    
-You have finished Task 0: Verify Lab Setup. Now you are ready to move on
-to the next Task: Create a service package:
+You have finished Scenario 1: Verify Lab Setup. Now you are ready to move on
+to the next Scenario: Create a service package:
 
- [Task1 Create L2VPN Service Package](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task1.md)
+ [Scenario 2 Create L2VPN Service Package](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task1.md)
 ------
 
   

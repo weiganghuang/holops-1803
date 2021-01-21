@@ -96,18 +96,13 @@ auto-generated Yang file, `L2Vpn.yang` to model the L2Vpn service.
 **Option 1: Edit `~/packages/L2Vpn/src/yang/L2Vpn.yang` from NSO server,
 using `vi` for example;**
 
-**Option 2: Copy file `~/packages/L2Vpn/src/yang/L2Vpn.yang` from NSO
-server to Windows worksttion use `WinScp`
-(**![](./media/media/scp.png)**). Edit the file use editors such as
-Visiual Studio Code (** ![](./media/media/vstudio.png)**), or
-Notepad++(**![](./media/media/notepad.png)**). 
-If you take this Option, remember to copy
+**Option 2: At the `[nso@nso ~]$` prompt, enter `code ~/packages/L2Vpn/src/yang/L2Vpn.yang`. This automatically launches the file in Visual Studio Code You can edit the file directly in Visual Studio Code. member to copy
 the file back to NSO server.**
 
 
 1.  The auto-generated `L2Vpn.yang` file contains several skeleton blocks.
     You need to update L2Vpn block to add service attributes. Modify the
-    generated Yang file, locate the block starts with “list L2Vpn”:
+    generated Yang file, locate the block starts with `list L2Vpn`:
 
     ![](./media/media/l2vpnyang.png)
 
@@ -173,8 +168,7 @@ the file back to NSO server.**
     **Note: You can find the solution of the L2Vpn.yang from NSO server,
     at `/home/nso/solution/L2Vpn/src/yang/` for your reference.**
 
-1.  Save the updated L2Vpn.yang file. If you edit the file at Windows workstation, remember to copy back to NSO server
-    (![](./media/media/scp.png).
+1.  Save the updated L2Vpn.yang file.
 
 2.  Compile project L2Vpn at your NSO server.
 
@@ -285,12 +279,7 @@ format. This output is the starting point of the mapping template.
     **Option 1: Edit ~/packages/L2Vpn/templates/L2Vpn-template.xml from
  NSO server, using `vi` for example;**
 
-    **Option 2: Copy the file
- ~/packages/L2Vpn/templates/L2Vpn-template.xml from NSO server to
-  Windows workstation using
-  (![](./media/media/scp.png). Edit the file using editors such as Visual Studio Code  
- ![](./media/media/vstudio.png),
- Notepad++(![](./media/media/notepad.png). If you take Option 2, remember copy the file back to NSO server.**
+    **Option 2: At the [nso@nso ~]$ prompt, enter code ~/packages/L2Vpn/templates/L2Vpn-template.xml. This automatically launches the file in Visual Studio Code You can edit the file directly in Visual Studio Code. member to copy the file back to NSO server.**
 
 1.  Edit file ~/packages/L2Vpn/templates/L2Vpn-template.xml. Replace
     the contents of the block of `<config-template
@@ -567,10 +556,10 @@ service instance.
    [nso@nso packages]$
    ```
    
-You have completed Task1. In this task, you created, deployed and tested
+You have completed Scenario 2. In this task, you created, deployed and tested
 L2Vpn service package. Next, you will learn service discovery and
 reconcile when dealing with brownfield network:
 
-[Task2 Service discovery and reconciliation A: Create L2Vpn service instances from pre-existing configuration](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task2.md)
+[Scenario 3 Service discovery and reconciliation A: Create L2Vpn service instances from pre-existing configuration](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task2.md)
 --------------------------------------------------
 

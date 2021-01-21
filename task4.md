@@ -4,10 +4,10 @@ HOLOPS-1803
 ===========
 
 
-Task 4(Extra Credit): Create an NSO action to discover pre-existing L2VPN service instances automatically. 
+Scenario 5 (Extra Credit): Create an NSO action to discover pre-existing L2VPN service instances automatically. 
 ----------------------------------------------------------------------------------------------------
 
-In the previous two tasks, Task 2 and Task3, you learned to discover
+In the previous two scenarios, Scenario 3 and Scenario 4, you learned to discover
 pre-existing service configurations manually. As one can see, manually
 creating service instances to match all the attributes in pre-existing
 configurations is time consuming, tedious, and error prone. This
@@ -20,10 +20,10 @@ creating service instances from device model using NSO’s maapi and magic
 API’s, followed by resetting the ref-count for the service instances
 programmatically.
 
-In this task, you will learn how to create an NSO action to discover
+In this Scenario, you will learn how to create an NSO action to discover
 pre-existing L2VPN services through an NSO action.
 
-   **Note: This task requires python programming, and knowledge of NSO
+   **Note: This Scenariorequires python programming, and knowledge of NSO
     maagic and maapi API’s**.
 
 ### Create package skeleton for reconcile action
@@ -35,7 +35,7 @@ create an action package, `l2vpnreconcile`, to perform L2Vpn service
 discovery. Although it can be easily extended, for simplicity, this lab
 designs the action to perform service discovery from one PE device.
 
-Similar to what we did at Task 1, you will create the package skeleton
+Similar to what we did at Scenario1, you will create the package skeleton
 first.
 
 1. From NSO VM, create a skeleton package,
@@ -63,12 +63,7 @@ capture the input and output parameters.
 **Option 1: Edit `~/packages/l2vpnreconcile/src/yang/l2vpnreconcile.yang` from NSO server,
 use `vi` for example;**
 
-**Option 2: Copy file `~/packages/l2vpnreconcile/src/yang/l2vpnreconcile.yang` from NSO
-server to Windows workstation use `WinScp`
-(**![](./media/media/scp.png)**). Edit the file use editors such as
-Visual Studio Code (** ![](./media/media/vstudio.png)**), or
-Notepad++(**![](./media/media/notepad.png)**). If you take Option 2, remember copy
-the file back to NSO server.**
+**Option 2: At the `[nso@nso ~]$ `prompt, enter code ~/packages/l2vpnreconcile/src/yang/l2vpnreconcile.yang. This automatically launches the file in Visual Studio Code You can edit the file directly in Visual Studio Code. member to copy the file back to NSO server**.
 
 1.  Edit l2vpnreconcile.yang . We put the action reconcile-l2vpn under container action:
 
@@ -366,7 +361,7 @@ attribute mapping example for auto service instance creation
 
 
 1.  Now we are ready to reset the reference count as we have done at
-    Task 3: (**Service discovery and reconciliation B: Reset )** via ncs cli.
+    Scenario3: (**Service discovery and reconciliation B: Reset )** via ncs cli.
 
     Add the following to reset reference count, and close `cb_action`.
     Helper function `redeploySrs` is defined later.
@@ -426,7 +421,7 @@ In this step, we are defining the three functions used in `cb_action` .
     ```
 
 1.  Define `redeploySrs` in `Reconcile` class. It performs the same
-    operation via maapi as we have done at Task 3: (**Service discovery
+    operation via maapi as we have done at Scenario 4: (**Service discovery
     and reconciliation B: Reset** ); perform service
     redeploy with option of reconcile for each L2Vpn service instance:
     ```
@@ -665,4 +660,4 @@ pre-existing L2VPN services.
    [ok][2019-06-06 14:27:07]
    admin@ncs> exit
    ```
-**Congratulations! You have complteted all the tasks of lab HOLOPS-1803**
+**Congratulations! You have complteted all the scenarios of lab HOLOPS-1803**
