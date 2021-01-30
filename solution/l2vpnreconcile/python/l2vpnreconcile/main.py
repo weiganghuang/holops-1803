@@ -72,14 +72,14 @@ class Reconcile(Action):
                 output.message = "finish reconcile"  
                 return    
               for bundleEther in bundleEths:
-                id , bstag = bundleEther.id.split('.')
+                port , sint_id = bundleEther.id.split('.')
                 description = bundleEther.description
                 stags = bundleEther.encapsulation.dot1q.vlan_id              
                 if stags is  None or len(stags)==0:
                   continue 
                 stag = 0
                 for stag in stags: 
-                  if int(stag) == int(bstag):                 
+                  if int(stag) == int(sint_id):                 
                     break
                 if stag == 0:
                   self.log.warning('vlan tag not configured, or does not match sub-interface id for Bundle-Ether-subinterface %s, use sub-interface id'%bundleEther.id)
@@ -104,8 +104,8 @@ class Reconcile(Action):
                 pe_path = sr_path + '/pe-devices'
                 pes_node = ncs.maagic.get_node(t,pe_path)
                 pe_obj = pes_node.create(input.device_name)
-                pe_obj.stag = bstag
-                pe_obj.Bundle_Ether = id
+                pe_obj.stag = sint_id
+                pe_obj.Bundle_Ether = port
                 srs.append(sr_name) 
                            
             if len(srs) > 0:
