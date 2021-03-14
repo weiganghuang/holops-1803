@@ -88,9 +88,9 @@ As previously mentioned, the pre-existing L2VPN configurations are brought in to
 
 	```
 	nso@nso ~]$ ncs_cli -u admin
-   admin connected from 198.18.133.252 using ssh on nso
-   admin@ncs> conf
-   admin@ncs% show devices device asr9k0 config cisco-ios-xr:interface Bundle-Ether-subinterface
+	admin connected from 198.18.133.252 using ssh on nso
+	admin@ncs> conf
+	admin@ncs% show devices device asr9k0 config cisco-ios-xr:interface Bundle-Ether-subinterface
 	```
 	
 	Sample output:
