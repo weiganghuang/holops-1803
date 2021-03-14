@@ -36,7 +36,7 @@ This lab highlights the following features:
   
 
 
-Intended Audiencee
+Intended Audience
 =============
 
 **IMPORTANT!**This lab assumes the user meets the following prerequisites:
