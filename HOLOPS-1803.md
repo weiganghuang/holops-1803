@@ -46,7 +46,7 @@ Intended Audience
 -   Basic knowledge of Cisco NSO, including knowledge of the NSO maagic and maapi APIs
 
 -	Basic NSO service reconcilation knowledge ([Presentation slides available for downloading](https://github.com/weiganghuang/holops-1803/blob/master/BRKNMS-2805.pptx))
-- Python programming experience
+- (Optional) Python programming experience
 
 Overview
 ========
@@ -108,5 +108,5 @@ To start the lab, click the following links for instructions.
 [Scenario 4 Service discovery and reconciliation B: Reset reference count](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task3.md)
 -----------------------------
 
-[Scenario 5 (Extra Credit): Create an NSO action to discover pre-existing L2VPN service instances automatically](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task4.md)
+[Scenario 5 (Optional): Create an NSO action to discover pre-existing L2VPN service instances automatically](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task4.md)
 ------------------------------
