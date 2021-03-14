@@ -99,7 +99,7 @@ using an editor such as `vi`.**
 
 1.  The auto-generated `L2Vpn.yang` file contains several skeleton blocks. We will update the  L2Vpn block to add service attributes. To modify the generated Yang file, first locate the block that starts with `list L2Vpn`:
 
-    ![](./media/media/l2vpnyang.png)
+    ![](./media/media/l2vpnyang-new.png)
 
 1.  Change “`name`” to “`sr-name`” for both key and leaf:
 
