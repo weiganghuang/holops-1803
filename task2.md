@@ -212,15 +212,13 @@ The device attribute to service attribute mapping:
    [nso@nso packages]$
    ```
   
-### Observe the issues 
+### Observe the Issues 
 
-As mentioned, although the service instances (`test1` and `test2`) matching the
-two pre-existing Bundle-Ether sub-interfaces are committed in NSO, NSO
-is not able to modify or delete the associated device configuration.
-This is because, the pre-existing L2Vpn are configured out-of-band, NSO is not managing those by default.
+As previously mentioned, although the service instances (`test1` and `test2`) matching the two pre-existing Bundle-Ether sub-interfaces are committed in NSO, NSO is not able to modify or delete the associated device configuration. This is because, by default, devices own the out-of-band configurations.
 
-1. Try to delete instance `test1`.
+1. Enter the following commands to delete the instance `test1`.
 
+   Enter config mode
 	```
 	[nso@nso packages]$ ncs_cli -u admin
 
@@ -251,19 +249,26 @@ This is because, the pre-existing L2Vpn are configured out-of-band, NSO is not m
 
 	[edit]
 	```
+	
 	Now delete `test1`
+	
 	
 	```
 	admin@ncs% delete services L2Vpn test1
 	[ok][2020-12-29 10:04:40]
 
 	[edit]
+	```
+	Check `commit dry-run` output
 	admin@ncs% commit dry-run outformat native
 	native {
 	}
 	[ok][2020-12-29 10:04:47]
 
 	[edit]
+	```
+	Now commit
+	```
 	admin@ncs% commit
 	Commit complete.
 	[ok][2020-12-29 10:04:56]
