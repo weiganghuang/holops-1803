@@ -6,32 +6,27 @@ HOLOPS-1803
 # Scenario 1 Verify Lab Setup
 ----------------
 
-In this scenario, you verify lab setup access
 
-You session setup:
-
-![](./media/media/dcloud-setup.png)
-
-###  Access Information
-
-(revise this section after dCloud setup is finalized)
         
 
-### Access Lab Setup. 
+### Steps 
 
-1. Once you RDP to windows workstation, access NSO application VM:
-    
-    Click ![](./media/media/putty.png)from desktop, to open a putty connection to NSO VM
+1. On the remote desktop, double-click the **nso@nso** icon to open a PuTTY connection to the NSO VM.
+2. Enter the following commands to fully initialize all elements of the lab. The initialization takes approximately five minutes.
 
-2. Expected result:
 
-![](./media/media/nso-vm.png)
+    ```
+    [nso@nso ~]$ cd ansible
+    [nso@nso ncs-run]$ ansible-playbook set-lab.yml
+    ```
+3. Enter the following commands to return to the nso@nso prompt.
 
-### Validate the setup
+    ```
+    [nso@nso ~]$ cd
+    [nso@nso]$ 
+    ```
 
-Follow the following instruction. 
-
-1.  Check NSO version.
+1.  4.	Enter the following commands to verify the NSO version.
 
     ```
     [nso@nso ~]$ cd ncs-run
@@ -47,29 +42,9 @@ Follow the following instruction.
     [nso@nso ncs-run]$ ncs --version
     4.5.0.1
     ```
-
-1.  Make sure NSO is running:
-
-    ```
-    [nso@nso ncs-run]$  ncs --status | head
-    ```
-    Sample output:
-    
-    ```
-    [nso@nso ncs-run]$ ncs --status | head
-    vsn: 4.5.0.1
-    SMP support: yes, using 4 threads
-    Using epoll: yes
-    available modules:        
-    ....
-    ```
-    
-    **Note: if you get `connection refused`, start NSO application.  From your nso runtime directory:`/home/nso/ncs-run`, type `ncs`**
  
 
-1.  Check pre-loaded packages in your NSO application.
-
-    Check package version
+1.  Enter the following commands to access the CLI and check the pre-loaded packages in your NSO application.
     
     ```
     [nso@nso ncs-run]$ ncs_cli -u admin
@@ -105,8 +80,7 @@ Follow the following instruction.
     **Make sure the version of cisco-iosxr is 6.2.9 and the
     oper-status is up**
 
-1.  Check the NSO instance contains 3 PE devices, asr9k0, asr9k1,
-    asr9k2.
+1.  Verify that the NSO instance contains three PE devices (asr9k0, asr9k1, asr9k2).
 
     ```
     admin@ncs> show devices brief
@@ -150,16 +124,16 @@ Follow the following instruction.
 
      ```
      
-2. Exit from cli
+2. Enter the following commands to return to the nso@nso prompt.
 
    ```
    admin@ncs> exit
    [nso@nso ncs-run]$
    ```
+
+**This concludes scenario 1.**  
    
-   
-You have finished Scenario 1: Verify Lab Setup. Now you are ready to move on
-to the next Scenario: Create a service package:
+Next Scenario: Create a service package
 
  [Scenario 2 Create L2VPN Service Package](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task1.md)
 ------
