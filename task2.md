@@ -191,13 +191,9 @@ The device attribute to service attribute mapping:
 
 	```
 	
-1.  After confirm the output of `commit dry-run outformat native` does
-    not contain any CLI, continue commit the service instances, and then
-    exit from ncs cli. We will commit with option `no-networking`, this
-    option makes sure the instances are committed to NSO's cdb only.
+3.	After confirming that the output of `commit dry-run outformat native` is empty, continue to commit the service instances, and then exit from NCS CLI. We will commit with the option `no-networking`; this option makes sure the instances are committed to cdb without changing the configuration of network devices.
 
-    **Make sure you are still in ncs cli’s config mode**. With option
-    `no-networking`, NSO is committing the changes only to cdb.
+    **NOTE: Make sure you are still in NCS CLI config mode. With the option `no-networking`, NSO is committing the changes only to CDB**
 
 	```
 	admin@ncs% commit no-networking
@@ -205,12 +201,14 @@ The device attribute to service attribute mapping:
 	[ok][2020-12-29 09:42:50]
 
 	[edit]
+4.	Enter the following commands to exit from ncs cli.
+5. 
+   ```
 	admin@ncs% exit
 	[ok][2020-06-02 07:58:37]
 	admin@ncs> exit
 	[nso@nso packages]$
-
-	 ```
+	```
   
 ### Observe the issues 
 
