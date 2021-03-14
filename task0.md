@@ -11,7 +11,7 @@ HOLOPS-1803
 
 ### Steps 
 
-1. On the remote desktop, double-click the **nso@nso** icon to open a PuTTY connection to the NSO VM.
+1. On the remote desktop, double-click the **nso@nso** click ![](./media/media/putty.png) icon to open a PuTTY connection to the NSO VM.
 2. Enter the following commands to fully initialize all elements of the lab. The initialization takes approximately five minutes.
 
 
@@ -26,7 +26,7 @@ HOLOPS-1803
     [nso@nso]$ 
     ```
 
-1.  4.	Enter the following commands to verify the NSO version.
+1.  Enter the following commands to verify the NSO version.
 
     ```
     [nso@nso ~]$ cd ncs-run
