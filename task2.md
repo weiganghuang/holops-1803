@@ -36,10 +36,10 @@ As previously mentioned, the pre-existing L2VPN configurations are brought in to
 	
 2.	Enter the following command to return to the nso@nso prompt.  
 
-   ```
-	[nso@nso ansible]$ cd
-	[nso@nso ~]$
-	```
+    ```
+	 [nso@nso ansible]$ cd
+	 [nso@nso ~]$
+	 ```
 
 1. Perform a sync-from to bring the
     pre-existing configurations to NSO’s device model.
