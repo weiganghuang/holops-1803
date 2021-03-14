@@ -39,13 +39,14 @@ This lab highlights the following features:
 Intended Audiencee
 =============
 
-
+**IMPORTANT!**This lab assumes the user meets the following prerequisites:
 
 -   Basic understanding of network orchestration, NETCONF/Yang
 
--   Basic knowledge of Cisco Network Services Orchestrator (NSO)
+-   Basic knowledge of Cisco NSO, including knowledge of the NSO maagic and maapi APIs
 
 -	Basic NSO service reconcilation knowledge ([Presentation slides available for downloading](https://github.com/weiganghuang/holops-1803/blob/master/BRKNMS-2805.pptx))
+- Python programming experience
 
 Overview
 ========
@@ -54,24 +55,26 @@ As an industry leading orchestration platform, the Cisco Network Services Orches
 In this lab, you will create a simple L2VPN service package to configure Layer 2 Transport encapsulation on Bundle Ethernet sub-interfaces; you will also discover and reconcile pre-existing L2VPN services from the network.
 The network is composed of simulated NSO NETSIM ASR devices (Cisco IOS-XR). You will create L2VPN services from CE-PE. This lab focuses on PE configuration. To simulate a brownfield network, the PE devices are populated with pre-existing L2VPN services
 
+TOPOLOGY
+========
 
-The following figure illustrates the network topology. The network is composed of
-simulated NSO NETSIM ASR devices (Cisco IOS-XR). You will create L2VPN
-services from CE-PE. This lab focuses on PE configuration. To simulate
-the brownfield network, the PE devices are populated with pre-existing
-L2VPN services.
+This content includes preconfigured users and components to illustrate the scripted scenarios and features of the solution.
+
+### dCloud Topology
+
+![](./media/media/dcloud.png)
+
+### Logical Topology
 
 ![](./media/media/topology.png)
 
-NSO application is pre-installed on Linux VM, with the details as following:
+The NSO application is pre-installed on a Linux VM, with the details shown in the table below. The NSO runtime directory is set to **/home/nso/ncs-run**. The NSO runtime directory keeps the NSO’s database, state files, logs and other files. If at any time you find you want to start NSO, make sure that you are at the NSO runtime directory prompt.
+
+
+
+### NSO Server Installation and Setup Details
 
 ![](./media/media/nso.png)
-
-NSO runtime directory is set to `/home/nso/ncs-run` (NSO
-runtime directory is to keep NSO’s database, state files, logs and other
-files. At any time if you need to start NSO, make sure that you are
-situated at NSO runtime directory)
-
 
 The lab contains 5 scenarios.
 
@@ -87,7 +90,7 @@ The lab contains 5 scenarios.
     - Scenario 4: Complete the service
     discovery by resetting the reference count.
 
--   Scenario 5 (extra credit): Discover/reconcile pre-existing L2VPN services,
+-   Scenario 5 (optional): Discover/reconcile pre-existing L2VPN services,
     automatically, through NSO’s northbound api MAAPI (Management Agent
     API), and Maggic API.
 
