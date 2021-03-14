@@ -101,7 +101,7 @@ using an editor such as `vi`.**
 
     ![](./media/media/l2vpnyang-new.png)
 
-1.  Change “`name`” to “`sr-name`” for both key and leaf:
+1.  Change “`name`” to “`sr-name`” for both key and leaf (at lines #28 and #29).
 
     ```
     augment /ncs:services {
@@ -116,8 +116,10 @@ using an editor such as `vi`.**
                 type string;
             }
     ```
+    
+4.	Delete of leaf-list device and leaf dummy blocks (from line #38 through line #48).
 
-1.  Add other service attributes: `order-number`, `customer-name`, after `sr-name` block.     
+1.  Add other service attributes: `order-number`, `customer-name`, after `sr-name` block (beginning at line #34.     
     ```
     
             leaf order-number {
@@ -130,7 +132,7 @@ using an editor such as `vi`.**
     ```
   
 1.  Add list attribute `pe-devices`
-    with `device-name` as the key. We use leaf reference (`leafref`) points
+    with `device-name` as the key (beginning at line #41). Use the leaf reference  (`leafref`) points
     to NSO’s device model: (`/ncs:devices/ncs:device/ncs:name`). In addition, add leaf attributes `Bundle-Ether` and `stag`. 
 
     ```
@@ -153,11 +155,8 @@ using an editor such as `vi`.**
         }
     }
     ``` 
-1. You can delete the unused leaf-list block, `device` and leaf block `dummy`:
-
-   ![](./media/media/dummy.png)
-
-1.  Complete content of the file is available at [L2Vpn.yang](https://github.com/weiganghuang/HOLOPS-1803/blob/master/solution/L2Vpn/src/yang/L2Vpn.yang)
+    
+1.  The content of the file is available at [L2Vpn.yang](https://github.com/weiganghuang/HOLOPS-1803/blob/master/solution/L2Vpn/src/yang/L2Vpn.yang)
 
 
     **Note: You can find the solution of the L2Vpn.yang from NSO server,
@@ -165,7 +164,7 @@ using an editor such as `vi`.**
 
 1.  Save the updated L2Vpn.yang file.
 
-2.  Compile project L2Vpn at your NSO server.
+9.	Enter the following three commands to compile the project L2Vpn at the NSO server
 
     ```
     [nso@nso ncs-run]$ cd ~/packages/L2Vpn/src
@@ -185,27 +184,24 @@ using an editor such as `vi`.**
     **Note: Make sure there is no compilation errors. Check `L2Vpn.yang`
     from /home/nso/solution/L2Vpn/src/yang/ for your reference**.
 
-### Complete l2vpn template to map service model to device model mapping
+### Complete L2VPN Template to Map Service Model to Device Model Mapping
 
-You have created the service model in the previous step. Next, L2Vpn
-service needs to send the proper CLI’s to PE
-devices. In NSO term, this is called service model to device model
-mapping.
+You have created the service model in the previous sections. Next, the L2Vpn service must send the proper CLIs to PE devices. In NSO terms, this is called service model to device model mapping.
+In most cases, the service to device mapping can be easily implemented through an xml template. You will use this approach for L2Vpn. The skeleton of the mapping template xml file, L2Vpn-template.xml, is auto generated. In this procedure, you will add the contents.
+We start with creating a sample Bundle Ether sub-interface (sub-interface 100.100, with vlan id 100) to a PE through the NSO CLI. NSO’s operation “commit dry-run” will have the NSO’s cisco-iosxr Ned calculate the device CLIs. The `commit dry-run outformat xml` command displays the output in xml format. This output is the starting point of the mapping template.
 
-In most cases, the service to device mapping can be easily implemented
-through xml template. You will use this approach for L2Vpn. The skeleton
-of mapping template xml file, `L2Vpn-template.xml` is auto generated. In
-this step, you will add the contents.
 
-We start with creating a sample Bundle Ether sub-interface
-(sub-interface 100.100, with vlan id 100) to a PE through NSO CLI. NSO’s
-operation `commit dry-run` will have NSO’s cisco-iosxr Ned calculate the
-device CLI’s. `commit dry-run outformat xml` displays the output in xml
-format. This output is the starting point of the mapping template.
 
-1.  At NSO server, configure a Bundle Ether
-    sub-interface 100.100 to the PE device asr9k0 through nsc cli.
+
+1.	At the NSO server, enter the following three commands to configure a Bundle Ether sub-interface 100.100 to the PE device asr9k0 via the NCS CLI. Make sure the third command `set devices....` is entered as one line.
+
+    ```
+    [nso@nso src]$ ncs_cli -u admin
+    admin@ncs>conf
+    admin@ncs% set devices device asr9k0 config cisco-ios-xr:interface Bundle-Ether-subinterface Bundle-Ether 100.100 mode l2transport description test-desc encapsulation dot1q vlan-id 100
     
+    ```
+Sample output:
 
     ```
     [nso@nso src]$ ncs_cli -u admin
@@ -220,9 +216,7 @@ format. This output is the starting point of the mapping template.
     admin@ncs%
     ```
 
-1.  From ncs cli config mode, issue `commit
-    dry run outformat xml`. This command will show the configuration
-    changes to be sent to device as xml format.
+2.	Now enter the `commit dry run outformat xml` command. This command will show the configuration changes to be sent to the device in .xml format.
 
     ```
     admin@ncs% commit dry-run outformat xml
@@ -260,7 +254,9 @@ format. This output is the starting point of the mapping template.
     [edit]
 
     ```
-1. The above xml format output will be used as reference for service configuration template. Exit from ncs cli without committing:
+**IMPORTANT! Make sure to perform the following step describing how to exit from ncs config mode and the ncs CLI.**
+
+1. We don’t want to commit the above changes to devices. Enter the following two commands to exit the NCS CLI without committing
 
     ```
     admin@ncs% exit no
@@ -268,13 +264,21 @@ format. This output is the starting point of the mapping template.
     admin@ncs> exit
     [nso@nso src]$
     ```
+2. Enter the following command to return to the [nso@nso ~]$ prompt
 
+
+    ```
+    [nso@nso L2Vpn]$ cd	 
+    [nso@nso]$ 
+
+    ```
+    
 1.  Now let’s complete L2Vpn template file, L2Vpn-template.xml
 
     **Option 1: Edit ~/packages/L2Vpn/templates/L2Vpn-template.xml from
  NSO server, using `vi` for example;**
 
-    **Option 2: At the [nso@nso ~]$ prompt, enter code ~/packages/L2Vpn/templates/L2Vpn-template.xml. This automatically launches the file in Visual Studio Code You can edit the file directly in Visual Studio Code. member to copy the file back to NSO server.**
+    **Option 2: At the [nso@nso ~]$ prompt, enter code ~/packages/L2Vpn/templates/L2Vpn-template.xml. This automatically launches the file in Visual Studio Code You can edit the file directly in Visual Studio Code.**
 
 1.  Edit file ~/packages/L2Vpn/templates/L2Vpn-template.xml. Replace
     the contents of the block of `<config-template
@@ -283,12 +287,9 @@ format. This output is the starting point of the mapping template.
 
     ![](./media/media/xml.png)
 
+Next we will plant the service attributes to replace the sample parameters used to create the Bundle Ether sub-interface (sub-interface 100.100, with vlan id 100). The service attributes are identified as an xpath from service root L2vpn, with proper syntax (inside {}) and context, summarized in the table in the next section.
 
-1.  Next you need to plant the service attributes to replace the sample
-    parameters used to create the Bundle Ether sub-interface
-    (sub-interface 100.100, with vlan id 100). The service attributes
-    are identified as an xpath from service root L2vpn, with proper
-    syntax (inside {}) and context, summarized:
+###NSO Ned (cisco-iosxr) to L2Vpn Attribute Mapping
     
     ![](./media/media/xml-attr.png)
     
