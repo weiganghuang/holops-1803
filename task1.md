@@ -542,6 +542,11 @@ In this section, you will test the service package L2Vpn. NSO running on the app
 	 }
 	 [ok][2020-12-29 08:42:24]
 	 [edit]
+	 admin@ncs%
+	 ```
+6.	Commit your changes.
+
+    ```
 	 admin@ncs% commit
 	 Commit complete.
 	 [ok][2020-12-29 08:42:31]
@@ -549,7 +554,8 @@ In this section, you will test the service package L2Vpn. NSO running on the app
 	 admin@ncs%
 	 ```
 
-1.  Check device configuration to confirm that Bundle-Ether sub-interface 100.100 created through service instance test is removed. :
+
+1.  Check the device configuration to confirm that Bundle-Ether sub-interface `100.100` created through service instance `test` is removed.
 
 	```
 	admin@ncs% show devices device asr9k0 config cisco-ios-xr:interface Bundle-Ether-subinterface Bundle-Ether 100.100
@@ -566,18 +572,18 @@ In this section, you will test the service package L2Vpn. NSO running on the app
     admin@ncs%
   	 ```
 
-1. Exit from ncs cli
+1. Enter the following commands to return to the nso@nso prompt.
 
    ```
    admin@ncs% exit
    [ok][2019-06-06 13:37:30]
    admin@ncs> exit
-   [nso@nso packages]$
+   [nso@nso]$
    ```
    
-You have completed Scenario 2. In this task, you created, deployed and tested
-L2Vpn service package. Next, you will learn service discovery and
-reconcile when dealing with brownfield network:
+In this scenario, you created, deployed, and tested an L2Vpn service package. Next, you will learn service discovery and reconcile when dealing with a brownfield network.
+
+**Thi concludes scenario 2. Continue with the following**
 
 [Scenario 3 Service discovery and reconciliation A: Create L2Vpn service instances from pre-existing configuration](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task2.md)
 --------------------------------------------------
