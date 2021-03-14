@@ -39,7 +39,7 @@ The service YANG model:
 
 ### Create Service Skeleton 
 
-1.  1.	From the NSO vm  create a service skeleton package using
+1.  From the NSO vm  create a service skeleton package using
     `ncs-make-package` command, name it `L2Vpn`.
     
     ```
@@ -97,8 +97,7 @@ using an editor such as `vi`.**
 **Option 2: At the `[nso@nso ~]$` prompt, enter `code ~/packages/L2Vpn/src/yang/L2Vpn.yang`. This automatically launches the file in Visual Studio Code You can edit the file directly in Visual Studio Code.**
 
 
-1.  The auto-generated `L2Vpn.yang` file contains several skeleton blocks. We will update the  L2Vpn block to add service attributes. Modify the
-    generated Yang file, locate the block starts with `list L2Vpn`:
+1.  The auto-generated `L2Vpn.yang` file contains several skeleton blocks. We will update the  L2Vpn block to add service attributes. To modify the generated Yang file, first locate the block that starts with `list L2Vpn`:
 
     ![](./media/media/l2vpnyang.png)
 
