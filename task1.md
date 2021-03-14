@@ -254,7 +254,7 @@ Sample output:
     [edit]
 
     ```
-**IMPORTANT! Make sure to perform the following step describing how to exit from ncs config mode and the ncs CLI.**
+    **IMPORTANT! Make sure to perform the following step describing how to exit from ncs config mode and the ncs CLI.**
 
 1. We don’t want to commit the above changes to devices. Enter the following two commands to exit the NCS CLI without committing
 
@@ -285,7 +285,31 @@ Sample output:
     xmlns="http://tail-f.com/ns/config/1.0">` with the output of `commit
     dry run outformat xml` command  at the previous step:
 
-    ![](./media/media/xml.png)
+    ```
+    <config-template xmlns="http://tail-f.com/ns/config/1.0">
+      <devices xmlns="http://tail-f.com/ns/ncs">
+               <device>
+                 <name>asr9k0</name>
+                 <config>
+                   <interface xmlns="http://tail-f.com/ned/cisco-ios-xr">
+                     <Bundle-Ether-subinterface>
+                       <Bundle-Ether>
+                         <id>100.100</id>
+                         <mode>l2transport</mode>
+                         <description>test-desc</description>
+                         <encapsulation>
+                           <dot1q>
+                             <vlan-id>100</vlan-id>
+                           </dot1q>
+                         </encapsulation>
+                       </Bundle-Ether>
+                     </Bundle-Ether-subinterface>
+                   </interface>
+                 </config>
+               </device>
+             </devices>
+      </config-template>
+    ```
 
 Next we will plant the service attributes to replace the sample parameters used to create the Bundle Ether sub-interface (sub-interface 100.100, with vlan id 100). The service attributes are identified as an xpath from service root L2vpn, with proper syntax (inside {}) and context, summarized in the table in the next section.
 
