@@ -202,6 +202,7 @@ The device attribute to service attribute mapping:
 
 	[edit]
 	```
+	
 4.	Enter the following commands to exit from ncs cli.
 
    ```
