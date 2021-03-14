@@ -143,12 +143,9 @@ The device attribute to service attribute mapping:
 ![NSO Ned (cisco-iosxr) to L2Vpn attribute mapping example](./media/media/device-mapping.png)
 
 
-1.  Create two service instances, name them as
-    test1 and test2 to match two pre-existing configurations 
+1.  Create two service instances, name them test1 and test2 to match two pre-existing configurations (refer above mapping table). 
     
-    **Note: Since you are creating L2Vpn service instances to match the
-    pre-existing configurations, make sure the service attributes
-    match exactly to what appear in device configuration.**
+    **NOTE: Since you are creating L2Vpn service instances to match the pre-existing configurations, make sure the service attributes match exactly to what appear in the device configuration.**
 
 	 ```
 	 [nso@nso ncs-run]$ ncs_cli -u admin
@@ -175,12 +172,10 @@ The device attribute to service attribute mapping:
 
 	 ```
   
-1. Confirm “commit dry-run” output is **empty**.
+1. Confirm that the output of `commit dry-run` is  **empty**.
 	
 
-   **Make sure you are still in ncs cli’s config mode**, **if “commit
-    dry-run” output is not empty, do not continue. Check the attribute
-    values at the previous step.**
+   **NOTE: Make sure you are still in NCS CLI config mode. If the output of `commit dry-run` is not empty, do not continue. Re-check the attribute values entered in step 1..**
 
 	```
 	admin@ncs% commit dry-run outformat native  
