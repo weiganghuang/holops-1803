@@ -15,20 +15,12 @@ A service provider requires an orchestration tool to auto-configure L2VPN. The n
 Our job is to create the service package. As shown below, the service gets a list of PEs. For each PE, it needs to create a Layer 2 transport Bundle-Ethernet sub-interface, where the PE Port number identifies the Bundle-Ethernet interface. The Service tag (stag) is the VLAN id to be encapsulated. The stag is also used as sub-interface id of the Bundle-Ethernet port. Customer name and order number must be configured as the description of the sub-interfaces.
 
 
-* The service gets a list of PE’s. 
-* Each PE contains a Layer 2 transport Bundle-Ethernet sub-interface, where PE
-Port number is to identify the Bundle-Ethernet interface. 
-* Service tag (stag) is the VLAN id to be encapsulated. stag is also used as
-sub-interface id of Bundle-Ethernet port. 
-* Customer name and order number
-need to be put as the description of the sub-interfaces.
-* Service Attributes:
+Service Attributes:
 
 ![](./media/media/service-attr.png)
 
 
-* CLI's to be configured on PE for L2VPN
-Service
+CLI commands to be configured on PE for L2VPN service:
 
   ```
   interface Bundle-Ether <PE Port number>.<stag>l2transport 
@@ -36,26 +28,18 @@ Service
   encapsulation dot1q <stag>
   ```
 
-In this task, you will create a service package skeleton, and a service
-Yang model to capture the service attributes. You will
-then create service to device mapping to support the configuration of
-CLIs. At the end, you will deploy the service package
-onto your NSO host.
+In this scenario, you will create a service package skeleton and a service Yang model to capture the service attributes shown in the table above. You will then create service-to-device mapping to support the configuration of CLIs as shown above. Finally, you will deploy the service package onto your NSO host.
+The service model is illustrated in the figure that follows. As shown in the diagram, L2Vpn is modelled as a list of ncs services. “sr-name” is the key of the list. Each L2Vpn contains leaf nodes of order-number and customer-name. In addition, it contains a list of pe-devices, each with a Bundle-Ether port and a stag (service tag).
+
 
 The service YANG model:
 
 ![](./media/media/image10.png)
 
-As shown in the
-diagram, L2Vpn is modelled as a list of ncs services. `sr-name` is the
-key of the list. Each L2Vpn contains leaf nodes of `order-number` and
-`customer-name`. In addition, it contains a list of `pe-devices`, each with
-a `Bundle-Ether` port and an `stag` (service tag).
-
 
 ### Create Service Skeleton 
 
-1.  From NSO application VM, create a service skeleton package using
+1.  1.	From the NSO vm  create a service skeleton package using
     `ncs-make-package` command, name it `L2Vpn`.
     
     ```
@@ -66,7 +50,7 @@ a `Bundle-Ether` port and an `stag` (service tag).
 
     ```     
 
-1.  “ncs-make-package” creates a directory structure (`L2Vpn`), and skeleton of service files, let's check it out:
+1.  The **ncs-make-package** in step 1 creates a directory structure (`L2Vpn`), and a skeleton of service files, which we will verify.
 
     ```
     [nso@nso packages]$ cd ~/packages/L2Vpn
@@ -74,8 +58,8 @@ a `Bundle-Ether` port and an `stag` (service tag).
     package-meta-data.xml python README src templates test
     ```
 
-1.  Inspect the skeleton files, make sure files `Makefile`, `L2Vpn.yang` and
-    `L2Vpn-template.xml` are created:
+1.  After completing step 2 above, enter the following two commands to view the skeleton files.  Make sure files `Makefile`, `L2Vpn.yang` and
+    `L2Vpn-template.xml` are available:
 
     ```
     [nso@nso L2Vpn]$ tree src
@@ -92,22 +76,28 @@ a `Bundle-Ether` port and an `stag` (service tag).
     0 directories, 1 file
 
     ```
+4.	Enter the following command to return to the [nso@nso ~]$ prompt
 
-### Update the auto-generated L2Vpn.yang
+
+    ```
+    [nso@nso L2Vpn]$ cd	 
+    [nso@nso]$ 
+
+    ```
+
+### Update the Auto-generated L2Vpn.yang
 
 The skeleton of `L2Vpn.yang` file is auto-generated as part of
-`ncs-make-package` command. In this step, you will update the
-auto-generated Yang file, `L2Vpn.yang` to model the L2Vpn service.
+`ncs-make-package` command. In this procedure, you will update the
+auto-generated Yang file, `L2Vpn.yang` to model the L2Vpn service. Use one of the following options to open and edit the file:
 
 **Option 1: Edit `~/packages/L2Vpn/src/yang/L2Vpn.yang` from NSO server,
-using `vi` for example;**
+using an editor such as `vi`.**
 
-**Option 2: At the `[nso@nso ~]$` prompt, enter `code ~/packages/L2Vpn/src/yang/L2Vpn.yang`. This automatically launches the file in Visual Studio Code You can edit the file directly in Visual Studio Code. member to copy
-the file back to NSO server.**
+**Option 2: At the `[nso@nso ~]$` prompt, enter `code ~/packages/L2Vpn/src/yang/L2Vpn.yang`. This automatically launches the file in Visual Studio Code You can edit the file directly in Visual Studio Code. **
 
 
-1.  The auto-generated `L2Vpn.yang` file contains several skeleton blocks.
-    You need to update L2Vpn block to add service attributes. Modify the
+1.  The auto-generated `L2Vpn.yang` file contains several skeleton blocks. We will update the  L2Vpn block to add service attributes. Modify the
     generated Yang file, locate the block starts with `list L2Vpn`:
 
     ![](./media/media/l2vpnyang.png)
