@@ -94,7 +94,7 @@ auto-generated Yang file, `L2Vpn.yang` to model the L2Vpn service. Use one of th
 **Option 1: Edit `~/packages/L2Vpn/src/yang/L2Vpn.yang` from NSO server,
 using an editor such as `vi`.**
 
-**Option 2: At the `[nso@nso ~]$` prompt, enter `code ~/packages/L2Vpn/src/yang/L2Vpn.yang`. This automatically launches the file in Visual Studio Code You can edit the file directly in Visual Studio Code. **
+**Option 2: At the `[nso@nso ~]$` prompt, enter `code ~/packages/L2Vpn/src/yang/L2Vpn.yang`. This automatically launches the file in Visual Studio Code You can edit the file directly in Visual Studio Code.**
 
 
 1.  The auto-generated `L2Vpn.yang` file contains several skeleton blocks. We will update the  L2Vpn block to add service attributes. Modify the
