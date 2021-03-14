@@ -313,7 +313,7 @@ Sample output:
 
 Next we will plant the service attributes to replace the sample parameters used to create the Bundle Ether sub-interface (sub-interface 100.100, with vlan id 100). The service attributes are identified as an xpath from service root L2vpn, with proper syntax (inside {}) and context, summarized in the table in the next section.
 
-###NSO Ned (cisco-iosxr) to L2Vpn Attribute Mapping
+### NSO Ned (cisco-iosxr) to L2Vpn Attribute Mapping
 
 NCS CLI Command:
 
