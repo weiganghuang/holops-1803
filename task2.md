@@ -73,12 +73,24 @@ As previously mentioned, the pre-existing L2VPN configurations are brought in to
 	[edit]
 
 	```
-  
+4.	Enter the following commands to return to the nso@nso prompt.
+    
+    ```
+    admin@ncs% exit
+    [ok][2021-01-22 14:26:29]
+    admin@ncs> exit
+    [nso@nso ~]$
+    ```
+
+      
 1.  Check NSO’s device model to view pre-existing Bundel-Ether
-    sub-interfaces
+    sub-interfaces.
 
 	```
-	admin@ncs% show devices device asr9k0 config cisco-ios-xr:interface Bundle-Ether-subinterface
+	nso@nso ~]$ ncs_cli -u admin
+   admin connected from 198.18.133.252 using ssh on nso
+   admin@ncs> conf
+   admin@ncs% show devices device asr9k0 config cisco-ios-xr:interface Bundle-Ether-subinterface
 	```
 	
 	Sample output:
