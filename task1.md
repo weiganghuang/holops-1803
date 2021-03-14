@@ -376,7 +376,7 @@ Now we are ready to deploy the service package to NSO application.
 
 1.  Now we’ll make the package L2Vpn available for NSO. This involves creating a symbolic link to L2Vpn at the `packages` directory in the NSO runtime directory (`/home/nso/ncs-run/packages`). Enter the following three commands.
 
-**NOTE: Make sure you are creating the symbolic link at the `~/ncs-run/packages` directory.**
+  **NOTE: Make sure you are creating the symbolic link at the `~/ncs-run/packages` directory.**
 
     ```
     [nso@nso]$ cd ~/ncs-run/packages
