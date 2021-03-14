@@ -39,7 +39,7 @@ This lab highlights the following features:
 Intended Audience
 =============
 
-**IMPORTANT!**This lab assumes the user meets the following prerequisites:
+**IMPORTANT!** This lab assumes the user meets the following prerequisites:
 
 -   Basic understanding of network orchestration, NETCONF/Yang
 
