@@ -3,11 +3,17 @@
 HOLOPS-1803
 ===========
 
-Task 1 Create L2VPN Service Package
+ Scenario 2.	Create L2VPN Service Package
 ----------------------------
- 
+
+In this scenario, the user will learn to create a service package for L2VPN. It starts with creating the service package skeleton, editing the service yang model based on the requirement, creating an xml template for service to device attributes mapping, deploying and validating the service package. This scenario shows all the steps of building an NSO package for service lifecycle management.
 
 Requirements of the service package:
+
+A service provider requires an orchestration tool to auto-configure L2VPN. The network is shown in the figure on the next page. The service provider decided to use NSO. We need to create a service package for the job. After finalizing the requirements, we can see that the table below lists the parameters of the service package and the command syntax text lists the CLI commands to be configured.
+
+Our job is to create the service package. As shown below, the service gets a list of PEs. For each PE, it needs to create a Layer 2 transport Bundle-Ethernet sub-interface, where the PE Port number identifies the Bundle-Ethernet interface. The Service tag (stag) is the VLAN id to be encapsulated. The stag is also used as sub-interface id of the Bundle-Ethernet port. Customer name and order number must be configured as the description of the sub-interfaces.
+
 
 * The service gets a list of PE’s. 
 * Each PE contains a Layer 2 transport Bundle-Ethernet sub-interface, where PE
