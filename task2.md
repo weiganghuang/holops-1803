@@ -147,6 +147,7 @@ The device attribute to service attribute mapping:
     
     **NOTE: Since you are creating L2Vpn service instances to match the pre-existing configurations, make sure the service attributes match exactly to what appear in the device configuration.**
 
+    Enter config mode:
 	 ```
 	 [nso@nso ncs-run]$ ncs_cli -u admin
 
@@ -159,7 +160,7 @@ The device attribute to service attribute mapping:
 
 	[edit]
 	 ```
-	 
+	 Create service instances:
 	 ```
 	admin@ncs% set services L2Vpn test1 order-number L1111318 customer-name L_ford_318 pe-devices asr9k0 Bundle-Ether 100 stag 2188
 	[ok][2020-12-29 09:36:33]
