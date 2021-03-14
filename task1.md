@@ -193,8 +193,6 @@ In most cases, the service to device mapping can be easily implemented through a
 We start with creating a sample Bundle Ether sub-interface (sub-interface 100.100, with vlan id 100) to a PE through the NSO CLI. NSO’s operation “commit dry-run” will have the NSO’s cisco-iosxr Ned calculate the device CLIs. The `commit dry-run outformat xml` command displays the output in xml format. This output is the starting point of the mapping template.
 
 
-
-
 1.	At the NSO server, enter the following three commands to configure a Bundle Ether sub-interface 100.100 to the PE device asr9k0 via the NCS CLI. Make sure the third command `set devices....` is entered as one line.
 
     ```
@@ -292,10 +290,19 @@ Sample output:
 Next we will plant the service attributes to replace the sample parameters used to create the Bundle Ether sub-interface (sub-interface 100.100, with vlan id 100). The service attributes are identified as an xpath from service root L2vpn, with proper syntax (inside {}) and context, summarized in the table in the next section.
 
 ###NSO Ned (cisco-iosxr) to L2Vpn Attribute Mapping
+
+NCS CLI Command:
+
+![](./media/media/nso-set-cli.png)
+
+Mapping:
     
-    ![](./media/media/xml-attr.png)
-    
-    The final template file L2Vpn-template.xml should look like the following: 
+![](./media/media/xml-attr-mapping.png)
+
+1. Edit the template file opened in the previous section. In the block of `<config-template>`, replace the green highlighted values with the values highlighted in yellow in the above table. For example, replace asr9k0with {pe-devices/device-name}, replace 100.100 with {./Bundle-Ether}.{./stag}, replace test test-desc with {/customer-name}-{order-number}, and replace 100 with {./stag}.
+![](./media/media/xml-template.png)
+
+2. The final template file L2Vpn-template.xml should look like the following. Correct errors, if any, before you proceed.
  
     ```
     <config-template xmlns="http://tail-f.com/ns/config/1.0">
@@ -323,22 +330,17 @@ Next we will plant the service attributes to replace the sample parameters used 
     </config-template>
   
     ```
-    Complete tempalte file is available at [L2Vpn-template.xml](https://github.com/weiganghuang/HOLOPS-1803/blob/master/solution/L2Vpn/templates/L2Vpn-template.xml)
  
-    **You can find the solution template file from
-    `~/solution/L2Vpn/templates` of your NSO server, for your
-    reference.**
+    **NOTE: For reference, you can find the solution template file from 
+    `~/solution/L2Vpn/templates` of your NSO server.**
 
-1.  Save `L2Vpn-template.xlm`. If you edit the file from the windows
-    jumpstart server, remember to copy the file to NSO server, to
-    `~/packages/L2Vpn/templates/`
+1.  Save `L2Vpn-template.xlm`.
 
-### Deploy the service package L2Vpn
+### Deploy the Service Package L2Vpn
 
-Now you are ready to deploy the service package to NSO application.
+Now we are ready to deploy the service package to NSO application.
 
-1.  At NSO server, check current packages in your NSO installation, make
-    sure cisco-iosxr ned appear under
+1.  On the NSO server, check current packages in your NSO installation, make sure make sure cisco-iosxr ned appear under
     `ncs-run/packages`:
 
     ```
@@ -348,9 +350,9 @@ Now you are ready to deploy the service package to NSO application.
 
     ```
 
-1.  Make package L2Vpn available for NSO. Creating a symbolic link to
-    `L2Vpn` at the `packages` directory of your NSO runtime
-    (`/home/nso/ncs-run/packages`):
+1.  Now we’ll make the package L2Vpn available for NSO. This involves creating a symbolic link to L2Vpn at the `packages` directory in the NSO runtime directory (`/home/nso/ncs-run/packages`). Enter the following three commands.
+
+**NOTE: Make sure you are creating the symbolic link at the `~/ncs-run/packages` directory.**
 
     ```
     [nso@nso]$ cd ~/ncs-run/packages
@@ -362,17 +364,18 @@ Now you are ready to deploy the service package to NSO application.
 
 
     ```
+1. Enter the following command to return to the [nso@nso ~]$ prompt
 
-    **Note: Make sure you are creating the symbolic link at
-    `~/ncs-run/packages directory`.**
 
-1.  From NSO cli (ncs_cli), reload packages to complete the package
-    deployment process.
+    ```
+    [nso@nso packages]$ cd	 
+    [nso@nso]$ 
 
-    **Make sure the reload result is true. If you see errors, check the
-    solution from ~/packages/solution directory for reference.**
-    
-    **Note: It may take a few minutes to complete package reload**
+    ```
+
+1.  On the NSO CLI, enter the following three commands to reload the packages to complete the package deployment process and then verify.
+
+    **NOTE: Make sure the reload result is true. If you see errors, you can check the solution from `~/packages/solution`**
 
     ```
     [nso@nso ~]$ ncs_cli -u admin
@@ -410,16 +413,21 @@ Now you are ready to deploy the service package to NSO application.
 	[ok][2020-12-09 08:23:00]
 
     ```
+    
+1. Enter the following command to return to the [nso@nso ~]$ prompt
+
+
+    ```
+    admin@ncs> exit 
+    [nso@nso]$ 
+
+    ```
 
 ### Test the service package
 
-At this step, you will test the service package L2Vpn. The NSO running
-on the application server has 3 PE devices. You will create a test L2Vpn
-service instance.
+In this section, you will test the service package L2Vpn. NSO running on the application server has 3 PE devices. You will create a test L2Vpn service instance.
 
-1.  Create an L2Vpn service instance, name it
-    “test”, set customer name as duoabc, and order-number 123. In
-    addition, set pe-devices as asr9k0, Bundle-Ether 100, and stag 100 :
+1. 	Create an L2Vpn service instance, and name it `test`, set customer name as `duoabc`, and order-number `123`. In addition, set pe-devices as `asr9k0`, Bundle-Ether `100`, and stag `100`.
 
     ```
   	admin@ncs>conf
@@ -431,8 +439,7 @@ service instance.
   	[edit]
 	```
 
-1.  Operation “Commit dry run” shows the CLI’s to be configured to
-    asr9k0:
+1.  Issuing the  `Commit dry run` shows the CLI’s to be configured to the asr9k0:
 
   	```
   	admin@ncs% commit dry-run outformat native 
@@ -455,9 +462,7 @@ service instance.
 	admin@ncs%  
   	```
   	
-1.  Commit the service instance test. After commit, the service instance
-    test is persistent in NSO’s in memory database cdb, and the
-    cli’s from above are committed to asr9k0.
+1.  Commit the service instance test. After the commit, the service instance test is persistent in NSO’s memory database cdb, and the CLI commands from step 2 are committed to asr9k0.
 
   	```
   	admin@ncs% commit
@@ -479,9 +484,10 @@ service instance.
 
 	[edit]
 	admin@ncs%
+	
   	```
-
-1.  Check device configuration to see the intended CLI’s are configured at `asr9k0`:
+  	
+1. Check the device configuration to verify that the intended CLI commands are configured at the  `asr9k0`:
 
 	```	
 	admin@ncs% show devices device asr9k0 config cisco-ios-xr:interface Bundle-Ether-subinterface Bundle-Ether 100.100
