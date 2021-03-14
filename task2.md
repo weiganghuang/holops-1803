@@ -210,7 +210,7 @@ The device attribute to service attribute mapping:
    [ok][2020-06-02 07:58:37]
    admin@ncs> exit
    [nso@nso packages]$
-	```
+   ```
   
 ### Observe the issues 
 
