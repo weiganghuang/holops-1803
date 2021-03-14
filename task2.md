@@ -3,46 +3,46 @@
 HOLOPS-1803
 ===========
 
-Task 2: Service discovery and reconciliation A: Create L2Vpn service instances from pre-existing configuration. 
+Scenario 3.	Service Discovery and Reconciliation: Create L2Vpn Service Instances from Pre-existing Configuration 
 --------------------------------------------------------------------------------------------------------
 
-Discover and reconcile the pre-existing services in the
-network is an important aspect of service life cycle management. The pre-existing service configurations can be brought into
-NSO’s device model through NSO CLI operation “sync-from”. By default,
-NSO assumes that devices own the pre-existing configuration. This is to
-ensure that the out-of-band configurations are not accidentally
-overwritten by NSO’s service operations.
+One of the typical brownfield service orchestration requirements is to have NSO discover and reconcile the pre-existing services in the network. The pre-existing service configurations can be brought into NSO’s device model through NSO CLI operation “sync-from”. By default, NSO assumes that devices own the pre-existing configuration. This is to ensure that the out-of-band configurations are not accidentally overwritten by NSO’s service operations. 
 
-To have NSO fully manage the lifecycle
-of the pre-existing services, we need to perform service discovery and
-reconciliation.
+However, in many cases, we need to have NSO fully manage the lifecycle of the pre-existing services. This is called NSO service discovery and reconciliation.
 
-NSO service discovery and reconciliation for brownfield starts with
-creating service instances (the service instances that match the
-pre-existing service configurations. After the service instances are
-created, we need to transfer the ownership of the configuration to NSO.
+NSO service discovery and reconciliation for brownfield starts with creating service instances (the service instances that match the out-of-band service configurations. After the service instances are created, we need to transfer the ownership of the configuration to NSO. 
 
-In this lab, the PE devices (asr9k0, asr9k1 and asr9k2) have
-pre-existing L2VPN services that are configured out-of-band. The device configurations are synced to NSO’s device model via NSO’s
-`sync-from` operation.
+In this scenario, you will create L2Vpn service instances to match the pre-existing configurations. You will also observe service lifecycle management issues without transferring the ownership of the pre-existing configuration.
 
-Pre-existing L2VPN configuration on PE devices:
+In this lab, the PE devices (asr9k0, asr9k1 and asr9k2) all have pre-existing L2VPN services that are configured out-of-band. The configuration commands below lists part of them. They are synced to NSO’s device model via NSO’s `sync-from` operation.
+
+### Pre-existing L2VPN configuration on PE devices:
 
 
 ![Pre-existing L2VPN configuration on PE devices](./media/media/preconfig.png)
 
-In this task, you will create L2Vpn service instances to match the
-pre-existing configurations. You will also observe service lifecycle
-management issues without transferring the ownership of the pre-existing
-configuration.
+
 
 ### Check device model for pre-existing L2VPN configurations
 
-As mentioned, the pre-existing L2VPN configurations are brought in to
-NSO’s device model through `sync-from` operation.
+As previously mentioned, the pre-existing L2VPN configurations are brought in to NSO’s device model through a `sync-from` operation.
 
-1.  Perform a sync-from to bring the
-    pre-existing configurations to NSO’s device model
+1. Enter the following commands to make sure we have a working L2VPN package (from Scenario 1) in the setup. The operation takes about one minute to complete.
+
+   ```
+	[nso@nso ~]$ cd ansible
+	[nso@nso ansible]$ ansible-playbook ~/ansible/set-task1.yml
+	```
+	
+2.	Enter the following command to return to the nso@nso prompt.  
+
+   ```
+	[nso@nso ansible]$ cd
+	[nso@nso ~]$
+	```
+
+1. Perform a sync-from to bring the
+    pre-existing configurations to NSO’s device model.
 
 	```
 	[nso@nso ~]$ ncs_cli -u admin
