@@ -202,7 +202,7 @@ The device attribute to service attribute mapping:
 
 	[edit]
 4.	Enter the following commands to exit from ncs cli.
-5. 
+
    ```
 	admin@ncs% exit
 	[ok][2020-06-02 07:58:37]
