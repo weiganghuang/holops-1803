@@ -136,7 +136,11 @@ Recall what we have done in Scenario 2 (Create L2VPN Service Package), this is r
 
 Pre-existing Bundle-Ether Sub Interface Configuration:
 
-![NSO Ned (cisco-iosxr) to L2Vpn attribute mapping example](./media/media/reverse.png)
+![NSO Ned (cisco-iosxr) to L2Vpn attribute mapping example](./media/media/pre-cli.png)
+
+The device attribute to service attribute mapping:
+
+![NSO Ned (cisco-iosxr) to L2Vpn attribute mapping example](./media/media/device-attr-mapping.png)
 
 
 1.  Create two service instances, name them as
