@@ -131,9 +131,7 @@ HOLOPS-1803
    [nso@nso ncs-run]$
    ```
 
-**This concludes scenario 1.**  
-   
-Next Scenario: Create a service package
+**This concludes scenario 1. Next Scenario: Create a service package, continue with the following **
 
  [Scenario 2 Create L2VPN Service Package](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task1.md)
 ------
