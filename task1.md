@@ -492,11 +492,7 @@ In this section, you will test the service package L2Vpn. NSO running on the app
   	admin@ncs% commit
 	Commit complete.
 	[ok][2020-12-29 08:21:18]
-
 	[edit]
-	```
-	
-	```
 	admin@ncs% show services L2Vpn test
 	order-number  123;
 	customer-name duoabc;
@@ -532,13 +528,11 @@ In this section, you will test the service package L2Vpn. NSO running on the app
     admin@ncs%
     ```
 
-1.  Delete service instance “test” from NSO
-    CLI (config mode).
+2. Delete the service instance `test` using the NSO CLI, then perform a `commit dry-run` operation.
 
-	 ```
-	 admin@ncs% delete services L2Vpn test
+     ```
+     admin@ncs% delete services L2Vpn test
 	 [ok][2020-12-29 08:42:24]
-
 	 admin@ncs% commit dry-run outformat native
 	 native {
     	device {
@@ -547,16 +541,13 @@ In this section, you will test the service package L2Vpn. NSO running on the app
     	}
 	 }
 	 [ok][2020-12-29 08:42:24]
-
 	 [edit]
 	 admin@ncs% commit
 	 Commit complete.
 	 [ok][2020-12-29 08:42:31]
-
 	 [edit]
 	 admin@ncs%
-
-  	 ```
+	 ```
 
 1.  Check device configuration to confirm that Bundle-Ether sub-interface 100.100 created through service instance test is removed. :
 
