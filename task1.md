@@ -164,7 +164,7 @@ using an editor such as `vi`.**
 
 1.  Save the updated L2Vpn.yang file.
 
-9.	Enter the following three commands to compile the project L2Vpn at the NSO server
+9.	Enter the following commands to compile the project L2Vpn at the NSO server
 
     ```
     [nso@nso ncs-run]$ cd ~/packages/L2Vpn/src
