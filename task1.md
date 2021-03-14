@@ -583,7 +583,7 @@ In this section, you will test the service package L2Vpn. NSO running on the app
    
 In this scenario, you created, deployed, and tested an L2Vpn service package. Next, you will learn service discovery and reconcile when dealing with a brownfield network.
 
-**Thi concludes scenario 2. Continue with the following**
+**This concludes scenario 2. Continue with the following**
 
 [Scenario 3 Service discovery and reconciliation A: Create L2Vpn service instances from pre-existing configuration](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task2.md)
 --------------------------------------------------
