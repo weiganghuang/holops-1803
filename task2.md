@@ -39,7 +39,7 @@ As previously mentioned, the pre-existing L2VPN configurations are brought in to
    ```
 	 [nso@nso ansible]$ cd
 	 [nso@nso ~]$
-	```
+	 ```
 
 1. Perform a sync-from to bring the
     pre-existing configurations to NSO’s device model.
