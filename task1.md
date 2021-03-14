@@ -17,7 +17,7 @@ Our job is to create the service package. As shown below, the service gets a lis
 
 Service Attributes:
 
-![](./media/media/service-attr.png)
+![](./media/media/service-attr-new.png)
 
 
 CLI commands to be configured on PE for L2VPN service:
