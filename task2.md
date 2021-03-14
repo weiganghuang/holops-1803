@@ -201,6 +201,7 @@ The device attribute to service attribute mapping:
 	[ok][2020-12-29 09:42:50]
 
 	[edit]
+	```
 4.	Enter the following commands to exit from ncs cli.
 
    ```
