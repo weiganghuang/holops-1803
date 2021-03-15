@@ -56,13 +56,30 @@ use `vi` for example;**
 1. As shown below, action reconcile-l2vpn is under a container action.
 	![](./media/media/l2vpnaction.png)
 
-2. Change the generated generic action name “double” to
-    `reconcile-l2vpn`, and action point `l2vpnreconcile-action` to
-    “reconcile”. In addition, as specified above, replace the default
-    input parameter `number` with `device-name`, and the default output
-    parameter `result1 with `success` and `message`.
+4.	On line #25, change the generated generic action name `double` to `reconcile-l2vpn`, and actionpoint `l2vpnreconcile-action` to `reconcile` (on line #26). 
 
-    The contents of l2vpnreconcile.yang should look like the following, available at [l2vpnreconcile.yang](https://github.com/weiganghuang/HOLOPS-1803/blob/master/solution/l2vpnreconcile/src/yang/l2vpnreconcile.yang)
+5.	Replace the input block (lines #27 to #31) with the following input parameter (`device-name`). 
+
+	```
+	input {
+          leaf device-name {
+            type leafref {
+              path "/ncs:devices/ncs:device/ncs:name" ;
+            }
+        }
+    ```
+6.	Replace output block (lines #35 to #39) with the following output parameters (`message` , `success`). 
+	```
+	output {
+         leaf message {
+           type string;
+         }
+         leaf success {
+           type boolean;
+         }
+   ```
+7.	The complete contents of l2vpnreconcile.yanng should look like the following. Correct any errors before you proceed.		
+
     
     ```
     module l2vpnreconcile {
