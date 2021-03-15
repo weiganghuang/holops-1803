@@ -157,7 +157,7 @@ After a sync-from operation, the pre-existing configurations are brought into NS
 
 The logic flow is illustrated as pseudo code 
 
-**Flow of Create and Reconcile L2VPN Serv**
+**Flow of Create and Reconcile L2VPN Services**
 
   ```
   1.  Start write transaction of cdb 
@@ -185,15 +185,11 @@ The logic flow is illustrated as pseudo code
 This section explains of the contents of main.py using code snips as examples. This is just for reference. No action is required.
 
 1. The snip of starting write transaction of cdb: 
-
-   ```
-   import ncs
-   from ncs.application import Service
-   from ncs.dp import Action
-   import random
-   import _ncs
-   ```
-
+	![](./media/media/snip1.png)
+	For each Bundle Ether sub-interface in device config, create one L2Vpn service instance. Similar to manual service instance creation as in Scenario 3, we use device attributes to populate service instance attributes. Use the interface description plus the pe device name as the sr-name for an L2Vpn service instance. Parse the interface description to extract customer name and order number and set attributes order-number and customer-name.
+	
+	
+  
 1. We will create L2Vpn service instances in NSO cdb. Inside `cb_action`, open write transaction after initialize local variables `pe_device` and `srs`:
    
    ```
