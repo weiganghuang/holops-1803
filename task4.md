@@ -4,41 +4,25 @@ HOLOPS-1803
 ===========
 
 
-Scenario 5 (Extra Credit): Create an NSO action to discover pre-existing L2VPN service instances automatically. 
+Scenario 5.	(Optional) Create an NSO Action to Discover Pre-existing L2VPN Service Instances Automatically 
 ----------------------------------------------------------------------------------------------------
 
-In the previous two scenarios, Scenario 3 and Scenario 4, you learned to discover
-pre-existing service configurations manually. As one can see, manually
-creating service instances to match all the attributes in pre-existing
-configurations is time consuming, tedious, and error prone. This
-approach does not scale for networks with fair amount of pre-existing
-services. To be able to support brownfield network service lifecycle
-management, we need to discover pre-existing services automatically.
+In previous scenarios, you learned to discover pre-existing service configurations manually. As one can see, manually creating service instances to match all the attributes in pre-existing configurations is time consuming, tedious, and error prone. This approach does not scale for networks with a significant number of pre-existing services. To be able to support brownfield network service lifecycle management, we must be able to discover pre-existing services automatically.
 
-There are several ways to auto-discover services. One of them is
-creating service instances from device model using NSO’s maapi and magic
-API’s, followed by resetting the ref-count for the service instances
-programmatically.
+There are several ways to auto-discover services. One of them is creating service instances from device model using NSO’s maapi and magic APIs, followed by resetting the ref-count for the service instances programmatically. 
 
-In this Scenario, you will learn how to create an NSO action to discover
-pre-existing L2VPN services through an NSO action.
+In this scenario, you will learn how to create an NSO action to discover pre-existing L2VPN services through an NSO action.
 
-   **Note: This Scenariorequires python programming, and knowledge of NSO
-    maagic and maapi API’s**.
+
+**NOTE: This scenario requires Python programming experience and knowledge of the NSO maagic and maapi APIs.**
 
 ### Create package skeleton for reconcile action
 
-In NSO, action callbacks are used to implement arbitrary operations in
-java or python. These operations can be basically anything, e.g.
-downloading a file, performing some test, resetting alarms, etc. We will
-create an action package, `l2vpnreconcile`, to perform L2Vpn service
-discovery. Although it can be easily extended, for simplicity, this lab
-designs the action to perform service discovery from one PE device.
+In NSO, action callbacks are used to implement arbitrary operations in java or python. These operations can be basically anything, for example, downloading a file, performing some test, resetting alarms, and so on. We will create an action package, l2vpnreconcile, to perform L2Vpn service discovery. Although it can be easily extended, for simplicity, this lab designs the action to perform service discovery from one PE device. 
 
-Similar to what we did at Scenario1, you will create the package skeleton
-first.
+We will create the package skeleton first.
 
-1. From NSO VM, create a skeleton package,
+1. From NSO VM create a skeleton package, and
     name it `l2vpnreconcile`
     
    ```
@@ -52,6 +36,8 @@ first.
    package-meta-data.xml python README src templates test
    
    ```
+   
+   
 ### Update l2vpnreconcile.yang file
 
 Action l2vpnreconcile has one input parameter, the PE that we wish to
