@@ -122,13 +122,22 @@ use `vi` for example;**
     }
 
     ```
-    **Note: Check
-    ~/solution/l2vpnreconcile/src/yang/l2vpnreconcile.yang for
-    reference.**
+    **NOTE: Refer to `~/solution/l2vpnreconcile/src/yang/l2vpnreconcile.yang` for reference..**
 
-1.  Save l2vpnreconcile.yang. If you edit the file from the windows jump
-    start server, make sure you copy the file back to NSO server, to
-    `/home/nso/packages/l2vpnreconcile/src/yang/`
+1.  Save l2vpnreconcile.yang. 
+9.	Compile the package l2vpnreconcile to check if the yang file has any syntax error. Make sure that there are no errors.
+	```
+	[nso@nso ~]$ cd ~/packages
+	[nso@nso packages]$ cd ~/packages/l2vpnreconcile/src
+	[nso@nso src]$ make clean all
+	rm -rf ../load-dir java/src//
+	mkdir -p ../load-dir
+	mkdir -p java/src//
+	....
+	....
+	[nso@nso src]$
+	```
+
 
 ### Clean up generated python script
 
