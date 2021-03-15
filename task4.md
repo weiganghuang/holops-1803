@@ -191,8 +191,28 @@ This section explains of the contents of main.py using code snips as examples. T
 	![](./media/media/snip2.png)
 	
 	For each Bundle Ether sub-interface in device config, create one L2Vpn service instance. Similar to manual service instance creation as in Scenario 3, we use device attributes to populate service instance attributes. Use the interface description plus the pe device name as the sr-name for an L2Vpn service instance. Parse the interface description to extract customer name and order number and set attributes order-number and customer-name.
+	**Pre-existing Bundle Ether sub interface configuration:**
+	![](./media/media/pre-conf.png)
+	**Parse them as:**
+	![](./media/media/ds-model.png)
 	
+3.	The snip of parsing each Bundle-Ether sub interface
+	![](./media/media/snip3.png)
 	
+4.	The snip of creating PE node for the service instance and setting the attributes of Bundle Ether port number (id) and stag. 
+	![](./media/media/snip4.png)
+
+5.	The snip of invoking a dry-run action to make sure the output is empty and committing the service instances. It invokes a helper function `isDryRunEmpty`
+	![](./media/media/snip5.png)
+	
+6.	The snip of resetting the reference count as we have done in Scenario 4 via the NCS CLI. It invokes a helper function `redeploySrs` to reset the reference count of the services.	
+	![](./media/media/snip6.png)
+
+7.	The snip of the helper function `isDryRunEmpty`. 
+	![](./media/media/snip7.png)
+	
+8.	The snip of helper function `redeploySrs`. It performs the same operation via maapi. This is equivalent to what we have done in Scenario 4 via ncs cli.	
+	![](./media/media/snip8.png)
   
 1. We will create L2Vpn service instances in NSO cdb. Inside `cb_action`, open write transaction after initialize local variables `pe_device` and `srs`:
    
