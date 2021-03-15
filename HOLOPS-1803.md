@@ -52,7 +52,9 @@ Overview
 ========
 
 As an industry leading orchestration platform, the Cisco Network Services Orchestrator (NSO) is widely used to provide service lifecycle orchestration for hybrid networks. While new services are deployed using NSO service packages, service providers normally have a brownfield network, in which there are pre-existing configurations in the network orchestrated by legacy tools. For a brownfield network, NSO must discover and reconcile pre-existing services.
+
 In this lab, you will create a simple L2VPN service package to configure Layer 2 Transport encapsulation on Bundle Ethernet sub-interfaces; you will also discover and reconcile pre-existing L2VPN services from the network.
+
 The network is composed of simulated NSO NETSIM ASR devices (Cisco IOS-XR). You will create L2VPN services from CE-PE. This lab focuses on PE configuration. To simulate a brownfield network, the PE devices are populated with pre-existing L2VPN services
 
 TOPOLOGY
