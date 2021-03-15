@@ -31,7 +31,6 @@ We will create the package skeleton first.
    [nso@nso packages]$ cd l2vpnreconcile
    [nso@nso l2vpnreconcile]$ ls
    package-meta-data.xml python README src templates test
-   
    ```
    
 2.	Enter the following command to return to the nso@nso prompt.
