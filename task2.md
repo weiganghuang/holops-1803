@@ -147,7 +147,7 @@ The device attribute to service attribute mapping:
     
     **NOTE: Since you are creating L2Vpn service instances to match the pre-existing configurations, make sure the service attributes match exactly to what appear in the device configuration.**
 
-    Enter config mode:
+   Enter config mode:
 	 ```
 	 [nso@nso ncs-run]$ ncs_cli -u admin
 
@@ -215,6 +215,8 @@ The device attribute to service attribute mapping:
 ### Observe the Issues 
 
 As previously mentioned, although the service instances (`test1` and `test2`) matching the two pre-existing Bundle-Ether sub-interfaces are committed in NSO, NSO is not able to modify or delete the associated device configuration. This is because, by default, devices own the out-of-band configurations.
+
+We will verify by attempting delete the service instance created in the previous section. 
 
 1. Enter the following commands to delete the instance `test1`.
 
