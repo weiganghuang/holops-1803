@@ -324,6 +324,7 @@ In this section, you will run the reconcile-l2vpn action to discover the pre-exi
     Sample output:
     
     ```
+    admin@ncs> request action reconcile-l2vpn device-name asr9k0
     message Successfully created the services.
     success true
     [ok][2020-06-03 11:38:21]
