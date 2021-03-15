@@ -291,6 +291,7 @@ and
     Sample output:
     
     ```
+    admin@ncs> request packages reload
     >>> System upgrade is starting.
     >>> Sessions in configure mode must exit to operational mode.
     >>> No configuration changes can be performed until upgrade has completed.
