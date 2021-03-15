@@ -204,12 +204,12 @@ The device attribute to service attribute mapping:
 	
 4.	Enter the following commands to exit from ncs cli.
 
-   ```
-   admin@ncs% exit
-   [ok][2020-06-02 07:58:37]
-   admin@ncs> exit
-   [nso@nso packages]$
-   ```
+    ```
+    admin@ncs% exit
+    [ok][2020-06-02 07:58:37]
+    admin@ncs> exit
+    [nso@nso packages]$
+    ```
   
 ### Observe the Issues 
 
