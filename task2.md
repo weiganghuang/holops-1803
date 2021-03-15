@@ -147,11 +147,10 @@ The device attribute to service attribute mapping:
     
     **NOTE: Since you are creating L2Vpn service instances to match the pre-existing configurations, make sure the service attributes match exactly to what appear in the device configuration.**
 
-Enter config mode:
+	Enter config mode:
 
-	 ```
-	 [nso@nso ncs-run]$ ncs_cli -u admin
-
+	```
+	[nso@nso ncs-run]$ ncs_cli -u admin
 	admin connected from 128.107.235.22 using ssh on nso
 	admin@ncs> conf
 	Entering configuration mode private
@@ -160,9 +159,9 @@ Enter config mode:
 	[ok][2020-12-29 09:35:29]
 
 	[edit]
-	 ```
-	 Create service instances:
-	 ```
+	```
+	Create service instances:
+	```
 	admin@ncs% set services L2Vpn test1 order-number L1111318 customer-name L_ford_318 pe-devices asr9k0 Bundle-Ether 100 stag 2188
 	[ok][2020-12-29 09:36:33]
 
@@ -171,8 +170,7 @@ Enter config mode:
 	[ok][2020-12-29 09:39:25]
 
 	[edit]
-
-	 ```
+	```
   
 1. Confirm that the output of `commit dry-run` is  **empty**.
 	
