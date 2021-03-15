@@ -51,10 +51,10 @@ use `vi` for example;**
 
 1. Delete the service portion of the l2vpnreconcile.yang file (lines #39 to #63).
 
- ![](./media/media/l2vpnreconsileyang.png)
+	![](./media/media/l2vpnreconsileyang.png)
  
-3.	As shown below, action reconcile-l2vpn is under a container action.
- ![](./media/media/l2vpnaction.png)
+1. As shown below, action reconcile-l2vpn is under a container action.
+	![](./media/media/l2vpnaction.png)
 
 2. Change the generated generic action name “double” to
     `reconcile-l2vpn`, and action point `l2vpnreconcile-action` to
