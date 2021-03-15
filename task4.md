@@ -78,7 +78,7 @@ use `vi` for example;**
            type boolean;
          }
 	```
-7.	The complete contents of l2vpnreconcile.yanng should look like the following. Correct any errors before you proceed.		
+7.	The complete contents of l2vpnreconcile.yang should look like the following. Correct any errors before you proceed.		
 
     
     ```
