@@ -69,15 +69,15 @@ use `vi` for example;**
         }
     ```
 6.	Replace output block (lines #35 to #39) with the following output parameters (`message` , `success`). 
-  ```
-  output {
+	```
+    output {
          leaf message {
            type string;
          }
          leaf success {
            type boolean;
          }
-   ```
+	```
 7.	The complete contents of l2vpnreconcile.yanng should look like the following. Correct any errors before you proceed.		
 
     
