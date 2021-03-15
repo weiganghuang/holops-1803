@@ -49,9 +49,9 @@ use `vi` for example;**
 
 **Option 2: At the `[nso@nso ~]$ `prompt, enter `code ~/packages/l2vpnreconcile/src/yang/l2vpnreconcile.yang`. This automatically launches the file in Visual Studio Code You can edit the file directly in Visual Studio Code.**
 
-1.  Edit l2vpnreconcile.yang . We put the action reconcile-l2vpn under container action:
+1. Delete the service portion of the l2vpnreconcile.yang file (lines #39 to #63).
 
- ![](./media/media/action.png)
+ ![](./media/media/l2vpnreconsileyang.png)
 
 2. Change the generated generic action name “double” to
     `reconcile-l2vpn`, and action point `l2vpnreconcile-action` to
