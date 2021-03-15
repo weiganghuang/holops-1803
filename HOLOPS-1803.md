@@ -57,8 +57,7 @@ In this lab, you will create a simple L2VPN service package to configure Layer 2
 
 The network is composed of simulated NSO NETSIM ASR devices (Cisco IOS-XR). You will create L2VPN services from CE-PE. This lab focuses on PE configuration. To simulate a brownfield network, the PE devices are populated with pre-existing L2VPN services
 
-TOPOLOGY
-========
+##Topology
 
 This content includes preconfigured users and components to illustrate the scripted scenarios and features of the solution.
 
