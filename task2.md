@@ -219,7 +219,8 @@ We will verify by attempting delete the service instance created in the previous
 
 1. Enter the following commands to delete the instance `test1`.
 
-   Enter config mode
+	Enter config mode
+   
 	```
 	[nso@nso packages]$ ncs_cli -u admin
 
@@ -240,6 +241,7 @@ We will verify by attempting delete the service instance created in the previous
 	Sample output:
 	
 	```
+	admin@ncs% show services L2Vpn test1
 	order-number  L1111318;
 	customer-name L_ford_318;
 	pe-devices asr9k0 {
@@ -261,6 +263,8 @@ We will verify by attempting delete the service instance created in the previous
 	[edit]
 	```
 	Check `commit dry-run` output
+	
+	```
 	admin@ncs% commit dry-run outformat native
 	native {
 	}
@@ -292,7 +296,7 @@ We will verify by attempting delete the service instance created in the previous
 
 1.  Although the service instance `test1` is deleted from NSO, the
     associated Bundle Ether sub-interface 100.2188 **remains** in
-    asr9k0. The out-of-band configuration can’t be modified through NSO!
+    asr9k0. The out-of-band configuration can’t be modified through NSO.
     
 	```
 	admin@ncs% show devices device asr9k0 config cisco-ios-xr:interface Bundle-Ether-subinterface Bundle-Ether 100.2188
@@ -301,6 +305,7 @@ We will verify by attempting delete the service instance created in the previous
 	Sample outout:
 	
 	```
+	admin@ncs% show devices device asr9k0 config cisco-ios-xr:interface Bundle-Ether-subinterface Bundle-Ether 100.2188
 	Bundle-Ether 100.2188 {
     	mode        l2transport;
     	description L_ford_318-L1111318;
@@ -313,16 +318,13 @@ We will verify by attempting delete the service instance created in the previous
 
 	```
 
-You have completed Task 2. You created two L2Vpn service instances to
-match the pre-existing configurations. You also observed that deleting
-or modifying the service instances does not change the out-of-band
-device configuration. This implies that NSO is not managing the
-lifecycle of service instances of pre-existing configuration.
+You created two L2Vpn service instances to match the pre-existing configurations. You also observed that deleting or modifying the service instances does not change the out-of-band device configuration. This implies that NSO is not managing the lifecycle of service instances of a pre-existing configuration.
 
-In next Task, you will learn to complete service reconciliation by
-resetting the reference count of pre-existing services:
+In the next scenario, you will learn to complete service reconciliation by resetting the reference count of pre-existing services.
 
-[Task3 Service discovery and reconciliation B: Reset reference count](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task3.md)
+**This concludes scenario 3, Continue with the following**
+
+[Scenario 4.	Service Discovery and Reconciliation: Reset Reference Count](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task3.md)
 -----------------------------
 
  
