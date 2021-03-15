@@ -74,6 +74,8 @@ In this procedure, you will transfer the configuration ownership from device to 
 After re-setting the ref-count, the pre-existing L2VPN is reconciled, and NSO is managing the lifecycle of the reconciled service instance. In this procedure, you will see the correct behavior when we delete `test2`.
 
 1.  Delete `test2` and notice that the output of the `commit dry-run outformat native` command contains the correct `no` statement to remove the Bundle Ether sub-interface 100.2234.
+
+	Check service instance `test2`
     
     ```
     admin@ncs% show services L2Vpn test2
@@ -87,7 +89,7 @@ After re-setting the ref-count, the pre-existing L2VPN is reconciled, and NSO is
     
     [edit]
     ```
-    
+    Delete `test2`:
     ```
     admin@ncs% delete services L2Vpn test2
     [ok][2020-12-29 11:34:32]
