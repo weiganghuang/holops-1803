@@ -137,6 +137,12 @@ use `vi` for example;**
 	....
 	[nso@nso src]$
 	```
+10.	Enter the following command to return to the nso@nso prompt.
+
+    ```
+	[nso@nso src]$ cd
+	[nso@nso ~]$
+	```
 
 
 ### Clean up generated python script
