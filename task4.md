@@ -216,18 +216,24 @@ This section explains of the contents of main.py using code snips as examples. T
 8.	The snip of helper function `redeploySrs`. It performs the same operation via maapi. This is equivalent to what we have done in Scenario 4 via ncs cli.	
 	![](./media/media/snip8.png)
   
+   
+### Create Contents of main.py
+
 1. The complete contents of `main.py` file available at: 
 	[`main.py`](https://github.com/weiganghuang/holops-1803/blob/master/solution/l2vpnreconcile/python/l2vpnreconcile/main.py)
-   
-   
+	
+2.	Now we will replace the content with the main.py contents available from the solutions directory.
 
+	```
+	[nso@nso]$ cp ~/solution/l2vpnreconcile/python/l2vpnreconcile/main.py ~/packages/l2vpnreconcile/python/l2vpnreconcile/
+	```
+	
 
-### Compile and deploy action package l2vpnreconcile
+### Compile and Deploy Action package l2vpnreconcile
 
-In this step, we will compile the action package and deploy to NSO at
-NSO server.
+In this section, we will compile the action package and deploy to NSO at the NSO server.
 
-1.  Compile package `l2vpnreconcile`.
+1.  Compile the package `l2vpnreconcile`.
 
     ```
     [nso@nso packages]$ cd ~/packages/l2vpnreconcile/src
@@ -246,36 +252,18 @@ NSO server.
 
     ```
 
-1.  Add a symbolic link to `l2vpnreconcile` at `~/ncs-run/packages/`, and
-    reload packages from ncs cli.
+1.  Add a symbolic link to `l2vpnreconcile` at `~/ncs-run/packages/`, and then reload packages from NCS CLI.
     
-    **Note: Make sure there is no compilation errors, nor packages
-    reload errors. Final version of files l2vpnreconcile.yang and
-    main.py are available at `~/solution/l2vpnreconcile` directory for
-    your reference.
-    (`~/solution/l2vpnreconcile/src/yang/l2reconcile.yang`, and
-    `~/solution/l2vpnreconcile/python/l2vpnreconcile/main.py`)**
-
-    Check current `packages` dir:
+    **Make sure there are no compilation errors, nor package reload errors. Final version of files `l2vpnreconcile.yang` and `main.py` are available at ~/solution/l2vpnreconcile directory for your reference. 
+(`~/solution/l2vpnreconcile/src/yang/l2reconcile.yang`
+and 
+`~/solution/l2vpnreconcile/python/l2vpnreconcile/main.py`)
+**
+ 
+	 Create symbolic link
     ```
     [nso@nso src]$ cd ~/ncs-run/packages
-    [nso@nso packages]$ ls -l
-    total 0
-    lrwxrwxrwx. 1 nso nso 48 Nov 26 00:40 cisco-iosxr -> /home/nso/ncs-4.5.0.1/packages/neds/cisco-iosxr/
-    lrwxrwxrwx. 1 nso nso 25 Dec 11 23:08 L2Vpn -> /home/nso/packages/L2Vpn/
-
-
-    ```
-    
-    Create symbolic link:
-    
-    ```
     [nso@nso packages]$ ln -s /home/nso/packages/l2vpnreconcile/
-    
-    ```
-    
-    ```
-    [nso@nso src]$ cd ~/ncs-run/packages
     [nso@nso packages]$ ls -l
     ```
     
@@ -290,10 +278,8 @@ NSO server.
  
     ```
     
-    Reload NSO packages after creating symbolick link:
-    
-    **Note: package reload may take minutes to complete**
-    
+    Reload NSO packages 
+        
     ```
     [nso@nso packages]$ ncs_cli -u admin
 
@@ -323,14 +309,11 @@ NSO server.
     [ok][2018-12-09 09:16:12]
     ```
 
-### Test the action script to discover all pre-existing L2VPN services
+### Test the Action Script to Discover all Pre-existing L2VPN Services
 
-In this step, you will test the L2Vpn service disco ery and reconcile action `reconcile-l2vpn` to discover the
-pre-existing L2VPN services.
+In this section, you will run the reconcile-l2vpn action to discover the pre-existing L2VPN services in devices.
 
-1.  Run action `reconcile-l2vpn` to discover L2VPN services for asr9k0.
-
-    **Note: It may take up to 1 to 2 minutes to finish the whole process**.
+1.  Enter the following command to discover the L2VPN services for asr9k0. Note that it takes up to two minutes for the operation to complete.
 
     ```
     admin@ncs> request action reconcile-l2vpn device-name asr9k0
@@ -347,8 +330,7 @@ pre-existing L2VPN services.
     Commit performed by admin via tcp using cli.
 
     ```
-1.  Check the discovered L2Vpn services. Note, in service instance
-    creation code, we set `description-pe device-name` as the service instance name:
+2.	Check the discovered L2Vpn services. Note that in service instance creation code, we set the description concatenated with device name as the service instance name.
     
     ```
     admin@ncs> admin@ncs> show services L2Vpn ?
@@ -379,8 +361,7 @@ pre-existing L2VPN services.
 
     ```
 
-1.  Delete one of them to confirm that NSO is managing the
-    lifecycle of reconciled services.
+3.	Try to delete one of them to confirm that NSO is managing the lifecycle of reconciled services correctly.
     
     
     ```
@@ -404,8 +385,7 @@ pre-existing L2VPN services.
 
     ```
 
-1.  Commit the above delete operation. After that, we can see the device
-    configuration of `Bundle-Ether 100.276` is deleted:
+4.	Commit the delete performed in step 3. After that, we can see that the device configuration of Bundle-Ether 100.276 was deleted:
     ```
     admin@ncs% commit
     Commit complete.
@@ -430,4 +410,4 @@ pre-existing L2VPN services.
    [ok][2019-06-06 14:27:07]
    admin@ncs> exit
    ```
-**Congratulations! You have complteted all the scenarios of lab HOLOPS-1803**
+**This concludes scenario 5.**
