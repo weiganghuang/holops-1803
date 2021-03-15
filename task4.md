@@ -216,7 +216,8 @@ This section explains of the contents of main.py using code snips as examples. T
 8.	The snip of helper function `redeploySrs`. It performs the same operation via maapi. This is equivalent to what we have done in Scenario 4 via ncs cli.	
 	![](./media/media/snip8.png)
   
-1. We will create L2Vpn service instances in NSO cdb. Inside `cb_action`, open write transaction after initialize local variables `pe_device` and `srs`:
+1. To see the complete contents of `main.py` file: 
+	[`main.py`](https://github.com/weiganghuang/holops-1803/blob/master/solution/l2vpnreconcile/python/l2vpnreconcile/main.py)
    
    ```
    @Action.action
