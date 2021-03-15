@@ -219,7 +219,7 @@ This section explains of the contents of main.py using code snips as examples. T
    
 ### Create Contents of main.py
 
-1. The complete contents of `main.py` file available at: 
+1. The complete contents of `main.py` is available at: 
 	[`main.py`](https://github.com/weiganghuang/holops-1803/blob/master/solution/l2vpnreconcile/python/l2vpnreconcile/main.py)
 	
 2.	Now we will replace the content with the main.py contents available from the solutions directory.
@@ -243,6 +243,8 @@ In this section, we will compile the action package and deploy to NSO at the NSO
     Sample output:
     
     ```
+    [nso@nso packages]$ cd ~/packages/l2vpnreconcile/src
+    [nso@nso src]$ make clean all
     rm -rf ../load-dir java/src//
     mkdir -p ../load-dir
     mkdir -p java/src//
@@ -257,8 +259,7 @@ In this section, we will compile the action package and deploy to NSO at the NSO
     **Make sure there are no compilation errors, nor package reload errors. Final version of files `l2vpnreconcile.yang` and `main.py` are available at ~/solution/l2vpnreconcile directory for your reference. 
 (`~/solution/l2vpnreconcile/src/yang/l2reconcile.yang`
 and 
-`~/solution/l2vpnreconcile/python/l2vpnreconcile/main.py`)
-**
+`~/solution/l2vpnreconcile/python/l2vpnreconcile/main.py`)**
  
 	 Create symbolic link
     ```
