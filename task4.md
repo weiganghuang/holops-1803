@@ -37,7 +37,13 @@ We will create the package skeleton first.
    
    ```
    
-   
+2.	Enter the following command to return to the nso@nso prompt.
+
+   ```   
+   [nso@nso l2vpnreconcile]$ cd
+   [nso@nso ~]$   
+   ```
+
 ### Update l2vpnreconcile.yang file
 
 Action l2vpnreconcile has one input parameter, the PE that we wish to
