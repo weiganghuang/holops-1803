@@ -34,10 +34,11 @@ We will create the package skeleton first.
    ```
    
 2.	Enter the following command to return to the nso@nso prompt.
+
 	```
 	[nso@nso l2vpnreconcile]$ cd
-	[nso@nso ~]$   
-   ```
+	[nso@nso ~]$
+	```
    
 ### Update l2vpnreconcile.yang file
 
