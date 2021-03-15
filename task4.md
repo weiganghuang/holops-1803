@@ -145,79 +145,19 @@ use `vi` for example;**
 	```
 
 
-### Clean up generated python script
+### Update Python Script main.py for Service Discovery and Reconciliation
 
-The package l2vpnreconcile is auto generated as a service skeleton. Auto-generated python file `main.py` contains snips of
-service call back class, which we don’t need. In addition, we want to
-rename the generic default action class `DoubleAction` to `Reconcile`.
+We will update the auto generated python file main.py to perform L2Vpn service discovery and reconciliation. The objective is to create L2Vpn service instances from device model and reset the reference count of the service instances.
 
-1.  Edit python file,
-    `/home/nso/packages/l2vpnreconcile/python/l2vpnreconcile/main.py`.
-    Remove service related python script. Delete the  `Service Call Back Example` class (make sure
-    the whole class `ServiceCallbacks` is deleted)
+Creating service instances from a device model is a reverse process as compared to creating a service package: mapping device NED attributes to service attributes.
 
-    ![](./media/media/removeclass.png)
-   
+After a sync-from operation, the pre-existing configurations are brought into NSO’s device model. To create L2Vpn service instances, open a write transaction of cdb (the internal NSO in memory database), walk through the device model, populate service instance attributes, and commit the service instances to cdb.
 
-1.  Remove service registration from `Main` class, delete this line `self.register_service('l2vpnreconcile-servicepoint', ServiceCallbacks)`:
+### The Logic Flow
 
-    ![](./media/media/delete-reg.png)
+The logic flow is illustrated as pseudo code 
 
-  
-1.  Rename the auto generated action class name from
-    `DoubleAction(Action)` to `Reconcile(Action)`. Remove the contents of
-    `cb_action` (We will replace the contents later):
-
-    ![](./media/media/rename.png)
-    
-    The class `Reconcile` should look like:
-    
-    ```
-    class Reconcile(Action):
-    	@Action.action
-    	def cb_action(self, uinfo, name, kp, input, output):
-
-    ```
-  
-
-1.  in Main function, change the action registration accordingly, 
-    replace `DoubleAction` with `Reconcile`.
-
-	 ![](./media/media/main.png)
-	 
-	 As following:
-	 
-	 ```
-	 class Main(ncs.application.Application):
-    	def setup(self):
-
-        # When using actions, this is how we register them:
-        #
-        self.register_action('l2vpnreconcile-action', Reconcile)
-
-	 ```
-     
-2.   The cleaned `main.py` is available at [main-clean.py](https://github.com/weiganghuang/HOLOPS-1803/blob/master/solution/l2vpnreconcile/python/l2vpnreconcile/main-clean.py)
-
-### Implement the action call back function to reconcile pre-exisiting L2VPN service.
-
-In this step, you will add python code to action call back function
-`cb_action`. Inside `cb_action`, you will create L2Vpn service instances
-from device model, and reset reference count of the service instances.
-
-Creating service instances from device model is a reverse process as
-compare to creating a service package. You now need to map device NED
-attributes to service attributes. 
-
-After a `sync-from` operation, the pre-existing configurations are brought
-into NSO’s device model. To create L2Vpn service instances, we need to
-open a write transaction of cdb, walk through device model, populate
-service instance attributes and commit the service instances to cdb.
-
-The logic flow is illustrated as pseudo code in the following. We
-will take several steps to go through the implementation.
-
-Flow of reconcile L2Vpn services
+**Flow of Create and Reconcile L2VPN Serv**
 
   ```
   1.  Start write transaction of cdb 
@@ -241,9 +181,10 @@ Flow of reconcile L2Vpn services
   
   ```
 
-Continue editing file `main.py`.
+### The Code Snips of main.py
+This section explains of the contents of main.py using code snips as examples. This is just for reference. No action is required.
 
-1. Import additional packages, `random` and `_ncs` (on top of `main.py`)
+1. The snip of starting write transaction of cdb: 
 
    ```
    import ncs
