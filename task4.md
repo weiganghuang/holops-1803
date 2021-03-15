@@ -186,6 +186,10 @@ This section explains of the contents of main.py using code snips as examples. T
 
 1. The snip of starting write transaction of cdb: 
 	![](./media/media/snip1.png)
+	
+2.	The snip of get all Bundle-Ether-sub-interfaces of the pe-device: 
+	![](./media/media/snip2.png)
+	
 	For each Bundle Ether sub-interface in device config, create one L2Vpn service instance. Similar to manual service instance creation as in Scenario 3, we use device attributes to populate service instance attributes. Use the interface description plus the pe device name as the sr-name for an L2Vpn service instance. Parse the interface description to extract customer name and order number and set attributes order-number and customer-name.
 	
 	
