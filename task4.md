@@ -28,9 +28,6 @@ We will create the package skeleton first.
    ```
    [nso@nso]$ cd ~/packages
    [nso@nso packages]$ ncs-make-package --service-skeleton python --action-example l2vpnreconcile
-   ```
-   
-   ```
    [nso@nso packages]$ cd l2vpnreconcile
    [nso@nso l2vpnreconcile]$ ls
    package-meta-data.xml python README src templates test
