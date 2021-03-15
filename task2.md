@@ -147,7 +147,8 @@ The device attribute to service attribute mapping:
     
     **NOTE: Since you are creating L2Vpn service instances to match the pre-existing configurations, make sure the service attributes match exactly to what appear in the device configuration.**
 
-   Enter config mode:
+Enter config mode:
+
 	 ```
 	 [nso@nso ncs-run]$ ncs_cli -u admin
 
