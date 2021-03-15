@@ -69,8 +69,8 @@ use `vi` for example;**
         }
     ```
 6.	Replace output block (lines #35 to #39) with the following output parameters (`message` , `success`). 
-	```
-	output {
+  ```
+  output {
          leaf message {
            type string;
          }
