@@ -175,7 +175,7 @@ The device attribute to service attribute mapping:
 1. Confirm that the output of `commit dry-run` is  **empty**.
 	
 
-   **NOTE: Make sure you are still in NCS CLI config mode. If the output of `commit dry-run` is not empty, do not continue. Re-check the attribute values entered in step 1..**
+   **NOTE: Make sure you are still in NCS CLI config mode. If the output of `commit dry-run` is not empty, do not continue. Re-check the attribute values entered in step 1.**
 
 	```
 	admin@ncs% commit dry-run outformat native  

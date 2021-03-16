@@ -159,9 +159,6 @@ using an editor such as `vi`.**
 1.  The content of the file is available at [L2Vpn.yang](https://github.com/weiganghuang/HOLOPS-1803/blob/master/solution/L2Vpn/src/yang/L2Vpn.yang)
 
 
-    **Note: You can find the solution of the L2Vpn.yang from NSO server,
-    at `/home/nso/solution/L2Vpn/src/yang/` for your reference.**
-
 1.  Save the updated L2Vpn.yang file.
 
 9.	Enter the following commands to compile the project L2Vpn at the NSO server
