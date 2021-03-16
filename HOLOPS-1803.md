@@ -103,11 +103,11 @@ To start the lab, click the following links for instructions.
  [Scenario 2 Create L2VPN Service Package](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task1.md)
 -------------------------------------
 
-[Scenario 3 Service discovery and reconciliation A: Create L2Vpn service instances from pre-existing configuration](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task2.md)
+[Scenario 3 Service Discovery and Reconciliation: Create L2Vpn Service Instances from Pre-existing Configuration](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task2.md)
 --------------------------------------------------
 
-[Scenario 4 Service discovery and reconciliation B: Reset reference count](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task3.md)
+[Scenario 4 Service Discovery and Reconciliation: Reset Reference Count](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task3.md)
 -----------------------------
 
-[Scenario 5 (Optional): Create an NSO action to discover pre-existing L2VPN service instances automatically](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task4.md)
+[Scenario 5 (Optional) Create an NSO Action to Discover Pre-existing L2VPN Service Instances Automatically](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task4.md)
 ------------------------------
