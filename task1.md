@@ -198,7 +198,7 @@ We start with creating a sample Bundle Ether sub-interface (sub-interface 100.10
     admin@ncs% set devices device asr9k0 config cisco-ios-xr:interface Bundle-Ether-subinterface Bundle-Ether 100.100 mode l2transport description test-desc encapsulation dot1q vlan-id 100
     
     ```
-Sample output:
+	Sample output:
 
     ```
     [nso@nso src]$ ncs_cli -u admin
