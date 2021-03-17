@@ -181,7 +181,7 @@ The device attribute to service attribute mapping:
 	admin@ncs% commit dry-run outformat native  
 	```
 	
-	Expecte **empty** in `native` block:
+	Expected **empty** in `native` block:
 	
 	```                                                          
 	native {
