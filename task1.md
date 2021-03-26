@@ -45,7 +45,7 @@ The service YANG model:
     ```
     [nso@nso]$ cd
     [nso@nso]$ mkdir ~/packages
-    [nso@nso packages]$ cd ~/packages
+    [nso@nso]$ cd ~/packages
     [nso@nso packages]$ ncs-make-package --service-skeleton python-and-template --augment /ncs:services L2Vpn
 
     ```     
