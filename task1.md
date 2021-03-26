@@ -153,7 +153,7 @@ using an editor such as `vi`.**
                 }
             }
         }
-    }
+      }
     }
     ``` 
     
@@ -452,6 +452,8 @@ In this section, you will test the service package L2Vpn. NSO running on the app
 1. 	Create an L2Vpn service instance, and name it `test`, set customer name as `duoabc`, and order-number `123`. In addition, set pe-devices as `asr9k0`, Bundle-Ether `100`, and stag `100`.
 
     ```
+    [nso@nso]$ ncs_cli -u admin
+    admin connected from 198.18.133.252 using ssh on nso
   	admin@ncs>conf
   	Entering configuration mode private
   	[ok][2020-12-29 08:20:16] 
