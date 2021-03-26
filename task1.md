@@ -117,9 +117,9 @@ using an editor such as `vi`.**
             }
     ```
     
-4.	Delete of leaf-list device and leaf dummy blocks (from line #38 through line #48).
+4.	Delete of leaf-list device and leaf dummy blocks (delete all the lines from line #38 to the end).
 
-1.  Add other service attributes: `order-number`, `customer-name`, after `sr-name` block (beginning at line #34.     
+1.  Add other service attributes: `order-number`, `customer-name`, after `sr-name` block (beginning at line #38.     
     ```
     
             leaf order-number {
@@ -153,6 +153,7 @@ using an editor such as `vi`.**
                 }
             }
         }
+    }
     }
     ``` 
     
