@@ -4,9 +4,9 @@
 
 ## NSO Service Lifecycle Management
 
-### Weigang Huang – Cusomter Delivery Software Architect
+### Weigang Huang – Customer Delivery Software Architect
 
-### Andrew Bond – Cusomter Delivery Software Architect
+### Andrew Bond – Customer Delivery Software Architect
 
 
 
