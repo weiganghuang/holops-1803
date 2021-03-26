@@ -163,13 +163,9 @@ The device attribute to service attribute mapping:
 	Create service instances:
 	```
 	admin@ncs% set services L2Vpn test1 order-number L1111318 customer-name L_ford_318 pe-devices asr9k0 Bundle-Ether 100 stag 2188
-	[ok][2020-12-29 09:36:33]
-
-	[edit]
+	
 	admin@ncs% set services L2Vpn test2 order-number L1111318 customer-name L_unitedhealth_318 pe-devices asr9k0 Bundle-Ether 100 stag 2234
-	[ok][2020-12-29 09:39:25]
-
-	[edit]
+	
 	```
   
 1. Confirm that the output of `commit dry-run` is  **empty**.
