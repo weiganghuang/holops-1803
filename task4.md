@@ -26,6 +26,7 @@ We will create the package skeleton first.
     name it `l2vpnreconcile`
     
    ```
+   [nso@nso]$ mkdir -p ~/packages
    [nso@nso]$ cd ~/packages
    [nso@nso packages]$ ncs-make-package --service-skeleton python --action-example l2vpnreconcile
    [nso@nso packages]$ cd l2vpnreconcile
