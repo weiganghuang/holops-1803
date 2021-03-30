@@ -255,10 +255,10 @@ In this section, we will compile the action package and deploy to NSO at the NSO
     [nso@nso src]$
 
     ```
-**Make sure there are no compilation errors, nor package reload errors. Final version of files `l2vpnreconcile.yang` and `main.py` are available at `~/solution/l2vpnreconcile` directory for your reference. 
-(`~/solution/l2vpnreconcile/src/yang/l2reconcile.yang`
-and 
-`~/solution/l2vpnreconcile/python/l2vpnreconcile/main.py`)**
+	**Make sure there are no compilation errors, nor package reload errors. Final version of files `l2vpnreconcile.yang` and `main.py` are available at `~/solution/l2vpnreconcile` directory for your reference. 
+	(`~/solution/l2vpnreconcile/src/yang/l2reconcile.yang`
+	and 
+	`~/solution/l2vpnreconcile/python/l2vpnreconcile/main.py`)**
     
 
 1.  Add a symbolic link to `l2vpnreconcile` at `~/ncs-run/packages/`, and then reload packages from NCS CLI.
