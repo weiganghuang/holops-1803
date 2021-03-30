@@ -48,7 +48,7 @@ Action `l2vpnreconcile` has one input parameter, the PE that we wish to reconcil
 **Option 1: Edit `~/packages/l2vpnreconcile/src/yang/l2vpnreconcile.yang` from NSO server,
 use `vi` for example;**
 
-**Option 2: At the `[nso@nso ~]$ `prompt, enter `code ~/packages/l2vpnreconcile/src/yang/l2vpnreconcile.yang`. This automatically launches the file in Visual Studio Code You can edit the file directly in Visual Studio Code.**
+**Option 2: At the `[nso@nso ~]$ `prompt, enter `code ~/packages/l2vpnreconcile/src/yang/l2vpnreconcile.yang` This automatically launches the file in Visual Studio Code You can edit the file directly in Visual Studio Code.**
 
 1. Delete the service portion of the l2vpnreconcile.yang file (lines #39 to #63).
 
