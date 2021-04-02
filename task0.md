@@ -16,8 +16,7 @@ HOLOPS-1803
 
 
     ```
-    [nso@nso ~]$ cd ansible
-    [nso@nso ncs-run]$ ansible-playbook set-lab.yml
+    [nso@nso ~]$ ansible-playbook ~/ansible/set-lab.yml
     ```
 3. Enter the following commands to return to the nso@nso prompt.
 
