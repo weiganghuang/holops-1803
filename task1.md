@@ -160,6 +160,9 @@ using an editor such as `vi`.**
 1.  The content of the file is available at [L2Vpn.yang](https://github.com/weiganghuang/HOLOPS-1803/blob/master/solution/L2Vpn/src/yang/L2Vpn.yang)
 
 
+	
+
+
 1.  Save the updated L2Vpn.yang file.
 
 9.	Enter the following commands to compile the project L2Vpn at the NSO server
@@ -181,6 +184,12 @@ using an editor such as `vi`.**
     ```
     **Note: Make sure there is no compilation errors. Check `L2Vpn.yang`
     from /home/nso/solution/L2Vpn/src/yang/ for your reference**.
+    
+    **As an alternative, you can use the following to copy the yang file from solution, then repeat the previsou step to compile**
+    
+	```
+	[nso@nso ncs-run]cp /home/nso/solution/L2Vpn/src/yang/L2Vpn.yang /home/nso/packages/L2Vpn/src/yang/
+	```
 
 ### Complete L2VPN Template to Map Service Model to Device Model Mapping
 
@@ -356,7 +365,12 @@ Mapping:
     **NOTE: For reference, you can find the solution template file from 
     `~/solution/L2Vpn/templates` of your NSO server.**
 
-1.  Save `L2Vpn-template.xlm`.
+1.  Save `L2Vpn-template.xml`.
+	**As an alternative, you can use the following to copy the template file from solution**
+    
+	```
+	[nso@nso ncs-run]cp /home/nso/solution/L2Vpn/templates/L2Vpn-template.xml /home/nso/packages/L2Vpn/templates/
+	```
 
 ### Deploy the Service Package L2Vpn
 

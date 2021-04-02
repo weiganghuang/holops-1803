@@ -139,6 +139,12 @@ use `vi` for example;**
 	....
 	[nso@nso src]$
 	```
+	
+	**As an alternative, you can use the following to copy the yang file from solution, then repeat the previsou step to compile**
+    
+	```
+	[nso@nso ncs-run]cp /home/nso/solution/l2vpnreconcile/src/yang/l2vpnreconcile.yang /home/nso/packages/l2vpnreconcile/src/yang/
+	```
 10.	Enter the following command to return to the nso@nso prompt.
 
     ```
