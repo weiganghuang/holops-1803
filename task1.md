@@ -43,7 +43,7 @@ The service YANG model:
     `ncs-make-package` command, name it `L2Vpn`.
     
     ```
-    [nso@nso]$ mkdir ~/packages
+    [nso@nso]$ mkdir -p ~/packages
     [nso@nso]$ cd ~/packages
     [nso@nso packages]$ ncs-make-package --service-skeleton python-and-template --augment /ncs:services L2Vpn
 
