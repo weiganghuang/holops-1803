@@ -183,12 +183,12 @@ using an editor such as `vi`.**
     -c -o ../load-dir/L2Vpn.fxs yang/L2Vpn.yang
     ```
     **Note: Make sure there is no compilation errors. For reference, you can find the solution yang file 
-    `~/solution/L2Vpn/src/yang/L2Vpn` of your nso server**.
+    `~/solution/L2Vpn/src/yang/L2Vpn.yang` of your nso server**.
     
     **Note: As an alternative, you can use the following to copy the yang file from solution, then repeat the previous step to compile**
     
 	```
-	[nso@nso ncs-run]cp /home/nso/solution/L2Vpn/src/yang/L2Vpn.yang /home/nso/packages/L2Vpn/src/yang/
+	[nso@nso ncs-run]cp ~/solution/L2Vpn/src/yang/L2Vpn.yang ~/packages/L2Vpn/src/yang/
 	```
 
 ### Complete L2VPN Template to Map Service Model to Device Model Mapping
