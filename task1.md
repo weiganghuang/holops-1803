@@ -182,7 +182,7 @@ using an editor such as `vi`.**
     /home/nso/ncs-4.3.1/bin/ncsc \`ls L2Vpn-ann.yang >/dev/null 2>&1 && echo "-a L2Vpn-ann.yang"\` \\  
     -c -o ../load-dir/L2Vpn.fxs yang/L2Vpn.yang
     ```
-    **Note: Make sure there is no compilation errors. For reference, you can find the solution yang file `/home/nso/solution/L2Vpn/src/yang/L2Vpn` from your nso server**.
+    **Note: Make sure there is no compilation errors. For reference, you can find the solution yang file `/home/nso/solution/L2Vpn/src/yang/L2Vpn` of your nso server**.
     
     **Note: As an alternative, you can use the following to copy the yang file from solution, then repeat the previous step to compile**
     
@@ -361,8 +361,7 @@ Mapping:
   
     ```
  
-    **NOTE: For reference, you can find the solution template file  
-    `~/solution/L2Vpn/templates/L2Vpn-template.xml` of your NSO server.**
+    **NOTE: For reference, you can find the solution template file `~/solution/L2Vpn/templates/L2Vpn-template.xml` of your NSO server.**
 
 1.  Save `L2Vpn-template.xml`.
 	**As an alternative, you can use the following to copy the template file from solution**
