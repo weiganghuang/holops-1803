@@ -187,7 +187,7 @@ using an editor such as `vi`.**
     **Note: As an alternative, you can use the following to copy the yang file from solution, then repeat the previous step to compile**
     
 	```
-	[nso@nso ncs-run]cp ~/solution/L2Vpn/src/yang/L2Vpn.yang ~/packages/L2Vpn/src/yang/
+	[nso@nso src]$ cp ~/solution/L2Vpn/src/yang/L2Vpn.yang ~/packages/L2Vpn/src/yang/
 	```
 
 ### Complete L2VPN Template to Map Service Model to Device Model Mapping
