@@ -143,7 +143,7 @@ use `vi` for example;**
 	**As an alternative, you can use the following to copy the yang file from solution, then repeat the previous step to compile**
     
 	```
-	[nso@nso ncs-run]cp /home/nso/solution/l2vpnreconcile/src/yang/l2vpnreconcile.yang /home/nso/packages/l2vpnreconcile/src/yang/
+	[nso@nso src]$ cp ~/solution/l2vpnreconcile/src/yang/l2vpnreconcile.yang ~/packages/l2vpnreconcile/src/yang/
 	```
 10.	Enter the following command to return to the nso@nso prompt.
 
