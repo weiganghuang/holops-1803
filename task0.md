@@ -18,13 +18,6 @@ HOLOPS-1803
     ```
     [nso@nso ~]$ ansible-playbook ~/ansible/set-lab.yml
     ```
-3. Enter the following commands to return to the nso@nso prompt.
-
-    ```
-    [nso@nso ~]$ cd
-    [nso@nso]$ 
-    ```
-
 1.  Enter the following commands to verify the NSO version.
 
     ```
