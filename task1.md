@@ -362,7 +362,8 @@ Mapping:
   
     ```
  
-    **NOTE: For reference, you can find the solution template file `~/solution/L2Vpn/templates/L2Vpn-template.xml` of your NSO server.**
+    **NOTE: For reference, you can find the solution template file 
+    `~/solution/L2Vpn/templates/L2Vpn-template.xml` of your NSO server.**
 
 1.  Save `L2Vpn-template.xml`.
 	**As an alternative, you can use the following to copy the template file from solution**
