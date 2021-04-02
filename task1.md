@@ -368,7 +368,7 @@ Mapping:
 	**As an alternative, you can use the following to copy the template file from solution**
     
 	```
-	[nso@nso ncs-run]cp ~/solution/L2Vpn/templates/L2Vpn-template.xml ~/packages/L2Vpn/templates/
+	[nso@nso]$ cp ~/solution/L2Vpn/templates/L2Vpn-template.xml ~/packages/L2Vpn/templates/
 	```
 
 ### Deploy the Service Package L2Vpn
