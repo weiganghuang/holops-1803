@@ -3,7 +3,7 @@
 HOLOPS-1803
 ===========
 
-**[Previous Scenario)](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task2.md)**
+**[Previous Scenario](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task2.md)**
 
 **[Next Scenario (Optional)](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task4.md)**
 
@@ -164,4 +164,4 @@ The next scenario shows how to extend the service discovery process from manual 
 
 **[Next Scenario (Optional)](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task4.md)**
 
-**[Previous Scenario)](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task2.md)**
+**[Previous Scenario](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task2.md)**
