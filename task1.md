@@ -600,7 +600,7 @@ In this scenario, you created, deployed, and tested an L2Vpn service package. Ne
 
 **This concludes scenario 2. Continue with the next scenario: Service Discovery and Reconciliation: Create L2Vpn Service Instances From Pre-existing Configuration**
 
-###[Next Scenario](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task2.md)
+**[Next Scenario](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task2.md)**
 
 ###[Previos Scenario](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task0.md)
 
