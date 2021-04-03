@@ -3,13 +3,13 @@
 HOLOPS-1803
 ===========
 
+**[Lab Guide](https://github.com/weiganghuang/HOLOPS-1803/blob/master/HOLOPS-1803.md)**
+
 **[Next Scenario](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task1.md)**
 
 # Scenario 1 Verify Lab Setup
-----------------
+--------------------
 
-
-        
 
 ### Steps 
 
