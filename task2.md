@@ -2,6 +2,7 @@
 
 HOLOPS-1803
 ===========
+**[Lab Guide](https://github.com/weiganghuang/HOLOPS-1803/blob/master/HOLOPS-1803.md)**
 
 **[Previous Scenario](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task1.md)**
 
@@ -327,6 +328,8 @@ In the next scenario, you will learn to complete service reconciliation by reset
 **[Next Scenario](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task3.md)**
 
 **[Previous Scenario](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task1.md)**
+
+**[Lab Guide](https://github.com/weiganghuang/HOLOPS-1803/blob/master/HOLOPS-1803.md)**
 
 
  

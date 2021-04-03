@@ -129,6 +129,8 @@ HOLOPS-1803
 
 **[Next Scenario](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task1.md)**
 
+**[Lab Guide](https://github.com/weiganghuang/HOLOPS-1803/blob/master/HOLOPS-1803.md)**
+
 
   
 

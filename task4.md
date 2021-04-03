@@ -2,6 +2,8 @@
 
 HOLOPS-1803
 ===========
+**[Lab Guide](https://github.com/weiganghuang/HOLOPS-1803/blob/master/HOLOPS-1803.md)**
+
 **[Previous Scenario](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task3.md)**
 
 Scenario 5.	(Optional) Create an NSO Action to Discover Pre-existing L2VPN Service Instances Automatically 
@@ -423,3 +425,6 @@ In this section, you will run the reconcile-l2vpn action to discover the pre-exi
    admin@ncs> exit
    ```
 **This concludes scenario 5.**
+**[Previous Scenario](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task3.md)**
+
+**[Lab Guide](https://github.com/weiganghuang/HOLOPS-1803/blob/master/HOLOPS-1803.md)**

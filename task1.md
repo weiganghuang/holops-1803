@@ -2,6 +2,7 @@
 
 HOLOPS-1803
 ===========
+**[Lab Guide](https://github.com/weiganghuang/HOLOPS-1803/blob/master/HOLOPS-1803.md)**
 
 **[Previos Scenario](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task0.md)**
 
@@ -606,6 +607,7 @@ In this scenario, you created, deployed, and tested an L2Vpn service package. Ne
 
 **[Previos Scenario](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task0.md)**
 
+**[Lab Guide](https://github.com/weiganghuang/HOLOPS-1803/blob/master/HOLOPS-1803.md)**
 
 
 
