@@ -3,7 +3,7 @@
 HOLOPS-1803
 ===========
 
-<div align="left">[Previos Scenario](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task0.md)
+[Previos Scenario](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task0.md)
 
  Scenario 2.	Create L2VPN Service Package
 ----------------------------
