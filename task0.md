@@ -3,6 +3,8 @@
 HOLOPS-1803
 ===========
 
+**[Next Scenario](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task1.md)**
+
 # Scenario 1 Verify Lab Setup
 ----------------
 
@@ -123,10 +125,10 @@ HOLOPS-1803
    [nso@nso ncs-run]$
    ```
 
-**This concludes scenario 1. Next Scenario: Create a service package, continue with the following:**
+**This concludes scenario 1. Next Scenario: Create a service package, continue with to the next scenario: Create L2VPN Service Package**
 
- [Scenario 2 Create L2VPN Service Package](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task1.md)
-------
+**[Next Scenario](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task1.md)**
+
 
   
 

@@ -3,6 +3,9 @@
 HOLOPS-1803
 ===========
 
+**[Previous Scenario](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task1.md)**
+**[Next Scenario](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task3.md)**
+
 Scenario 3.	Service Discovery and Reconciliation: Create L2Vpn Service Instances from Pre-existing Configuration 
 --------------------------------------------------------------------------------------------------------
 
@@ -318,9 +321,11 @@ You created two L2Vpn service instances to match the pre-existing configurations
 
 In the next scenario, you will learn to complete service reconciliation by resetting the reference count of pre-existing services.
 
-**This concludes scenario 3, Continue with the following**
+**This concludes scenario 3, Continue with the next Scenario: Service Discovery and Reconciliation: Reset Reference Count**
 
-[Scenario 4.	Service Discovery and Reconciliation: Reset Reference Count](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task3.md)
------------------------------
+**[Next Scenario](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task3.md)**
+
+**[Previous Scenario](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task1.md)**
+
 
  
