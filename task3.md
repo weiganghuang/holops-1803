@@ -3,6 +3,11 @@
 HOLOPS-1803
 ===========
 
+**[Previous Scenario)](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task2.md)**
+
+**[Next Scenario (Optional)](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task4.md)**
+
+
 Scenario 4.	Service Discovery and Reconciliation: Reset Reference Count
 -------------------------------------------------------------
 
@@ -155,7 +160,8 @@ You have successfully finished all the required scenarios of this lab.
 
 The next scenario shows how to extend the service discovery process from manual to automatic. It is recommended go through the scenario and learn how to create massive service instances from pre-existing configurations and reset the ref-count automatically.
 
-**This concludes scenario 4. Continue with the following**
+**This concludes scenario 4. Continue with the next scenario: Create an NSO Action to Discover Pre-existing L2VPN Service Instances Automatically**
 
-[Scenario 5.	(Optional) Create an NSO Action to Discover Pre-existing L2VPN Service Instances Automatically](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task4.md)
-------------------------------
+**[Next Scenario (Optional)](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task4.md)**
+
+**[Previous Scenario)](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task2.md)**
