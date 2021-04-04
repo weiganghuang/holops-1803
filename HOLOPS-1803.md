@@ -79,19 +79,19 @@ The NSO application is pre-installed on a Linux VM, with the details shown in th
 
 The lab contains 5 scenarios.
 
--   Scenario 1: Verify lab set-up.
+-   [Scenario 1](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task0.md): Verify lab set-up.
 
--   Scenario 2: Create NSO service package for L2VPN.
+-   [Scenario 2](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task1.md): Create NSO service package for L2VPN.
 
--   Scenario 3 and 4: Discover/reconcile pre-existing L2VPN services,
+-   [Scenario 3 and 4: Discover/reconcile pre-existing L2VPN services,
     manually. 
     
-    - Scenario 3: Create L2VPN service instances for
+    - [Scenario 3](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task2.md): Create L2VPN service instances for
     pre-existing configuration. 
-    - Scenario 4: Complete the service
+    - [Scenario 4](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task3.md): Complete the service
     discovery by resetting the reference count.
 
--   Scenario 5 (optional): Discover/reconcile pre-existing L2VPN services,
+-   [Scenario 5 (optional)](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task4.md): Discover/reconcile pre-existing L2VPN services,
     automatically, through NSO’s northbound api MAAPI (Management Agent
     API), and Maggic API.
 
