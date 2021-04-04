@@ -82,13 +82,11 @@ The lab contains 5 scenarios.
 -   [Scenario 1](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task0.md): Verify lab set-up.
 
 -   [Scenario 2](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task1.md): Create NSO service package for L2VPN.
-
--   [Scenario 3 and 4: Discover/reconcile pre-existing L2VPN services,
-    manually. 
     
-    - [Scenario 3](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task2.md): Create L2VPN service instances for
+- [Scenario 3](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task2.md): Create L2VPN service instances for
     pre-existing configuration. 
-    - [Scenario 4](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task3.md): Complete the service
+    
+- [Scenario 4](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task3.md): Complete the service
     discovery by resetting the reference count.
 
 -   [Scenario 5 (optional)](https://github.com/weiganghuang/HOLOPS-1803/blob/master/task4.md): Discover/reconcile pre-existing L2VPN services,
