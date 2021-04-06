@@ -140,7 +140,7 @@ The device attribute to service attribute mapping:
 ![NSO Ned (cisco-iosxr) to L2Vpn attribute mapping example](./media/media/device-mapping.png)
 
 
-1.  Create two service instances, name them test1 and test2 to match two pre-existing configurations (refer above mapping table). 
+1.  Create two service instances, name them `test1` and `test2` to match two pre-existing configurations (refer above mapping table). 
     
     **NOTE: Since you are creating L2Vpn service instances to match the pre-existing configurations, make sure the service attributes match exactly to what appear in the device configuration.**
 
