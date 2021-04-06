@@ -35,16 +35,8 @@ As previously mentioned, the pre-existing L2VPN configurations are brought in to
 1. Enter the following commands to make sure we have a working L2VPN package (from Scenario 1) in the setup. The operation takes about one minute to complete.
 
     ```
-	[nso@nso ~]$ cd ansible
-	[nso@nso ansible]$ ansible-playbook ~/ansible/set-task1.yml
+	[nso@nso]$ ansible-playbook ~/ansible/set-task1.yml
 	 ```
-	
-2.	Enter the following command to return to the nso@nso prompt.  
-
-    ```
-	[nso@nso ansible]$ cd
-	[nso@nso ~]$
-	```
 	
 
 1. Perform a sync-from to bring the
