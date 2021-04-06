@@ -275,7 +275,7 @@ We start with creating a sample Bundle Ether sub-interface (`sub-interface 100.1
     admin@ncs> exit
     [nso@nso src]$
     ```
-2. Enter the following command to return to the [nso@nso ~]$ prompt
+2. Enter the following command to return to the `[nso@nso ~]$` prompt
 
 
     ```
