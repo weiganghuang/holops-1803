@@ -201,7 +201,7 @@ You have created the service model in the previous sections. Next, the L2Vpn ser
 
 In most cases, the service to device mapping can be easily implemented through an xml template. You will use this approach for L2Vpn. The skeleton of the mapping template xml file, `L2Vpn-template.xml`, is auto generated. In this procedure, you will add the contents.
 
-We start with creating a sample Bundle Ether sub-interface (`sub-interface 100.100`, with vlan id `100`) to a PE through the NSO CLI. NSO’s operation “`commit dry-run`” will have the NSO’s cisco-iosxr Ned calculate the device CLIs. The `commit dry-run outformat xml` command displays the output in xml format. This output is the starting point of the mapping template.
+We start with creating a sample Bundle Ether sub-interface (`sub-interface 100.100`, with vlan id `100`) to a PE through the NSO CLI. NSO’s operation `commit dry-run` will have the NSO’s cisco-iosxr Ned calculate the device CLIs. The `commit dry-run outformat xml` command displays the output in xml format. This output is the starting point of the mapping template.
 
 
 1.	At the NSO server, enter the following three commands to configure a Bundle Ether sub-interface 100.100 to the PE device asr9k0 via the NCS CLI. Make sure the third command `set devices....` is entered as one line.
