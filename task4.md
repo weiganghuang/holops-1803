@@ -11,7 +11,7 @@ Scenario 5.	(Optional) Create an NSO Action to Discover Pre-existing L2VPN Servi
 
 In previous scenarios, you learned to discover pre-existing service configurations manually. As one can see, manually creating service instances to match all the attributes in pre-existing configurations is time consuming, tedious, and error prone. This approach does not scale for networks with a significant number of pre-existing services. To be able to support brownfield network service lifecycle management, we must be able to discover pre-existing services automatically.
 
-There are several ways to auto-discover services. One of them is creating service instances from device model using NSO’s maapi and magic APIs, followed by resetting the ref-count for the service instances programmatically. 
+There are several ways to auto-discover services. One of them is creating service instances from device model using NSO’s maapi and maagic APIs, followed by resetting the ref-count for the service instances programmatically. 
 
 In this scenario, you will learn how to create an NSO action to discover pre-existing L2VPN services through an NSO action.
 
