@@ -416,7 +416,7 @@ Now we are ready to deploy the service package to NSO application.
 
 1.  On the NSO CLI, enter the following three commands to reload the packages to complete the package deployment process and then verify.
 
-    **NOTE: Make sure the reload result is true. If you see errors, you can check the solution from `~/packages/solution`**
+    **NOTE: Make sure the reload result is true. If you see errors, you can check the solution from `~/packages/solution/L2Vpn`**
 
     ```
     [nso@nso ~]$ ncs_cli -u admin
@@ -455,7 +455,7 @@ Now we are ready to deploy the service package to NSO application.
 
     ```
     
-1. Enter the following command to return to the [nso@nso ~]$ prompt
+1. Enter the following command to return to the `[nso@nso ~]$ ` prompt
 
 
     ```
