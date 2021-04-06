@@ -91,7 +91,7 @@ The service YANG model:
 
 ### Update the Auto-generated L2Vpn.yang
 
-The skeleton of `L2Vpn.yang` file is auto-generated as part of
+The skeleton of `L2Vpn.yang` file is auto-generated via
 `ncs-make-package` command. In this procedure, you will update the
 auto-generated Yang file, `L2Vpn.yang` to model the L2Vpn service. Use one of the following options to open and edit the file:
 
