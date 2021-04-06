@@ -70,7 +70,7 @@ As previously mentioned, the pre-existing L2VPN configurations are brought in to
 	[edit]
 
 	```
-4.	Enter the following commands to return to the nso@nso prompt.
+4.	Enter the following commands to return to the `[nso@nso ~]$` prompt.
     
     ```
     admin@ncs% exit
