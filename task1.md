@@ -505,7 +505,7 @@ In this section, you will test the service package L2Vpn. NSO running on the app
 	admin@ncs%  
   	```
   	
-1.  Commit the service instance test. After the commit, the service instance test is persistent in NSO’s memory database cdb, and the CLI commands from step 2 are committed to asr9k0.
+1.  Commit the service instance test. After the commit, the service instance test is persistent in NSO’s in-memory database cdb, and the CLI commands from step 2 are committed to asr9k0.
 
   	```
   	admin@ncs% commit
