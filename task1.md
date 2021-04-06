@@ -591,7 +591,7 @@ In this section, you will test the service package L2Vpn. NSO running on the app
     admin@ncs%
   	 ```
 
-1. Enter the following commands to return to the `nso@nso` prompt.
+1. Enter the following commands to return to the `[nso@nso]$` prompt.
 
    ```
    admin@ncs% exit
