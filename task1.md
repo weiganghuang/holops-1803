@@ -381,7 +381,7 @@ Mapping:
 
 Now we are ready to deploy the service package to NSO application.
 
-1.  On the NSO server, check current packages in your NSO installation, make sure make sure cisco-iosxr ned appear under
+1.  On the NSO server, check current packages in your NSO installation, make sure cisco-iosxr ned appear under
     `ncs-run/packages`:
 
     ```
