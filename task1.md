@@ -227,7 +227,7 @@ We start with creating a sample Bundle Ether sub-interface (`sub-interface 100.1
     admin@ncs%
     ```
 
-2.	Now enter the `commit dry run outformat xml` command. This command will show the configuration changes to be sent to the device in .xml format.
+2.	Now enter the `commit dry run outformat xml` command. This command will show the configuration changes to be sent to the device in xml format.
 
     ```
     admin@ncs% commit dry-run outformat xml
