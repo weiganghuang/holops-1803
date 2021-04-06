@@ -80,7 +80,7 @@ The service YANG model:
     0 directories, 1 file
 
     ```
-4.	Enter the following command to return to the [nso@nso ~]$ prompt
+4.	Enter the following command to return to the `[nso@nso ~]$` prompt
 
 
     ```
