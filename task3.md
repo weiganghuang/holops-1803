@@ -22,7 +22,7 @@ In this scenario, you will work on instance test2 to complete the service discov
 
 ### Check the ref-count of L2VPN Configuration
 
-1.  Now we will check the ref-count of the Bundle Ether sub-interfaces. As you can see in the output, Bundle-Ether 100.2234 has backpointers that point to the service instance test2 (which we created previously). The value of ref-count is 2. This indicates that NSO service instance test2 is not the sole owner of the configuration.
+1.  Now we will check the ref-count of the Bundle Ether sub-interfaces. As you can see in the output, `Bundle-Ether 100.2234` has backpointers that point to the service instance `test2` (which we created previously). The value of ref-count is 2. This indicates that NSO service instance `test2` is not the sole owner of the configuration.
 
 	```
 	admin@ncs% show devices device asr9k0 config cisco-ios-xr:interface Bundle-Ether-subinterface | display service-meta-data
@@ -35,7 +35,7 @@ In this scenario, you will work on instance test2 to complete the service discov
 
 In this procedure, you will transfer the configuration ownership from device to NSO through ref-count reset.
 
-1. Reset the ref-count of Bundle-Ether 100.2234 by using the service L2Vpn re-deploy reconcile command.  This resets the value of ref-count, and service instance test2 will then be the sole owner of the configurations.
+1. Reset the ref-count of `Bundle-Ether 100.2234` by using the service L2Vpn re-deploy reconcile command.  This resets the value of ref-count, and service instance `test2` will then be the sole owner of the configurations.
 
 	```
 	admin@ncs% request services L2Vpn test2 re-deploy reconcile
@@ -44,7 +44,7 @@ In this procedure, you will transfer the configuration ownership from device to 
 	```
   
 
-1. Perform a device sync-from operation.
+1. Perform a device `sync-from` operation.
 	```
 	admin@ncs% request devices sync-from
 	sync-result {
@@ -65,7 +65,7 @@ In this procedure, you will transfer the configuration ownership from device to 
 
 	```
 
-1. Now let's check the ref-count. Notice the value of the ref-count attached with Bundle-Ether 100.2234 is 1, backpointer to test2.  
+1. Now let's check the ref-count. Notice the value of the ref-count attached with `Bundle-Ether 100.2234` is 1, backpointer to `test2`.  
 	
 	```
 	admin@ncs% show devices device asr9k0 config cisco-ios-xr:interface Bundle-Ether-subinterface | display service-meta-data
@@ -133,7 +133,7 @@ After re-setting the ref-count, the pre-existing L2VPN is reconciled, and NSO is
    [edit] 
    ```
 
-1. Now check the device model to confirm that Bundle-Ether 100.2234 no longer exists in asr9k0.
+1. Now check the device model to confirm that `Bundle-Ether 100.2234` no longer exists in `asr9k0`.
    
    ```
    admin@ncs% show devices device asr9k0 config cisco-ios-xr:interface Bundle-Ether-subinterface Bundle-Ether 100.2234
@@ -144,7 +144,7 @@ After re-setting the ref-count, the pre-existing L2VPN is reconciled, and NSO is
    [edit]
    ```
 
-1. Enter the following commands to return to the nso@nso prompt.
+1. Enter the following commands to return to the `[nso@nso ~]$` prompt.
 
    ```
    admin@ncs% exit
