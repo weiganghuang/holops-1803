@@ -289,7 +289,7 @@ We start with creating a sample Bundle Ether sub-interface (`sub-interface 100.1
     **Option 1: Edit ~/packages/L2Vpn/templates/L2Vpn-template.xml from
  NSO server, using `vi` for example;**
 
-    **Option 2: At the [nso@nso ~]$ prompt, enter `code ~/packages/L2Vpn/templates/L2Vpn-template.xml` This automatically launches the file in Visual Studio Code You can edit the file directly in Visual Studio Code.**
+    **Option 2: At the [nso@nso ~]$ prompt, enter `code ~/packages/L2Vpn/templates/L2Vpn-template.xml` This automatically launches the file in Visual Studio Code. You can edit the file directly in Visual Studio Code.**
 
 1.  Edit file ~/packages/L2Vpn/templates/L2Vpn-template.xml. Replace
     the contents of the block of `<config-template
