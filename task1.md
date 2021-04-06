@@ -335,7 +335,8 @@ Mapping:
 ![](./media/media/xml-attr-mapping.png)
 
 1. Edit the template file opened in the previous section. In the block of `<config-template>`, replace the green highlighted values with the values highlighted in yellow in the above table. For example, replace `asr9k0` with `{pe-devices/device-name}`, replace `100.100` with `{./Bundle-Ether}.{./stag}`, replace `test-desc` with `{/customer-name}-{order-number}`, and replace `100` with `{./stag}`.
-![](./media/media/xml-template.png)
+
+	![](./media/media/xml-template.png)
 
 2. The final template file L2Vpn-template.xml should look like the following. Correct errors, if any, before you proceed.
  
