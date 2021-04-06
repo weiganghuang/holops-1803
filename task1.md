@@ -291,7 +291,7 @@ We start with creating a sample Bundle Ether sub-interface (`sub-interface 100.1
 
     **Option 2: At the [nso@nso ~]$ prompt, enter `code ~/packages/L2Vpn/templates/L2Vpn-template.xml` This automatically launches the file in Visual Studio Code. You can edit the file directly in Visual Studio Code.**
 
-1.  Edit file ~/packages/L2Vpn/templates/L2Vpn-template.xml. Replace
+1.  Edit file `~/packages/L2Vpn/templates/L2Vpn-template.xml`. Replace
     the contents of the block of `<config-template
     xmlns="http://tail-f.com/ns/config/1.0">` with the output of `commit
     dry run outformat xml` command  at the previous step:
@@ -323,6 +323,7 @@ We start with creating a sample Bundle Ether sub-interface (`sub-interface 100.1
     ```
 
 Next we will plant the service attributes to replace the sample parameters used to create the Bundle Ether sub-interface (sub-interface 100.100, with vlan id 100). The service attributes are identified as an xpath from service root L2vpn, with proper syntax (inside {}) and context, summarized in the table in the next section.
+
 
 ### NSO Ned (cisco-iosxr) to L2Vpn Attribute Mapping
 
