@@ -127,7 +127,7 @@ As previously mentioned, the pre-existing L2VPN configurations are brought in to
   
 ### Create L2Vpn service instances for pre-existing configuration
 
-As shown on the first page of this scenario, one L2Vpn service instance should be created to match each pre-existing Bundle-Ether sub-interface. In this procedure, you will manually create two L2Vpn service instances to match two pre-existing Bundle-Ether sub-interfaces, through the NSO CLI.
+As shown at the begining of this scenario, one L2Vpn service instance should be created to match each pre-existing Bundle-Ether sub-interface. In this procedure, you will manually create two L2Vpn service instances to match two pre-existing Bundle-Ether sub-interfaces, through the NSO CLI.
 
 Recall what we have done in Scenario 2 (Create L2VPN Service Package), this is reverse mapping of device model to service model. Similar to a previous information table, let’s build a device attribute to service attribute mapping example.
 
