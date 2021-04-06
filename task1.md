@@ -526,7 +526,7 @@ In this section, you will test the service package L2Vpn. NSO running on the app
 	
   	```
   	
-1. Check the device configuration to verify that the intended CLI commands are configured at the  `asr9k0`:
+1. Check the device configuration to verify that the intended CLI commands are configured at the device  `asr9k0`:
 
 	```	
 	admin@ncs% show devices device asr9k0 config cisco-ios-xr:interface Bundle-Ether-subinterface Bundle-Ether 100.100
