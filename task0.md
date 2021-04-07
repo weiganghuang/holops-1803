@@ -22,8 +22,11 @@ We will need use Remote Desktop to the workstation where you can access the lab 
 	![](./media/media/anyconnect.png)
 3. unzip the downloaded file and install
 
-4. Get Remote Desktop Client if you don't have it already. Urls: 
-	[Remote Desktop RDP Client for Mac](https://apps.apple.com/au/app/microsoft-remote-desktop/id1295203466?mt=12)	
+4. Get Remote Desktop Client if you don't have it already. 
+
+	Urls: 
+	[Remote Desktop RDP Client for Mac](https://apps.apple.com/au/app/microsoft-remote-desktop/id1295203466?mt=12)
+		
 	[Desktop for Windows](https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients)
 	
 5. Connect to AnyConnect VPN. From your dCloud session, click View -> Details, use the AnyConnect Credentials to connect.
