@@ -39,8 +39,9 @@ We will need use Remote Desktop to the workstation where you can access the lab 
 
 #### Option B 
 
-1. From your dCloud session, click on Workstation icon, and then from the popup menu, click on Remote Desktop link:
-	![](.media/media/webrdp.png)
+1. From your dCloud session, click on Workstation icon, and then from the popup menu, click on Remote Desktop:
+
+	![](./media/media/webrdp.png)
 
 
 ### Verify Lab Setup 
