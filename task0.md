@@ -11,7 +11,35 @@ HOLOPS-1803
 --------------------
 
 
-### Steps 
+### Connecting to the Workstation
+
+We will need use Remote Desktop to the workstation where you can access the lab server. There are two options. Option A requires Cisco AnyConnect Client and Remote Desktop client. Option B is using WebRdp.
+
+#### Option A
+
+1. Download Cisco Anyconnect if you don't have it already. Download url: [AnyConnect](https://software.cisco.com/download/home/286281283/type/282364313/release/4.9.06037)
+2. From the list, download the pre-deployment version based on your OS:
+	![](./media/media/anyconnect.png)
+3. unzip the downloaded file and install
+
+4. Get Remote Desktop Client if you don't have it already. Urls: 
+	[Remote Desktop RDP Client for Mac](https://apps.apple.com/au/app/microsoft-remote-desktop/id1295203466?mt=12)	
+	[Desktop for Windows](https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients)
+	
+5. Connect to AnyConnect VPN. From your dCloud session, click View -> Details, use the AnyConnect Credentials to connect.
+	![](./media/media/anyconnect-creds.png)
+
+6. Open your remote desktop RDP client, enter the following to connect:
+	* IP Address for the remote PC: `198.18.133.252`
+	* Credentials: `Administrator/C1sco12345` 
+
+#### Option B 
+
+1. From your dCloud session, click on Workstation icon, and then from the popup menu, click on Remote Desktop link:
+	![](.media/media/webrdp.png)
+
+
+### Verify Lab Setup 
 
 1. On the remote desktop, double-click the **nso@nso** click ![](./media/media/putty.png) icon to open a PuTTY connection to the NSO VM.
 2. Enter the following commands to fully initialize all elements of the lab. The initialization takes approximately five minutes.
