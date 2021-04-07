@@ -15,7 +15,7 @@ HOLOPS-1803
 
 We will need use Remote Desktop to the workstation where you can access the lab server. There are two options. Option A requires Cisco AnyConnect Client and Remote Desktop client. Option B is using WebRdp.
 
-#### Option A
+#### Option A: AnyConnect and Remote Desktop Client
 
 1. Download Cisco Anyconnect if you don't have it already. Download url: [AnyConnect](https://software.cisco.com/download/home/286281283/type/282364313/release/4.9.06037)
 2. From the list, download the pre-deployment version based on your OS:
@@ -31,17 +31,19 @@ We will need use Remote Desktop to the workstation where you can access the lab 
 	[Desktop for Windows](https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients)
 	
 5. Connect to AnyConnect VPN. From your dCloud session, click View -> Details, use the AnyConnect Credentials to connect.
+	
 	![](./media/media/anyconnect-creds.png)
 
 6. Open your remote desktop RDP client, enter the following to connect:
 	* IP Address for the remote PC: `198.18.133.252`
 	* Credentials: `Administrator/C1sco12345` 
 
-#### Option B 
+#### Option B: WebRDP
 
 1. From your dCloud session, click on Workstation icon, and then from the popup menu, click on Remote Desktop:
 
 	![](./media/media/webrdp.png)
+
 
 
 ### Verify Lab Setup 
