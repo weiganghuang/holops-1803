@@ -25,6 +25,7 @@ We will need use Remote Desktop to the workstation where you can access the lab 
 4. Get Remote Desktop Client if you don't have it already. 
 
 	Urls: 
+	
 	[Remote Desktop RDP Client for Mac](https://apps.apple.com/au/app/microsoft-remote-desktop/id1295203466?mt=12)
 		
 	[Desktop for Windows](https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients)
